@@ -23,10 +23,10 @@ jobs:
       - name: Run ProtonVPN IP Scraper
         run: python main.py
         env:
-          auth_pm_uid: ${{ secrets.AUTH_PM_UID }}
-          auth_token: ${{ secrets.AUTH_TOKEN }}
-          session_id: ${{ secrets.SESSION_ID }}
-          web_app_version: ${{ secrets.WEB_APP_VERSION }}
+          AUTH_PM_UID: ${{ secrets.AUTH_PM_UID }}
+          AUTH_TOKEN: ${{ secrets.AUTH_TOKEN }}
+          SESSION_ID: ${{ secrets.SESSION_ID }}
+          WEB_APP_VERSION: ${{ secrets.WEB_APP_VERSION }}
 
       - name: Commit and Push Changes
         run: |
