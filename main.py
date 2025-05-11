@@ -1,0 +1,140 @@
+#!/usr/bin/env python3
+import http.client
+import http.cookies
+import json
+import os
+from typing import List, Any, Dict
+
+
+class WebException(Exception):
+    """Exception raised for HTTP errors with status code information."""
+
+    def __init__(self, message, status_code, reason):
+        self.message = message
+        self.status_code = status_code
+        self.reason = reason
+        super().__init__(f"{message} Status: {status_code}, reason: {reason}")
+
+
+def load_dotenv(env_file=".env"):
+    """
+    Load environment variables from a .env file into os.environ
+
+    Args:
+        env_file: Path to the .env file (default: ".env")
+    """
+    if not os.path.exists(env_file):
+        return
+
+    with open(env_file, "r", encoding="utf-8") as f:
+        for line in f:
+            line = line.strip()
+
+            if not line or line.startswith("#"):
+                continue
+
+            if "=" in line:
+                key, value = line.split("=", 1)
+                key = key.strip()
+                value = value.strip()
+
+                if (value.startswith('"') and value.endswith('"')) or (
+                    value.startswith("'") and value.endswith("'")
+                ):
+                    value = value[1:-1]
+
+                os.environ[key] = value
+
+    print(f"Loaded environment variables from {env_file}")
+
+
+def fetch_protonvpn_data(
+    auth_pm_uid, auth_token, session_id, web_app_version
+) -> Dict[str, Any]:
+    """
+    Fetch ProtonVPN logicals and save the unique exit IPs to a JSON file.
+
+    Args:
+        auth_pm_uid: The PM user ID for authentication
+        auth_token: The authentication token
+        session_id: The session ID
+        web_app_version: The web app version string
+    """
+    auth_cookies = http.cookies.SimpleCookie()
+    auth_cookies["AUTH-" + auth_pm_uid] = auth_token
+    auth_cookies["Session-Id"] = session_id
+
+    headers = {
+        "x-pm-appversion": web_app_version,
+        "x-pm-uid": auth_pm_uid,
+        "Accept": "application/vnd.protonmail.v1+json",
+        "Cookie": auth_cookies.output(attrs=[], header="", sep="; "),
+    }
+
+    print("Requesting ProtonVPN logicals API...")
+    connection = http.client.HTTPSConnection("account.protonvpn.com")
+    connection.request("GET", "/api/vpn/logicals", headers=headers)
+    response = connection.getresponse()
+    if response.status != 200:
+        raise WebException(
+            "Failed to fetch data from ProtonVPN.", response.status, response.reason
+        )
+
+    data = response.read().decode()
+    response_json = json.loads(data)
+    connection.close()
+
+    return response_json
+
+
+def get_unique_exit_ips(data: Dict[str, Any]) -> List[str]:
+    """
+    Get unique exit IPs from ProtonVPN logicals.
+    """
+    exit_ips: List[str] = []
+    for logical_server in data.get("LogicalServers", []):
+        for server in logical_server.get("Servers", []):
+            exit_ip = server.get("ExitIP")
+            if exit_ip:
+                exit_ips.append(exit_ip)
+
+    unique_exit_ips: List[str] = list(set(exit_ips))
+
+    return unique_exit_ips
+
+
+def main() -> None:
+    """
+    Fetch ProtonVPN logicals and save the unique exit IPs to a JSON file.
+    """
+    load_dotenv()
+
+    auth_pm_uid = os.environ.get("AUTH_PM_UID")
+    auth_token = os.environ.get("AUTH_TOKEN")
+    session_id = os.environ.get("SESSION_ID")
+    web_app_version = os.environ.get("WEB_APP_VERSION", "web-vpn-settings@5.0.202.0")
+
+    if not auth_pm_uid or not auth_token or not session_id:
+        print("Missing required authentication parameters.")
+        if not auth_pm_uid:
+            auth_pm_uid = input("Please enter your AUTH_PM_UID: ")
+        if not auth_token:
+            auth_token = input("Please enter your AUTH_TOKEN: ")
+        if not session_id:
+            session_id = input("Please enter your SESSION_ID: ")
+
+    data: Dict[str, Any] = fetch_protonvpn_data(
+        auth_pm_uid, auth_token, session_id, web_app_version
+    )
+
+    unique_exit_ips: List[str] = get_unique_exit_ips(data)
+    with open("protonvpn_ips.json", "w", encoding="utf-8") as f:
+        json.dump(unique_exit_ips, f, indent=2)
+
+    with open("protonvpn_ips.txt", "w", encoding="utf-8") as f:
+        for ip in unique_exit_ips:
+            f.write(f"{ip}\n")
+
+
+if __name__ == "__main__":
+    main()

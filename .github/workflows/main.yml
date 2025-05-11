@@ -1,0 +1,37 @@
+name: ProtonVPN IP Scraper
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # Runs every 24 hours at midnight UTC
+  workflow_dispatch:  # Allows manual trigger
+
+jobs:
+  scrape-protonvpn-ips:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.10'
+
+      - name: Run ProtonVPN IP Scraper
+        run: python main.py
+        env:
+          auth_pm_uid: ${{ secrets.AUTH_PM_UID }}
+          auth_token: ${{ secrets.AUTH_TOKEN }}
+          session_id: ${{ secrets.SESSION_ID }}
+          web_app_version: ${{ secrets.WEB_APP_VERSION }}
+
+      - name: Commit and Push Changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add protonvpn_ips.json protonvpn_ips.txt
+          git commit -m "Update ProtonVPN IPs [skip ci]" || echo "No changes to commit"
+          git push
