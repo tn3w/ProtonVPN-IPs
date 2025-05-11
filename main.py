@@ -82,6 +82,10 @@ def fetch_protonvpn_data(
 
     data = response.read().decode()
     response_json = json.loads(data)
+
+    with open("protonvpn_logicals.json", "w", encoding="utf-8") as f:
+        json.dump(response_json, f, indent=2)
+
     connection.close()
 
     return response_json
