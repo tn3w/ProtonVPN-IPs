@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
+import urllib.request
+import urllib.error
 import http.client
 import http.cookies
 import json
 import os
-from typing import List, Any, Dict
+from typing import List, Any, Dict, Optional
 
 
 class WebException(Exception):
@@ -107,6 +109,23 @@ def get_unique_exit_ips(data: Dict[str, Any]) -> List[str]:
     return unique_exit_ips
 
 
+def get_latest_protonvpn_version() -> Optional[str]:
+    """
+    Gets the latest version of protonvpn web
+    """
+    url = "https://account.protonvpn.com/assets/yandex-browser-manifest.json"
+
+    try:
+        with urllib.request.urlopen(url) as response:
+            data = json.load(response)
+
+            return f"web-vpn-settings@{data['version']}"
+    except (urllib.error.URLError, KeyError):
+        pass
+
+    return None
+
+
 def main() -> None:
     """
     Fetch ProtonVPN logicals and save the unique exit IPs to a JSON file.
@@ -116,7 +135,9 @@ def main() -> None:
     auth_pm_uid = os.environ.get("AUTH_PM_UID")
     auth_token = os.environ.get("AUTH_TOKEN")
     session_id = os.environ.get("SESSION_ID")
-    web_app_version = os.environ.get("WEB_APP_VERSION", "web-vpn-settings@5.0.202.0")
+    web_app_version = get_latest_protonvpn_version()
+    if not web_app_version:
+        web_app_version = os.environ.get("WEB_APP_VERSION")
 
     if not auth_pm_uid or not auth_token or not session_id:
         print("Missing required authentication parameters.")
