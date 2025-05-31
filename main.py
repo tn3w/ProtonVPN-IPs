@@ -93,6 +93,62 @@ def fetch_protonvpn_data(
     return response_json
 
 
+def load_base_logicals(base_file="dev_base.json") -> Dict[str, Any]:
+    """
+    Load base logicals from the specified JSON file.
+
+    Args:
+        base_file: Path to the base logicals JSON file
+
+    Returns:
+        Dictionary containing the base logicals data
+    """
+    if not os.path.exists(base_file):
+        print(f"Base logicals file {base_file} not found. Using only API data.")
+        return {"LogicalServers": []}
+
+    try:
+        with open(base_file, "r", encoding="utf-8") as f:
+            return json.load(f)
+    except json.JSONDecodeError as e:
+        print(f"Error parsing {base_file}: {e}")
+        return {"LogicalServers": []}
+
+
+def combine_logicals(
+    api_data: Dict[str, Any], base_data: Dict[str, Any]
+) -> Dict[str, Any]:
+    """
+    Combine logical servers from API and base data, removing duplicates.
+
+    Args:
+        api_data: Logicals data from the API
+        base_data: Base logicals data
+
+    Returns:
+        Combined logicals data
+    """
+    server_ids = set()
+    combined_logicals = []
+
+    for logical in api_data.get("LogicalServers", []):
+        server_id = logical.get("ID")
+        if server_id and server_id not in server_ids:
+            server_ids.add(server_id)
+            combined_logicals.append(logical)
+
+    for logical in base_data.get("LogicalServers", []):
+        server_id = logical.get("ID")
+        if server_id and server_id not in server_ids:
+            server_ids.add(server_id)
+            combined_logicals.append(logical)
+
+    result = api_data.copy()
+    result["LogicalServers"] = combined_logicals
+
+    return result
+
+
 def get_unique_exit_ips(data: Dict[str, Any]) -> List[str]:
     """
     Get unique exit IPs from ProtonVPN logicals.
@@ -148,17 +204,30 @@ def main() -> None:
         if not session_id:
             session_id = input("Please enter your SESSION_ID: ")
 
-    data: Dict[str, Any] = fetch_protonvpn_data(
+    api_data: Dict[str, Any] = fetch_protonvpn_data(
         auth_pm_uid, auth_token, session_id, web_app_version
     )
 
-    unique_exit_ips: List[str] = get_unique_exit_ips(data)
+    base_data: Dict[str, Any] = load_base_logicals()
+
+    combined_data: Dict[str, Any] = combine_logicals(api_data, base_data)
+
+    with open("protonvpn_logicals.json", "w", encoding="utf-8") as f:
+        json.dump(combined_data, f, indent=2)
+
+    unique_exit_ips: List[str] = get_unique_exit_ips(combined_data)
+
     with open("protonvpn_ips.json", "w", encoding="utf-8") as f:
         json.dump(unique_exit_ips, f, indent=2)
 
     with open("protonvpn_ips.txt", "w", encoding="utf-8") as f:
         for ip in unique_exit_ips:
             f.write(f"{ip}\n")
+
+    print(
+        f"Found {len(combined_data.get('LogicalServers', []))} unique logical"
+        f"servers with {len(unique_exit_ips)} unique exit IPs."
+    )
 
 
 if __name__ == "__main__":
