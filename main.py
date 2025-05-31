@@ -131,13 +131,13 @@ def combine_logicals(
     server_ids = set()
     combined_logicals = []
 
-    for logical in api_data.get("LogicalServers", []):
+    for logical in base_data.get("LogicalServers", []):
         server_id = logical.get("ID")
         if server_id and server_id not in server_ids:
             server_ids.add(server_id)
             combined_logicals.append(logical)
 
-    for logical in base_data.get("LogicalServers", []):
+    for logical in api_data.get("LogicalServers", []):
         server_id = logical.get("ID")
         if server_id and server_id not in server_ids:
             server_ids.add(server_id)
