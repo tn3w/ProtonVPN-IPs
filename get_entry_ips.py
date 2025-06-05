@@ -158,7 +158,7 @@ def main():
     unique_ips = list(all_ip_addresses)
     prioritized_ips = format_ip_addresses(unique_ips)
 
-    with open("protonvpn-entry-ips.json", "w", encoding="utf-8") as f:
+    with open("protonvpn_entry_ips.json", "w", encoding="utf-8") as f:
         json.dump(prioritized_ips, f, indent=2)
 
     print("\nSummary:")
