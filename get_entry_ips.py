@@ -131,7 +131,7 @@ def main():
         print("Error: No subdomains found. Exiting.")
         return
 
-    with open("protonvpn-subdomains.json", "w", encoding="utf-8") as f:
+    with open("protonvpn_subdomains.json", "w", encoding="utf-8") as f:
         json.dump(list(subdomains), f, indent=2)
 
     print(f"Processing {len(subdomains)} subdomains...")
