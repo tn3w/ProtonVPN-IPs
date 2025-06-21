@@ -10,6 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      secrets: write
 
     steps:
       - name: Checkout Repository
@@ -26,15 +27,102 @@ jobs:
           pip install -r requirements.txt
 
       - name: Run ProtonVPN IP Scraper
-        run: python main.py
+        id: scraper
+        run: |
+          # Create token update script
+          cat > update_tokens.py << EOL
+          import os
+          import sys
+          import json
+          
+          if len(sys.argv) != 3:
+              sys.exit(0)
+              
+          token_file = sys.argv[1]
+          output_file = sys.argv[2]
+          
+          if not os.path.exists(token_file):
+              sys.exit(0)
+              
+          with open(token_file, 'r') as f:
+              tokens = json.load(f)
+              
+          if not all(k in tokens for k in ['AUTH_TOKEN', 'REFRESH_TOKEN', 'SESSION_ID']):
+              sys.exit(0)
+              
+          with open(output_file, 'w') as f:
+              f.write(f"auth_token={tokens['AUTH_TOKEN']}\n")
+              f.write(f"refresh_token={tokens['REFRESH_TOKEN']}\n")
+              f.write(f"session_id={tokens['SESSION_ID']}\n")
+              f.write("tokens_updated=true\n")
+          EOL
+          
+          # Create tokens output file to capture updated tokens
+          echo "{}" > tokens.json
+          
+          # Export tokens to file before running main script
+          python -c "
+          import os
+          import json
+          with open('tokens.json', 'w') as f:
+              json.dump({
+                  'AUTH_TOKEN': os.environ.get('AUTH_TOKEN', ''),
+                  'REFRESH_TOKEN': os.environ.get('REFRESH_TOKEN', ''),
+                  'SESSION_ID': os.environ.get('SESSION_ID', '')
+              }, f)
+          "
+          
+          # Run main script
+          python main.py
+          
+          # Check if tokens were refreshed and updated in environment
+          python -c "
+          import os
+          import json
+          with open('tokens.json', 'r') as f:
+              old_tokens = json.load(f)
+          
+          new_tokens = {
+              'AUTH_TOKEN': os.environ.get('AUTH_TOKEN', ''),
+              'REFRESH_TOKEN': os.environ.get('REFRESH_TOKEN', ''),
+              'SESSION_ID': os.environ.get('SESSION_ID', '')
+          }
+          
+          if (new_tokens['AUTH_TOKEN'] and new_tokens['REFRESH_TOKEN'] and
+              (new_tokens['AUTH_TOKEN'] != old_tokens['AUTH_TOKEN'] or 
+               new_tokens['REFRESH_TOKEN'] != old_tokens['REFRESH_TOKEN'])):
+              with open('tokens.json', 'w') as f:
+                  json.dump(new_tokens, f)
+          "
+          
+          # Generate outputs for GitHub Actions using the new environment file approach
+          python update_tokens.py tokens.json $GITHUB_OUTPUT
         env:
           AUTH_PM_UID: ${{ secrets.AUTH_PM_UID }}
           AUTH_TOKEN: ${{ secrets.AUTH_TOKEN }}
+          REFRESH_TOKEN: ${{ secrets.REFRESH_TOKEN }}
           SESSION_ID: ${{ secrets.SESSION_ID }}
           WEB_APP_VERSION: ${{ secrets.WEB_APP_VERSION }}
 
       - name: Run Get ProtonVPN Entry IPs
         run: python get_entry_ips.py
+
+      - name: Update GitHub Secrets
+        if: steps.scraper.outputs.tokens_updated == 'true'
+        run: |
+          # Install GitHub CLI
+          curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg
+          echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null
+          sudo apt update
+          sudo apt install gh
+          
+          # Authenticate GitHub CLI
+          echo "${{ secrets.GITHUB_TOKEN }}" | gh auth login --with-token
+          
+          # Update secrets
+          echo "${{ steps.scraper.outputs.auth_token }}" | gh secret set AUTH_TOKEN -R $GITHUB_REPOSITORY
+          echo "${{ steps.scraper.outputs.refresh_token }}" | gh secret set REFRESH_TOKEN -R $GITHUB_REPOSITORY
+          echo "${{ steps.scraper.outputs.session_id }}" | gh secret set SESSION_ID -R $GITHUB_REPOSITORY
 
       - name: Commit and Push Changes
         run: |

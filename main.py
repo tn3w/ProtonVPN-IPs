@@ -5,7 +5,7 @@ import http.client
 import http.cookies
 import json
 import os
-from typing import List, Any, Dict, Optional
+from typing import List, Any, Dict, Optional, Tuple
 
 
 class WebException(Exception):
@@ -48,6 +48,73 @@ def load_dotenv(env_file=".env"):
                 os.environ[key] = value
 
     print(f"Loaded environment variables from {env_file}")
+
+
+def refresh_auth_token(
+    uid: str, refresh_token: str, app_version: str
+) -> Tuple[str, str, str]:
+    """
+    Refresh authentication tokens using the refresh token API.
+
+    Args:
+        uid: The PM user ID
+        refresh_token: The refresh token
+        app_version: The web app version string
+
+    Returns:
+        Tuple containing (auth_token, refresh_token, session_id)
+    """
+    print("Refreshing authentication tokens...")
+
+    refresh_cookies = http.cookies.SimpleCookie()
+    refresh_cookies[f"REFRESH-{uid}"] = refresh_token
+
+    headers = {
+        "x-pm-appversion": app_version,
+        "x-pm-uid": uid,
+        "Cookie": refresh_cookies.output(attrs=[], header="", sep="; "),
+    }
+
+    connection = http.client.HTTPSConnection("account.proton.me")
+    connection.request("POST", "/api/auth/refresh", headers=headers)
+    response = connection.getresponse()
+
+    if response.status != 200:
+        raise WebException(
+            "Failed to refresh authentication tokens", response.status, response.reason
+        )
+
+    new_auth_token = None
+    new_refresh_token = None
+    new_session_id = None
+
+    for header in response.getheaders():
+        if header[0].lower() == "set-cookie":
+            cookie_str = header[1]
+            if f"AUTH-{uid}" in cookie_str:
+                start = cookie_str.find(f"AUTH-{uid}=") + len(f"AUTH-{uid}=")
+                end = cookie_str.find(";", start)
+                new_auth_token = cookie_str[start:end]
+            elif f"REFRESH-{uid}" in cookie_str:
+                start = cookie_str.find(f"REFRESH-{uid}=") + len(f"REFRESH-{uid}=")
+                end = cookie_str.find(";", start)
+                new_refresh_token = cookie_str[start:end]
+            elif "Session-Id" in cookie_str:
+                start = cookie_str.find("Session-Id=") + len("Session-Id=")
+                end = cookie_str.find(";", start)
+                new_session_id = cookie_str[start:end]
+
+    connection.close()
+
+    if not new_auth_token or not new_refresh_token or not new_session_id:
+        raise WebException(
+            "Failed to extract new tokens from refresh response",
+            response.status,
+            "Missing tokens in response",
+        )
+
+    print("Successfully refreshed authentication tokens")
+    return new_auth_token, new_refresh_token, new_session_id
 
 
 def fetch_protonvpn_data(
@@ -191,14 +258,26 @@ def main() -> None:
     auth_pm_uid = os.environ.get("AUTH_PM_UID")
     auth_token = os.environ.get("AUTH_TOKEN")
     session_id = os.environ.get("SESSION_ID")
+    refresh_token = os.environ.get("REFRESH_TOKEN")
     web_app_version = get_latest_protonvpn_version()
     if not web_app_version:
         web_app_version = os.environ.get("WEB_APP_VERSION")
 
-    if not auth_pm_uid or not auth_token or not session_id:
-        print("Missing required authentication parameters.")
-        if not auth_pm_uid:
-            auth_pm_uid = input("Please enter your AUTH_PM_UID: ")
+    if refresh_token and auth_pm_uid and web_app_version:
+        try:
+            auth_token, refresh_token, session_id = refresh_auth_token(
+                auth_pm_uid, refresh_token, web_app_version
+            )
+            os.environ["AUTH_TOKEN"] = auth_token
+            os.environ["REFRESH_TOKEN"] = refresh_token
+            os.environ["SESSION_ID"] = session_id
+
+            print("Authentication tokens refreshed successfully")
+        except WebException as e:
+            print(f"Token refresh failed: {e}")
+            print("Falling back to existing tokens or manual input...")
+
+    if not auth_token or not session_id:
         if not auth_token:
             auth_token = input("Please enter your AUTH_TOKEN: ")
         if not session_id:
@@ -226,7 +305,7 @@ def main() -> None:
 
     print(
         f"Found {len(combined_data.get('LogicalServers', []))} unique logical"
-        f"servers with {len(unique_exit_ips)} unique exit IPs."
+        f" servers with {len(unique_exit_ips)} unique exit IPs."
     )
 
 
