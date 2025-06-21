@@ -29,6 +29,7 @@ For GitHub Actions to work properly, set the following repository secrets:
 - `REFRESH_TOKEN`: Token used to refresh authentication credentials
 - `SESSION_ID`: Your session ID
 - `WEB_APP_VERSION`: (Optional) Override for the web app version string
+- `GH_TOKEN`: GitHub fine grained token with `Secrets: Read and Write` and `Contents: Read and Write` permissions used to update repository secrets
 
 The workflow automatically refreshes tokens when needed and updates repository secrets accordingly.
 
