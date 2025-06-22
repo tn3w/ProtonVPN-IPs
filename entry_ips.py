@@ -12,6 +12,19 @@ import dns.resolver
 import netaddr
 
 
+TXT_HEADER = """
+#
+# protonvpn_entry_ips.txt
+# https://github.com/tn3w/ProtonVPN-IPs/blob/master/protonvpn_entry_ips.txt
+#
+# An automatically updated list of Entry IPs associated with the
+# widely used free and privacy-focused VPN provider, ProtonVPN.
+#
+# This list could be used to block access to ProtonVPN's services.
+#
+"""
+
+
 def get_ip_addresses(hostname: str) -> List[str]:
     """Get both IPv4 and IPv6 addresses for a hostname."""
     ip_addresses = []
@@ -160,6 +173,10 @@ def main():
 
     with open("protonvpn_entry_ips.json", "w", encoding="utf-8") as f:
         json.dump(prioritized_ips, f, indent=2)
+
+    with open("protonvpn_entry_ips.txt", "w", encoding="utf-8") as f:
+        f.write(TXT_HEADER)
+        f.write("\n".join(prioritized_ips))
 
     print("\nSummary:")
     print(f"Total subdomains discovered: {len(subdomains)}")

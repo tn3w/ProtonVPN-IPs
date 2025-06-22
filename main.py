@@ -8,6 +8,19 @@ import os
 from typing import List, Any, Dict, Optional, Tuple
 
 
+TXT_HEADER = """
+#
+# protonvpn_ips.txt
+# https://github.com/tn3w/ProtonVPN-IPs/blob/master/protonvpn_ips.txt
+#
+# An automatically updated list of IP addresses associated with the
+# widely used free and privacy-focused VPN provider, ProtonVPN.
+#
+# This list could be used to block malicious traffic from ProtonVPN's servers.
+#
+"""
+
+
 class WebException(Exception):
     """Exception raised for HTTP errors with status code information."""
 
@@ -287,8 +300,8 @@ def main() -> None:
         json.dump(unique_exit_ips, f, indent=2)
 
     with open("protonvpn_ips.txt", "w", encoding="utf-8") as f:
-        for ip in unique_exit_ips:
-            f.write(f"{ip}\n")
+        f.write(TXT_HEADER)
+        f.write("\n".join(unique_exit_ips))
 
     print(
         f"Found {len(combined_data.get('LogicalServers', []))} unique logical"

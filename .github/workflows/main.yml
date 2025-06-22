@@ -27,10 +27,8 @@ jobs:
 
       - name: Run ProtonVPN IP Scraper
         run: |
-          # Run main script as the primary scraper - token refresh is handled within the script
           python main.py
           
-          # Set tokens_updated flag if tokens exist in environment
           if [ -n "$AUTH_TOKEN" ] && [ -n "$REFRESH_TOKEN" ] && [ -n "$SESSION_ID" ]; then
             echo "TOKENS_UPDATED=true" >> $GITHUB_ENV
           fi
@@ -42,7 +40,7 @@ jobs:
           WEB_APP_VERSION: ${{ secrets.WEB_APP_VERSION }}
 
       - name: Run Get ProtonVPN Entry IPs
-        run: python get_entry_ips.py
+        run: python entry_ips.py
 
       - name: Update GitHub Secrets
         if: env.TOKENS_UPDATED == 'true'
@@ -70,6 +68,6 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add protonvpn_ips.json protonvpn_ips.txt protonvpn_logicals.json protonvpn_entry_ips.json protonvpn_subdomains.json
+          git add protonvpn_ips.json protonvpn_ips.txt protonvpn_logicals.json protonvpn_entry_ips.json protonvpn_entry_ips.txt protonvpn_subdomains.json
           git commit -m "Update ProtonVPN IPs [skip ci]" || echo "No changes to commit"
           git push
