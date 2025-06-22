@@ -8,8 +8,7 @@ import os
 from typing import List, Any, Dict, Optional, Tuple
 
 
-TXT_HEADER = """
-#
+TXT_HEADER = """#
 # protonvpn_ips.txt
 # https://github.com/tn3w/ProtonVPN-IPs/blob/master/protonvpn_ips.txt
 #

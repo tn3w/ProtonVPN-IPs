@@ -12,8 +12,7 @@ import dns.resolver
 import netaddr
 
 
-TXT_HEADER = """
-#
+TXT_HEADER = """#
 # protonvpn_entry_ips.txt
 # https://github.com/tn3w/ProtonVPN-IPs/blob/master/protonvpn_entry_ips.txt
 #
