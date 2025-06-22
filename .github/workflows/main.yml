@@ -39,9 +39,6 @@ jobs:
           SESSION_ID: ${{ secrets.SESSION_ID }}
           WEB_APP_VERSION: ${{ secrets.WEB_APP_VERSION }}
 
-      - name: Run Get ProtonVPN Entry IPs
-        run: python entry_ips.py
-
       - name: Update GitHub Secrets
         if: env.TOKENS_UPDATED == 'true'
         run: |
@@ -63,6 +60,9 @@ jobs:
           
           echo "$SESSION_ID" | gh secret set SESSION_ID -R $GITHUB_REPOSITORY
           if [ $? -eq 0 ]; then echo "Successfully updated SESSION_ID"; else echo "Failed to update SESSION_ID"; fi
+
+      - name: Run Get ProtonVPN Entry IPs
+        run: python entry_ips.py
 
       - name: Commit and Push Changes
         run: |
