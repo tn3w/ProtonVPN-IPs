@@ -250,8 +250,6 @@ def main() -> None:
     session_id = os.environ.get("SESSION_ID")
     refresh_token = os.environ.get("REFRESH_TOKEN")
     web_app_version = get_latest_protonvpn_version()
-    if not web_app_version:
-        web_app_version = os.environ.get("WEB_APP_VERSION")
 
     if refresh_token and auth_pm_uid and web_app_version:
         try:
@@ -262,16 +260,15 @@ def main() -> None:
             os.environ["REFRESH_TOKEN"] = refresh_token
             os.environ["SESSION_ID"] = session_id
 
+            if os.environ.get("GITHUB_ACTIONS") == "true":
+                with open(os.environ.get("GITHUB_ENV", "/dev/null"), "a") as env_file:
+                    env_file.write(f"AUTH_TOKEN={auth_token}\n")
+                    env_file.write(f"REFRESH_TOKEN={refresh_token}\n")
+                    env_file.write(f"SESSION_ID={session_id}\n")
+
             print("Authentication tokens refreshed successfully")
         except WebException as e:
             print(f"Token refresh failed: {e}")
-            print("Falling back to existing tokens or manual input...")
-
-    if not auth_token or not session_id:
-        if not auth_token:
-            auth_token = input("Please enter your AUTH_TOKEN: ")
-        if not session_id:
-            session_id = input("Please enter your SESSION_ID: ")
 
     api_data: Dict[str, Any] = fetch_protonvpn_data(
         auth_pm_uid, auth_token, session_id, web_app_version

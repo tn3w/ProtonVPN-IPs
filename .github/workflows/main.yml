@@ -26,76 +26,14 @@ jobs:
           pip install -r requirements.txt
 
       - name: Run ProtonVPN IP Scraper
-        id: scraper
         run: |
-          # Create token update script
-          cat > update_tokens.py << EOL
-          import os
-          import sys
-          import json
-          
-          if len(sys.argv) != 3:
-              sys.exit(0)
-              
-          token_file = sys.argv[1]
-          output_file = sys.argv[2]
-          
-          if not os.path.exists(token_file):
-              sys.exit(0)
-              
-          with open(token_file, 'r') as f:
-              tokens = json.load(f)
-              
-          if not all(k in tokens for k in ['AUTH_TOKEN', 'REFRESH_TOKEN', 'SESSION_ID']):
-              sys.exit(0)
-              
-          with open(output_file, 'w') as f:
-              f.write(f"auth_token={tokens['AUTH_TOKEN']}\n")
-              f.write(f"refresh_token={tokens['REFRESH_TOKEN']}\n")
-              f.write(f"session_id={tokens['SESSION_ID']}\n")
-              f.write("tokens_updated=true\n")
-          EOL
-          
-          # Create tokens output file to capture updated tokens
-          echo "{}" > tokens.json
-          
-          # Export tokens to file before running main script
-          python -c "
-          import os
-          import json
-          with open('tokens.json', 'w') as f:
-              json.dump({
-                  'AUTH_TOKEN': os.environ.get('AUTH_TOKEN', ''),
-                  'REFRESH_TOKEN': os.environ.get('REFRESH_TOKEN', ''),
-                  'SESSION_ID': os.environ.get('SESSION_ID', '')
-              }, f)
-          "
-          
-          # Run main script
+          # Run main script as the primary scraper - token refresh is handled within the script
           python main.py
           
-          # Check if tokens were refreshed and updated in environment
-          python -c "
-          import os
-          import json
-          with open('tokens.json', 'r') as f:
-              old_tokens = json.load(f)
-          
-          new_tokens = {
-              'AUTH_TOKEN': os.environ.get('AUTH_TOKEN', ''),
-              'REFRESH_TOKEN': os.environ.get('REFRESH_TOKEN', ''),
-              'SESSION_ID': os.environ.get('SESSION_ID', '')
-          }
-          
-          if (new_tokens['AUTH_TOKEN'] and new_tokens['REFRESH_TOKEN'] and
-              (new_tokens['AUTH_TOKEN'] != old_tokens['AUTH_TOKEN'] or 
-               new_tokens['REFRESH_TOKEN'] != old_tokens['REFRESH_TOKEN'])):
-              with open('tokens.json', 'w') as f:
-                  json.dump(new_tokens, f)
-          "
-          
-          # Generate outputs for GitHub Actions using the new environment file approach
-          python update_tokens.py tokens.json $GITHUB_OUTPUT
+          # Set tokens_updated flag if tokens exist in environment
+          if [ -n "$AUTH_TOKEN" ] && [ -n "$REFRESH_TOKEN" ] && [ -n "$SESSION_ID" ]; then
+            echo "TOKENS_UPDATED=true" >> $GITHUB_ENV
+          fi
         env:
           AUTH_PM_UID: ${{ secrets.AUTH_PM_UID }}
           AUTH_TOKEN: ${{ secrets.AUTH_TOKEN }}
@@ -107,7 +45,7 @@ jobs:
         run: python get_entry_ips.py
 
       - name: Update GitHub Secrets
-        if: steps.scraper.outputs.tokens_updated == 'true'
+        if: env.TOKENS_UPDATED == 'true'
         run: |
           # Install GitHub CLI
           curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg
@@ -118,10 +56,15 @@ jobs:
           # Authenticate GitHub CLI
           echo "${{ secrets.GH_TOKEN }}" | gh auth login --with-token
           
-          # Update secrets
-          echo "${{ steps.scraper.outputs.auth_token }}" | gh secret set AUTH_TOKEN -R $GITHUB_REPOSITORY
-          echo "${{ steps.scraper.outputs.refresh_token }}" | gh secret set REFRESH_TOKEN -R $GITHUB_REPOSITORY
-          echo "${{ steps.scraper.outputs.session_id }}" | gh secret set SESSION_ID -R $GITHUB_REPOSITORY
+          # Update secrets - environment variables are already set by main.py
+          echo "$AUTH_TOKEN" | gh secret set AUTH_TOKEN -R $GITHUB_REPOSITORY
+          if [ $? -eq 0 ]; then echo "Successfully updated AUTH_TOKEN"; else echo "Failed to update AUTH_TOKEN"; fi
+          
+          echo "$REFRESH_TOKEN" | gh secret set REFRESH_TOKEN -R $GITHUB_REPOSITORY
+          if [ $? -eq 0 ]; then echo "Successfully updated REFRESH_TOKEN"; else echo "Failed to update REFRESH_TOKEN"; fi
+          
+          echo "$SESSION_ID" | gh secret set SESSION_ID -R $GITHUB_REPOSITORY
+          if [ $? -eq 0 ]; then echo "Successfully updated SESSION_ID"; else echo "Failed to update SESSION_ID"; fi
 
       - name: Commit and Push Changes
         run: |
