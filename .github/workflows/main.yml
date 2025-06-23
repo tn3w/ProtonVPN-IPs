@@ -33,7 +33,6 @@ jobs:
           AUTH_TOKEN: ${{ secrets.AUTH_TOKEN }}
           REFRESH_TOKEN: ${{ secrets.REFRESH_TOKEN }}
           SESSION_ID: ${{ secrets.SESSION_ID }}
-          WEB_APP_VERSION: ${{ secrets.WEB_APP_VERSION }}
 
       - name: Update GitHub Secrets
         env:

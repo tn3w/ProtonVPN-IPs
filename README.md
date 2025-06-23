@@ -14,7 +14,9 @@ The script generates three data files:
 
 4. `protonvpn_entry_ips.json` - A JSON array containing the unique entry IP addresses used by ProtonVPN servers.
 
-5. `protonvpn_subdomains.json` - A JSON array containing unique subdomains used by ProtonVPN servers.
+5. `protonvpn_entry_ips.txt` - A plain text file with one IP address per line, making it easy to use in scripts or other tools that expect a simple list format.
+
+6. `protonvpn_subdomains.json` - A JSON array containing unique subdomains used by ProtonVPN servers.
 
 ## Token Authentication
 
@@ -24,11 +26,10 @@ The project uses Proton API authentication tokens to fetch VPN server data. It n
 
 For GitHub Actions to work properly, set the following repository secrets:
 
-- `AUTH_PM_UID`: Your Proton account UID
+- `AUTH_PM_UID`: Your Proton account UID (not changed by token refresh)
 - `AUTH_TOKEN`: Initial authentication token
 - `REFRESH_TOKEN`: Token used to refresh authentication credentials
 - `SESSION_ID`: Your session ID
-- `WEB_APP_VERSION`: (Optional) Override for the web app version string
 - `GH_TOKEN`: GitHub fine grained token with `Secrets: Read and Write` and `Contents: Read and Write` permissions used to update repository secrets
 
 The workflow automatically refreshes tokens when needed and updates repository secrets accordingly.
