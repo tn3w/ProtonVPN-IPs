@@ -273,7 +273,7 @@ def main() -> None:
             os.environ["SESSION_ID"] = session_id
 
             if os.environ.get("GITHUB_ACTIONS") == "true":
-                with open(os.environ.get("GITHUB_ENV", "/dev/null"), "a") as env_file:
+                with open(".env", "a", encoding="utf-8") as env_file:
                     env_file.write(f"AUTH_TOKEN={auth_token}\n")
                     env_file.write(f"REFRESH_TOKEN={refresh_token}\n")
                     env_file.write(f"SESSION_ID={session_id}\n")
