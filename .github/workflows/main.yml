@@ -37,7 +37,7 @@ jobs:
 
       - name: Update GitHub Secrets
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
           gh secret set -f .env -R $GITHUB_REPOSITORY
           echo "Successfully updated authentication secrets"
