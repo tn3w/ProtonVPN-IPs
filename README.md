@@ -157,6 +157,47 @@ For GitHub Actions to work properly, set the following repository secrets:
 
 The workflow automatically refreshes tokens when needed and updates repository secrets accordingly.
 
+## 🔬 Technical Implementation
+
+### Exit IP Discovery (`main.py`)
+
+The exit IP discovery process implements authenticated API interaction with ProtonVPN's official endpoints:
+
+1. **Authentication Flow**:
+   - Implements cookie-based authentication using `AUTH-{uid}` and `Session-Id` tokens
+   - Handles token refresh via `/api/auth/refresh` endpoint on token expiration
+   - Extracts new tokens from HTTP response headers (`Set-Cookie`)
+
+2. **API Integration**:
+   - Fetches server data from `account.protonvpn.com/api/vpn/logicals` endpoint
+   - Uses HTTP headers including `x-pm-appversion`, `x-pm-uid` for API versioning
+   - Dynamically identifies latest app version from manifest.json
+
+3. **Data Processing**:
+   - Traverses the nested JSON structure (`LogicalServers[].Servers[].ExitIP`)
+   - Performs deduplication using Python sets (`set()`)
+   - Combines API data with local base data for enhanced coverage
+   - Serializes to both JSON and plain text formats
+
+### Entry IP Discovery (`entry_ips.py`)
+
+The entry IP discovery process employs passive reconnaissance techniques:
+
+1. **Subdomain Enumeration**:
+   - Leverages Certificate Transparency logs via crt.sh API
+   - Implements retry logic (10 attempts with 30s intervals) for API resilience
+   - Filters and normalizes subdomains
+
+2. **DNS Resolution**:
+   - Employs dual-resolution strategy with both standard socket library and `dns.resolver`
+   - Resolves both IPv4 (A records) and IPv6 (AAAA records)
+   - Utilizes concurrent execution (`ThreadPoolExecutor`) for parallel DNS resolution
+
+3. **IP Processing**:
+   - Formats IPv6 addresses to expanded notation using `netaddr.IPAddress().format(netaddr.ipv6_verbose)`
+   - Prioritizes IPv4 addresses in output list
+   - Deduplicates results while preserving IP format integrity
+
 ## 📜 License
 Copyright 2025 TN3W
 
