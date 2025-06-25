@@ -1,5 +1,7 @@
 # ProtonVPN-IPs
 
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/tn3w/ProtonVPN-IPs/main.yml?label=Build&style=for-the-badge)
+
 An automatically updated list of IP addresses associated with the widely used free and privacy-focused VPN provider, ProtonVPN.
 
 ## Data Files
