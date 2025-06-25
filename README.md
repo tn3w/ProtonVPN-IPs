@@ -1,12 +1,16 @@
+<div align="center">
+  
 # ProtonVPN-IPs
+
+🔒 An automatically updated list of IP addresses associated with the widely used free and privacy-focused VPN provider, ProtonVPN.
 
 ![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/tn3w/ProtonVPN-IPs/main.yml?label=Build&style=for-the-badge)
 
-An automatically updated list of IP addresses associated with the widely used free and privacy-focused VPN provider, ProtonVPN.
+</div>
 
-## Data Files
+## 📊 Data Files
 
-The script generates six data files:
+The repository maintains six regularly updated data files:
 
 1. `protonvpn_logicals.json` - Contains the raw response from ProtonVPN's API, including detailed information about all logical servers and their configurations.
 
@@ -20,7 +24,124 @@ The script generates six data files:
 
 6. `protonvpn_entry_ips.txt` - A plain text file with one IP address per line, making it easy to use in scripts or other tools that expect a simple list format.
 
-## Token Authentication
+## 🛠️ Usage Examples
+
+### Checking if an IP address is a ProtonVPN IP
+
+#### Python Example - Check Exit IP
+
+```python
+import json
+import netaddr
+
+def is_protonvpn_exit_ip(ip_to_check, json_path='protonvpn_ips.json'):
+    """Check if an IP address is a ProtonVPN exit IP"""
+    try:
+        # Validate IP address format
+        netaddr.IPAddress(ip_to_check)
+        
+        # Load the ProtonVPN IPs list
+        with open(json_path, 'r') as f:
+            protonvpn_ips = json.load(f)
+            
+        # Check if IP is in the list
+        return ip_to_check in protonvpn_ips
+    except netaddr.AddrFormatError:
+        print(f"Error: {ip_to_check} is not a valid IP address")
+        return False
+    except Exception as e:
+        print(f"Error: {e}")
+        return False
+
+# Usage example
+ip = "84.247.50.181"  # Example IP address
+if is_protonvpn_exit_ip(ip):
+    print(f"{ip} is a ProtonVPN exit IP")
+else:
+    print(f"{ip} is not a ProtonVPN exit IP")
+```
+
+#### Python Example - Check Entry IP
+
+```python
+import json
+import netaddr
+
+def is_protonvpn_entry_ip(ip_to_check, json_path='protonvpn_entry_ips.json'):
+    """Check if an IP address is a ProtonVPN entry IP"""
+    try:
+        # Validate IP address format
+        netaddr.IPAddress(ip_to_check)
+        
+        # Load the ProtonVPN IPs list
+        with open(json_path, 'r') as f:
+            protonvpn_ips = json.load(f)
+            
+        # Check if IP is in the list
+        return ip_to_check in protonvpn_ips
+    except netaddr.AddrFormatError:
+        print(f"Error: {ip_to_check} is not a valid IP address")
+        return False
+    except Exception as e:
+        print(f"Error: {e}")
+        return False
+
+# Usage example
+ip = "146.70.120.210"  # Example IP address
+if is_protonvpn_entry_ip(ip):
+    print(f"{ip} is a ProtonVPN entry IP")
+else:
+    print(f"{ip} is not a ProtonVPN entry IP")
+```
+
+#### Bulk IP Checking (Python)
+
+```python
+import json
+import netaddr
+from typing import List, Dict
+
+def check_multiple_ips(ips_to_check: List[str]) -> Dict[str, Dict[str, bool]]:
+    """Check multiple IPs against both entry and exit IP lists"""
+    # Load IP lists
+    try:
+        with open('protonvpn_ips.json', 'r') as f:
+            exit_ips = set(json.load(f))
+        
+        with open('protonvpn_entry_ips.json', 'r') as f:
+            entry_ips = set(json.load(f))
+            
+        # Check each IP
+        results = {}
+        for ip in ips_to_check:
+            try:
+                netaddr.IPAddress(ip)  # Validate IP format
+                results[ip] = {
+                    'is_exit_ip': ip in exit_ips,
+                    'is_entry_ip': ip in entry_ips
+                }
+            except netaddr.AddrFormatError:
+                results[ip] = {'error': f"Invalid IP address format"}
+                
+        return results
+    
+    except Exception as e:
+        return {'error': str(e)}
+
+# Example usage
+ips = ["146.70.120.210", "84.247.50.181", "192.168.1.1"]
+results = check_multiple_ips(ips)
+
+for ip, status in results.items():
+    print(f"IP: {ip}")
+    if 'error' in status:
+        print(f"  Error: {status['error']}")
+    else:
+        print(f"  ProtonVPN Exit IP: {'Yes' if status['is_exit_ip'] else 'No'}")
+        print(f"  ProtonVPN Entry IP: {'Yes' if status['is_entry_ip'] else 'No'}")
+```
+
+## 🔄 Token Authentication
 
 The project uses Proton API authentication tokens to fetch VPN server data. It now supports automatic token refresh, which helps maintain uninterrupted access to the API even when tokens expire.
 
@@ -36,7 +157,7 @@ For GitHub Actions to work properly, set the following repository secrets:
 
 The workflow automatically refreshes tokens when needed and updates repository secrets accordingly.
 
-## License
+## 📜 License
 Copyright 2025 TN3W
 
 Licensed under the Apache License, Version 2.0 (the "License");
