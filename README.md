@@ -4,7 +4,7 @@ An automatically updated list of IP addresses associated with the widely used fr
 
 ## Data Files
 
-The script generates three data files:
+The script generates six data files:
 
 1. `protonvpn_logicals.json` - Contains the raw response from ProtonVPN's API, including detailed information about all logical servers and their configurations.
 
@@ -12,11 +12,11 @@ The script generates three data files:
 
 3. `protonvpn_ips.txt` - A plain text file with one IP address per line, making it easy to use in scripts or other tools that expect a simple list format.
 
-4. `protonvpn_entry_ips.json` - A JSON array containing the unique entry IP addresses used by ProtonVPN servers.
+4. `protonvpn_subdomains.json` - A JSON array containing unique subdomains used by ProtonVPN servers.
 
-5. `protonvpn_entry_ips.txt` - A plain text file with one IP address per line, making it easy to use in scripts or other tools that expect a simple list format.
+5. `protonvpn_entry_ips.json` - A JSON array containing the unique entry IP addresses used by ProtonVPN servers.
 
-6. `protonvpn_subdomains.json` - A JSON array containing unique subdomains used by ProtonVPN servers.
+6. `protonvpn_entry_ips.txt` - A plain text file with one IP address per line, making it easy to use in scripts or other tools that expect a simple list format.
 
 ## Token Authentication
 
