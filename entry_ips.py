@@ -1,15 +1,9 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-
-import socket
 import json
+import socket
 import time
 import urllib.request
-import urllib.error
-import concurrent.futures
-from typing import List, Set
-import dns.resolver
-import netaddr
+from concurrent.futures import ThreadPoolExecutor, as_completed
+from typing import List
 
 
 TXT_HEADER = """#
@@ -24,113 +18,83 @@ TXT_HEADER = """#
 """
 
 
-def get_ip_addresses(hostname: str) -> List[str]:
-    """Get both IPv4 and IPv6 addresses for a hostname."""
-    ip_addresses = []
-
-    try:
-        addrinfo = socket.getaddrinfo(hostname, None)
-        for addr in addrinfo:
-            ip = addr[4][0]
-            if ip not in ip_addresses:
-                ip_addresses.append(ip)
-    except (socket.gaierror, socket.herror):
-        pass
-
-    resolver = dns.resolver.Resolver()
-
-    try:
-        answers = resolver.resolve(hostname, "A")
-        for rdata in answers:
-            ip = str(rdata)
-            if ip not in ip_addresses:
-                ip_addresses.append(ip)
-    except Exception as e:
-        print(f"Failed to resolve A record for {hostname}: {e}")
-
-    try:
-        answers = resolver.resolve(hostname, "AAAA")
-        for rdata in answers:
-            ip = str(rdata)
-            if ip not in ip_addresses:
-                ip_addresses.append(ip)
-    except Exception as e:
-        print(f"Failed to resolve AAAA record for {hostname}: {e}")
-
-    return ip_addresses
-
-
-def process_crtsh_subdomains(data: bytes, domain: str) -> Set[str]:
-    """Process subdomains from crt.sh."""
-    subdomains = set()
-    data = json.loads(data.decode("utf-8"))
-    print(f"Retrieved {len(data)} certificate records")
-
-    for item in data:
-        name_value = item.get("name_value", "")
-        for name in name_value.split("\n"):
-            if domain in name:
-                name = name.strip().lower()
-                if name.endswith(domain) and name != domain and "*" not in name:
-                    subdomains.add(name)
-
-    return subdomains
-
-
-def get_subdomains_from_crtsh(domain: str) -> Set[str]:
+def get_subdomains_from_crtsh(domain: str) -> List[str]:
     """Get subdomains for a domain from crt.sh using their web API."""
     subdomains = set()
-
-    print(f"Finding subdomains for {domain} using crt.sh...")
-
     try:
-        url = f"https://crt.sh/json?q={domain}"
-        req = urllib.request.Request(url)
-
-        with urllib.request.urlopen(req, timeout=60) as response:
+        with urllib.request.urlopen(
+            f"https://crt.sh/json?q={domain}", timeout=60
+        ) as response:
             if response.status == 200:
-                try:
-                    subdomains = process_crtsh_subdomains(response.read(), domain)
-
-                    print(f"Found {len(subdomains)} unique subdomains")
-                except json.JSONDecodeError:
-                    print("Failed to decode JSON response from crt.sh")
-            else:
-                print(f"Failed to query crt.sh API: HTTP {response.status}")
-    except urllib.error.URLError as e:
-        print(f"Error with crt.sh API: {e}")
+                data = json.loads(response.read().decode("utf-8"))
+                for item in data:
+                    for name in item.get("name_value", "").split("\n"):
+                        if (
+                            domain in name
+                            and name.endswith(domain)
+                            and name != domain
+                            and "*" not in name
+                        ):
+                            subdomains.add(name.strip().lower())
     except Exception as e:
         print(f"Error with crt.sh API: {e}")
 
-    return subdomains
+    return list(subdomains)
 
 
-def format_ip_addresses(ip_list: List[str]) -> List[str]:
-    """Reorder the IP list to put IPv4 addresses first and expand IPv6 to long format."""
-    ipv4_addresses = [ip for ip in ip_list if ":" not in ip]
-    ipv6_addresses = []
+def get_ips_for_hostname(hostname: str) -> List[str]:
+    """Get both IPv4 and IPv6 addresses for a hostname."""
+    ips = set()
 
-    for ip in ip_list:
-        if ":" in ip:
+    try:
+        for info in socket.getaddrinfo(hostname, None, socket.AF_INET):
+            ips.add(info[4][0])
+    except (socket.gaierror, socket.herror) as e:
+        print(f"IPv4 lookup failed for {hostname}: {e}")
+
+    try:
+        for info in socket.getaddrinfo(hostname, None, socket.AF_INET6):
+            ips.add(info[4][0])
+    except (socket.gaierror, socket.herror) as e:
+        print(f"IPv6 lookup failed for {hostname}: {e}")
+
+    return list(ips)
+
+
+def batch_get_ips_for_hostnames(
+    hostnames: List[str], workers: int = 10
+) -> List[str]:
+    """Get IP addresses for multiple hostnames in parallel."""
+    ip_addresses = set()
+
+    with ThreadPoolExecutor(max_workers=workers) as executor:
+        futures = {
+            executor.submit(get_ips_for_hostname, hostname): hostname
+            for hostname in hostnames
+        }
+
+        for i, future in enumerate(as_completed(futures)):
+            hostname = futures[future]
             try:
-                ipv6_obj = netaddr.IPAddress(ip)
-                if ipv6_obj.version == 6:
-                    expanded_ip = str(ipv6_obj.format(netaddr.ipv6_verbose))
-                    ipv6_addresses.append(expanded_ip)
-                else:
-                    ipv6_addresses.append(ip)
-            except Exception:
-                ipv6_addresses.append(ip)
+                ips = future.result()
+                if ips:
+                    print(f"Found {len(ips)} IPs for {hostname}")
+                    ip_addresses.update(ips)
+            except Exception as e:
+                print(f"Error processing {hostname}: {e}")
 
-    return ipv4_addresses + ipv6_addresses
+            if (i + 1) % 10 == 0:
+                print(f"Progress: {i + 1}/{len(hostnames)} hostnames processed")
+
+    return list(ip_addresses)
 
 
 def main():
     """Main function to discover subdomains and their IP addresses."""
     print("Starting Entry IP discovery...")
     base_domain = "protonvpn.net"
-    all_ip_addresses = set()
 
+    subdomains = list()
     for i in range(10):
         subdomains = get_subdomains_from_crtsh(base_domain)
         if subdomains:
@@ -148,40 +112,19 @@ def main():
 
     print(f"Processing {len(subdomains)} subdomains...")
 
-    with concurrent.futures.ThreadPoolExecutor(max_workers=10) as executor:
-        future_to_hostname = {
-            executor.submit(get_ip_addresses, hostname): hostname
-            for hostname in subdomains
-        }
-
-        for i, future in enumerate(concurrent.futures.as_completed(future_to_hostname)):
-            hostname = future_to_hostname[future]
-            try:
-                ips = future.result()
-                if ips:
-                    print(f"Found {len(ips)} IPs for {hostname}")
-                    all_ip_addresses.update(ips)
-            except Exception as e:
-                print(f"Error with {hostname}: {e}")
-
-            if (i + 1) % 10 == 0:
-                print(f"Progress: {i + 1}/{len(subdomains)} subdomains processed")
-
-    unique_ips = list(all_ip_addresses)
-    prioritized_ips = format_ip_addresses(unique_ips)
-
+    ip_addresses = batch_get_ips_for_hostnames(subdomains)
     with open("protonvpn_entry_ips.json", "w", encoding="utf-8") as f:
-        json.dump(prioritized_ips, f, indent=2)
+        json.dump(ip_addresses, f, indent=2)
 
     with open("protonvpn_entry_ips.txt", "w", encoding="utf-8") as f:
         f.write(TXT_HEADER)
-        f.write("\n".join(prioritized_ips))
+        f.write("\n".join(ip_addresses))
 
     print("\nSummary:")
     print(f"Total subdomains discovered: {len(subdomains)}")
-    print(f"Total unique Entry IPs found: {len(prioritized_ips)}")
-    print(f"Entry IPv6 addresses: {sum(1 for ip in prioritized_ips if ':' in ip)}")
-    print(f"Entry IPv4 addresses: {sum(1 for ip in prioritized_ips if ':' not in ip)}")
+    print(f"Total unique Entry IPs found: {len(ip_addresses)}")
+    print(f"Entry IPv6 addresses: {sum(1 for ip in ip_addresses if ':' in ip)}")
+    print(f"Entry IPv4 addresses: {sum(1 for ip in ip_addresses if ':' not in ip)}")
     print("Results saved to protonvpn_entry_ips.json and protonvpn_subdomains.json")
 
 
