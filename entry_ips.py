@@ -61,9 +61,7 @@ def get_ips_for_hostname(hostname: str) -> List[str]:
     return list(ips)
 
 
-def batch_get_ips_for_hostnames(
-    hostnames: List[str], workers: int = 10
-) -> List[str]:
+def batch_get_ips_for_hostnames(hostnames: List[str], workers: int = 10) -> List[str]:
     """Get IP addresses for multiple hostnames in parallel."""
     ip_addresses = set()
 

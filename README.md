@@ -189,14 +189,14 @@ The entry IP discovery process employs passive reconnaissance techniques:
    - Filters and normalizes subdomains
 
 2. **DNS Resolution**:
-   - Employs dual-resolution strategy with both standard socket library and `dns.resolver`
-   - Resolves both IPv4 (A records) and IPv6 (AAAA records)
+   - Uses socket library with specific address family parameters (AF_INET, AF_INET6)
+   - Directly resolves both IPv4 (A records) and IPv6 (AAAA records)
    - Utilizes concurrent execution (`ThreadPoolExecutor`) for parallel DNS resolution
 
 3. **IP Processing**:
-   - Formats IPv6 addresses to expanded notation using `netaddr.IPAddress().format(netaddr.ipv6_verbose)`
-   - Prioritizes IPv4 addresses in output list
-   - Deduplicates results while preserving IP format integrity
+   - Employs set data structures for efficient deduplication
+   - Maintains mixed IPv4/IPv6 collections in output
+   - Handles network errors gracefully with specific exception handling
 
 ## 📜 License
 Copyright 2025 TN3W
