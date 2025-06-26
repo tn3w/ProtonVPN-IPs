@@ -302,10 +302,20 @@ def main() -> None:
         f.write(TXT_HEADER)
         f.write("\n".join(unique_exit_ips))
 
-    print(
-        f"Found {len(combined_data.get('LogicalServers', []))} unique logical"
-        f" servers with {len(unique_exit_ips)} unique exit IPs."
-    )
+    ipv4_count = sum(1 for ip in unique_exit_ips if ":" not in ip)
+    ipv6_count = sum(1 for ip in unique_exit_ips if ":" in ip)
+    total = len(unique_exit_ips)
+
+    print("\nSummary:")
+    print(f"Total logical servers: {len(combined_data.get('LogicalServers', []))}")
+    print(f"Total unique Exit IPs found: {total}")
+
+    print("\nIP Address Distribution:")
+    ipv4_bar = "█" * int(30 * ipv4_count / total)
+    ipv6_bar = "█" * int(30 * ipv6_count / total)
+
+    print(f"IPv4 ({ipv4_count}): {ipv4_bar} {ipv4_count/total:.1%}")
+    print(f"IPv6 ({ipv6_count}): {ipv6_bar} {ipv6_count/total:.1%}")
 
 
 if __name__ == "__main__":

@@ -118,12 +118,20 @@ def main():
         f.write(TXT_HEADER)
         f.write("\n".join(ip_addresses))
 
+    ipv4_count = sum(1 for ip in ip_addresses if ":" not in ip)
+    ipv6_count = sum(1 for ip in ip_addresses if ":" in ip)
+    total = len(ip_addresses)
+
     print("\nSummary:")
     print(f"Total subdomains discovered: {len(subdomains)}")
-    print(f"Total unique Entry IPs found: {len(ip_addresses)}")
-    print(f"Entry IPv6 addresses: {sum(1 for ip in ip_addresses if ':' in ip)}")
-    print(f"Entry IPv4 addresses: {sum(1 for ip in ip_addresses if ':' not in ip)}")
-    print("Results saved to protonvpn_entry_ips.json and protonvpn_subdomains.json")
+    print(f"Total unique Entry IPs found: {total}")
+
+    print("\nIP Address Distribution:")
+    ipv4_bar = "█" * int(30 * ipv4_count / total)
+    ipv6_bar = "█" * int(30 * ipv6_count / total)
+
+    print(f"IPv4 ({ipv4_count}): {ipv4_bar} {ipv4_count/total:.1%}")
+    print(f"IPv6 ({ipv6_count}): {ipv6_bar} {ipv6_count/total:.1%}")
 
 
 if __name__ == "__main__":
