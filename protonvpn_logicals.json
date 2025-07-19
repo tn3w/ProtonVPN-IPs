@@ -55865,7 +55865,7 @@
       "Features": 16,
       "Region": null,
       "City": "Houston",
-      "Score": 3.9824747807,
+      "Score": 4.9956544655,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -55874,7 +55874,6 @@
         "Lat": 29.74,
         "Long": -95.35
       },
-      "Status": 1,
       "Servers": [
         {
           "EntryIP": "37.19.221.197",
@@ -55925,7 +55924,8 @@
           "ServicesDownReason": null
         }
       ],
-      "Load": 83
+      "Status": 1,
+      "Load": 90
     },
     {
       "Name": "US-FREE#42",
@@ -55936,7 +55936,7 @@
       "Features": 16,
       "Region": null,
       "City": "Houston",
-      "Score": 3.9798260334,
+      "Score": 4.9921118019,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -55945,7 +55945,6 @@
         "Lat": 29.74,
         "Long": -95.35
       },
-      "Status": 1,
       "Servers": [
         {
           "EntryIP": "37.19.221.194",
@@ -55996,6 +55995,7 @@
           "ServicesDownReason": null
         }
       ],
+      "Status": 1,
       "Load": 82
     },
     {
@@ -56007,7 +56007,7 @@
       "Features": 16,
       "Region": null,
       "City": "Warsaw",
-      "Score": 4.994921908,
+      "Score": 4.9904548602,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -56016,7 +56016,6 @@
         "Lat": 52.23,
         "Long": 21.01
       },
-      "Status": 1,
       "Servers": [
         {
           "EntryIP": "149.102.244.102",
@@ -56067,7 +56066,8 @@
           "ServicesDownReason": null
         }
       ],
-      "Load": 92
+      "Status": 1,
+      "Load": 89
     },
     {
       "Name": "NL-FREE#165",
@@ -56078,7 +56078,7 @@
       "Features": 0,
       "Region": null,
       "City": "Amsterdam",
-      "Score": 4.9913686036,
+      "Score": 4.9877194743,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -56087,7 +56087,6 @@
         "Lat": 52.37,
         "Long": 4.89
       },
-      "Status": 1,
       "Servers": [
         {
           "EntryIP": "185.107.94.197",
@@ -56102,7 +56101,8 @@
           "ServicesDownReason": null
         }
       ],
-      "Load": 89
+      "Status": 1,
+      "Load": 87
     },
     {
       "Name": "NL-FREE#232",
@@ -56113,7 +56113,7 @@
       "Features": 0,
       "Region": null,
       "City": "Amsterdam",
-      "Score": 4.9912657091,
+      "Score": 4.985025629,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -56122,7 +56122,6 @@
         "Lat": 52.37,
         "Long": 4.89
       },
-      "Status": 1,
       "Servers": [
         {
           "EntryIP": "185.177.125.13",
@@ -56305,7 +56304,8 @@
           "ServicesDownReason": null
         }
       ],
-      "Load": 63
+      "Status": 1,
+      "Load": 71
     },
     {
       "Name": "SE-US#1",
@@ -56316,7 +56316,7 @@
       "Features": 1,
       "Region": null,
       "City": "New York",
-      "Score": 1.9851439709999998,
+      "Score": 1.9850362777,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -56325,7 +56325,6 @@
         "Lat": 40.73,
         "Long": -73.93
       },
-      "Status": 1,
       "Servers": [
         {
           "EntryIP": "185.159.156.110",
@@ -56832,7 +56831,8 @@
           "ServicesDownReason": null
         }
       ],
-      "Load": 50
+      "Status": 1,
+      "Load": 56
     },
     {
       "Name": "IS-BR#2",
@@ -56843,7 +56843,7 @@
       "Features": 1,
       "Region": null,
       "City": "S\u00e3o Paulo",
-      "Score": 5.9951041073999995,
+      "Score": 5.998668856,
       "HostCountry": "US",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -56852,7 +56852,6 @@
         "Lat": -23.55,
         "Long": -46.63
       },
-      "Status": 1,
       "Servers": [
         {
           "EntryIP": "185.159.158.177",
@@ -56867,7 +56866,8 @@
           "ServicesDownReason": null
         }
       ],
-      "Load": 51
+      "Status": 1,
+      "Load": 56
     },
     {
       "Name": "US-TX#269",
@@ -56878,7 +56878,7 @@
       "Features": 12,
       "Region": null,
       "City": "McAllen",
-      "Score": 1.9607407483000001,
+      "Score": 1.9702223308,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -56887,7 +56887,6 @@
         "Lat": 26.2,
         "Long": -98.23
       },
-      "Status": 1,
       "Servers": [
         {
           "EntryIP": "79.127.147.3",
@@ -56902,7 +56901,8 @@
           "ServicesDownReason": null
         }
       ],
-      "Load": 43
+      "Status": 1,
+      "Load": 51
     },
     {
       "Name": "US-TX#270",
@@ -56913,7 +56913,7 @@
       "Features": 12,
       "Region": null,
       "City": "McAllen",
-      "Score": 1.9623737806000001,
+      "Score": 1.9698827709,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -56922,7 +56922,6 @@
         "Lat": 26.2,
         "Long": -98.23
       },
-      "Status": 1,
       "Servers": [
         {
           "EntryIP": "79.127.147.3",
@@ -56937,7 +56936,8 @@
           "ServicesDownReason": null
         }
       ],
-      "Load": 41
+      "Status": 1,
+      "Load": 42
     },
     {
       "Name": "US-TX#271",
@@ -56948,7 +56948,7 @@
       "Features": 12,
       "Region": null,
       "City": "McAllen",
-      "Score": 1.9637137329,
+      "Score": 1.9639927587,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -56957,7 +56957,6 @@
         "Lat": 26.2,
         "Long": -98.23
       },
-      "Status": 1,
       "Servers": [
         {
           "EntryIP": "79.127.147.3",
@@ -56972,7 +56971,8 @@
           "ServicesDownReason": null
         }
       ],
-      "Load": 45
+      "Status": 1,
+      "Load": 44
     },
     {
       "Name": "US-TX#272",
@@ -56983,7 +56983,7 @@
       "Features": 12,
       "Region": null,
       "City": "McAllen",
-      "Score": 1.9648375193,
+      "Score": 1.9721653834000001,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -56992,7 +56992,6 @@
         "Lat": 26.2,
         "Long": -98.23
       },
-      "Status": 1,
       "Servers": [
         {
           "EntryIP": "79.127.147.3",
@@ -57007,7 +57006,8 @@
           "ServicesDownReason": null
         }
       ],
-      "Load": 38
+      "Status": 1,
+      "Load": 49
     },
     {
       "Name": "US-TN#1",
@@ -57018,7 +57018,7 @@
       "Features": 12,
       "Region": null,
       "City": "Memphis",
-      "Score": 1.9826915106,
+      "Score": 1.941975183,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -57027,7 +57027,6 @@
         "Lat": 35.11,
         "Long": -89.97
       },
-      "Status": 1,
       "Servers": [
         {
           "EntryIP": "146.70.8.2",
@@ -57042,7 +57041,8 @@
           "ServicesDownReason": null
         }
       ],
-      "Load": 66
+      "Status": 1,
+      "Load": 39
     },
     {
       "Name": "US-TN#10",
@@ -57053,7 +57053,7 @@
       "Features": 12,
       "Region": null,
       "City": "Memphis",
-      "Score": 1.9853485306,
+      "Score": 1.9432262195,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -57062,7 +57062,6 @@
         "Lat": 35.11,
         "Long": -89.97
       },
-      "Status": 1,
       "Servers": [
         {
           "EntryIP": "146.70.8.2",
@@ -57077,7 +57076,8 @@
           "ServicesDownReason": null
         }
       ],
-      "Load": 64
+      "Status": 1,
+      "Load": 44
     },
     {
       "Name": "US-TN#11",
@@ -57088,7 +57088,7 @@
       "Features": 12,
       "Region": null,
       "City": "Memphis",
-      "Score": 1.9871804068999999,
+      "Score": 1.9411139045999999,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -57097,7 +57097,6 @@
         "Lat": 35.11,
         "Long": -89.97
       },
-      "Status": 1,
       "Servers": [
         {
           "EntryIP": "146.70.8.2",
@@ -57112,7 +57111,8 @@
           "ServicesDownReason": null
         }
       ],
-      "Load": 73
+      "Status": 1,
+      "Load": 43
     },
     {
       "Name": "US-TN#12",
@@ -57123,7 +57123,7 @@
       "Features": 12,
       "Region": null,
       "City": "Memphis",
-      "Score": 1.9822092802,
+      "Score": 1.9388198825,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -57132,7 +57132,6 @@
         "Lat": 35.11,
         "Long": -89.97
       },
-      "Status": 1,
       "Servers": [
         {
           "EntryIP": "146.70.8.2",
@@ -57147,7 +57146,8 @@
           "ServicesDownReason": null
         }
       ],
-      "Load": 72
+      "Status": 1,
+      "Load": 48
     },
     {
       "Name": "AM#1",
@@ -57158,7 +57158,7 @@
       "Features": 12,
       "Region": null,
       "City": "Yerevan",
-      "Score": 2.9901027443,
+      "Score": 2.9876628842,
       "HostCountry": "RO",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -57167,7 +57167,6 @@
         "Lat": 40.18,
         "Long": 44.51
       },
-      "Status": 1,
       "Servers": [
         {
           "EntryIP": "89.249.72.2",
@@ -57182,7 +57181,8 @@
           "ServicesDownReason": null
         }
       ],
-      "Load": 15
+      "Status": 1,
+      "Load": 13
     },
     {
       "Name": "AM#10",
@@ -57193,7 +57193,7 @@
       "Features": 12,
       "Region": null,
       "City": "Yerevan",
-      "Score": 2.9905126305,
+      "Score": 2.9875200080999997,
       "HostCountry": "RO",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -57202,7 +57202,6 @@
         "Lat": 40.18,
         "Long": 44.51
       },
-      "Status": 1,
       "Servers": [
         {
           "EntryIP": "89.249.72.2",
@@ -57217,7 +57216,8 @@
           "ServicesDownReason": null
         }
       ],
-      "Load": 20
+      "Status": 1,
+      "Load": 9
     },
     {
       "Name": "AM#11",
@@ -57228,7 +57228,7 @@
       "Features": 12,
       "Region": null,
       "City": "Yerevan",
-      "Score": 2.9953731166,
+      "Score": 2.9906333471,
       "HostCountry": "RO",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -57237,7 +57237,6 @@
         "Lat": 40.18,
         "Long": 44.51
       },
-      "Status": 1,
       "Servers": [
         {
           "EntryIP": "89.249.72.2",
@@ -57252,7 +57251,8 @@
           "ServicesDownReason": null
         }
       ],
-      "Load": 18
+      "Status": 1,
+      "Load": 13
     },
     {
       "Name": "AM#12",
@@ -57263,7 +57263,7 @@
       "Features": 12,
       "Region": null,
       "City": "Yerevan",
-      "Score": 2.9945952427,
+      "Score": 2.9913096418,
       "HostCountry": "RO",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -57272,7 +57272,6 @@
         "Lat": 40.18,
         "Long": 44.51
       },
-      "Status": 1,
       "Servers": [
         {
           "EntryIP": "89.249.72.2",
@@ -57287,7 +57286,8 @@
           "ServicesDownReason": null
         }
       ],
-      "Load": 11
+      "Status": 1,
+      "Load": 9
     },
     {
       "Name": "LA#1",
@@ -57298,7 +57298,7 @@
       "Features": 12,
       "Region": null,
       "City": "Vientiane",
-      "Score": 2.9960553452000003,
+      "Score": 2.9913909310999998,
       "HostCountry": "SG",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -57307,7 +57307,6 @@
         "Lat": 17.96,
         "Long": 102.6
       },
-      "Status": 1,
       "Servers": [
         {
           "EntryIP": "109.111.197.2",
@@ -57322,7 +57321,8 @@
           "ServicesDownReason": null
         }
       ],
-      "Load": 4
+      "Status": 1,
+      "Load": 6
     },
     {
       "Name": "LA#10",
@@ -57333,7 +57333,7 @@
       "Features": 12,
       "Region": null,
       "City": "Vientiane",
-      "Score": 2.9909578005,
+      "Score": 2.9991611375,
       "HostCountry": "SG",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -57342,7 +57342,6 @@
         "Lat": 17.96,
         "Long": 102.6
       },
-      "Status": 1,
       "Servers": [
         {
           "EntryIP": "109.111.197.2",
@@ -57357,6 +57356,7 @@
           "ServicesDownReason": null
         }
       ],
+      "Status": 1,
       "Load": 0
     },
     {
@@ -57368,7 +57368,7 @@
       "Features": 12,
       "Region": null,
       "City": "Vientiane",
-      "Score": 2.9938276001,
+      "Score": 2.9988920115999997,
       "HostCountry": "SG",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -57377,7 +57377,6 @@
         "Lat": 17.96,
         "Long": 102.6
       },
-      "Status": 1,
       "Servers": [
         {
           "EntryIP": "109.111.197.2",
@@ -57392,7 +57391,8 @@
           "ServicesDownReason": null
         }
       ],
-      "Load": 8
+      "Status": 1,
+      "Load": 4
     },
     {
       "Name": "LA#12",
@@ -57403,7 +57403,7 @@
       "Features": 12,
       "Region": null,
       "City": "Vientiane",
-      "Score": 2.9909249543,
+      "Score": 2.9937544825,
       "HostCountry": "SG",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -57412,7 +57412,6 @@
         "Lat": 17.96,
         "Long": 102.6
       },
-      "Status": 1,
       "Servers": [
         {
           "EntryIP": "109.111.197.2",
@@ -57427,7 +57426,8 @@
           "ServicesDownReason": null
         }
       ],
-      "Load": 2
+      "Status": 1,
+      "Load": 0
     },
     {
       "Name": "MN#1",
@@ -57438,7 +57438,7 @@
       "Features": 12,
       "Region": null,
       "City": "Ulaanbaatar",
-      "Score": 2.9949036971,
+      "Score": 2.9939894171,
       "HostCountry": "JP",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -57447,7 +57447,6 @@
         "Lat": 47.92,
         "Long": 106.91
       },
-      "Status": 1,
       "Servers": [
         {
           "EntryIP": "37.191.127.2",
@@ -57462,7 +57461,8 @@
           "ServicesDownReason": null
         }
       ],
-      "Load": 9
+      "Status": 1,
+      "Load": 7
     },
     {
       "Name": "MN#10",
@@ -57473,7 +57473,7 @@
       "Features": 12,
       "Region": null,
       "City": "Ulaanbaatar",
-      "Score": 2.9877597137,
+      "Score": 2.9894213587,
       "HostCountry": "JP",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -57482,7 +57482,6 @@
         "Lat": 47.92,
         "Long": 106.91
       },
-      "Status": 1,
       "Servers": [
         {
           "EntryIP": "37.191.127.2",
@@ -57497,7 +57496,8 @@
           "ServicesDownReason": null
         }
       ],
-      "Load": 0
+      "Status": 1,
+      "Load": 4
     },
     {
       "Name": "MN#11",
@@ -57508,7 +57508,7 @@
       "Features": 12,
       "Region": null,
       "City": "Ulaanbaatar",
-      "Score": 2.9903545843,
+      "Score": 2.992259491,
       "HostCountry": "JP",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -57517,7 +57517,6 @@
         "Lat": 47.92,
         "Long": 106.91
       },
-      "Status": 1,
       "Servers": [
         {
           "EntryIP": "37.191.127.2",
@@ -57532,7 +57531,8 @@
           "ServicesDownReason": null
         }
       ],
-      "Load": 9
+      "Status": 1,
+      "Load": 4
     },
     {
       "Name": "MN#12",
@@ -57543,7 +57543,7 @@
       "Features": 12,
       "Region": null,
       "City": "Ulaanbaatar",
-      "Score": 2.989471099,
+      "Score": 2.9890735553,
       "HostCountry": "JP",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -57552,7 +57552,6 @@
         "Lat": 47.92,
         "Long": 106.91
       },
-      "Status": 1,
       "Servers": [
         {
           "EntryIP": "37.191.127.2",
@@ -57567,7 +57566,8 @@
           "ServicesDownReason": null
         }
       ],
-      "Load": 3
+      "Status": 1,
+      "Load": 0
     },
     {
       "Name": "BN#1",
@@ -57578,7 +57578,7 @@
       "Features": 12,
       "Region": null,
       "City": "Bandar Seri Begawan",
-      "Score": 2.9980449105,
+      "Score": 2.9943463908,
       "HostCountry": "SG",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -57587,7 +57587,6 @@
         "Lat": 4.89,
         "Long": 114.94
       },
-      "Status": 1,
       "Servers": [
         {
           "EntryIP": "109.111.197.130",
@@ -57602,7 +57601,8 @@
           "ServicesDownReason": null
         }
       ],
-      "Load": 2
+      "Status": 1,
+      "Load": 9
     },
     {
       "Name": "BN#10",
@@ -57613,7 +57613,7 @@
       "Features": 12,
       "Region": null,
       "City": "Bandar Seri Begawan",
-      "Score": 2.9986266843,
+      "Score": 2.9985456103,
       "HostCountry": "SG",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -57622,7 +57622,6 @@
         "Lat": 4.89,
         "Long": 114.94
       },
-      "Status": 1,
       "Servers": [
         {
           "EntryIP": "109.111.197.130",
@@ -57637,6 +57636,7 @@
           "ServicesDownReason": null
         }
       ],
+      "Status": 1,
       "Load": 8
     },
     {
@@ -57648,7 +57648,7 @@
       "Features": 12,
       "Region": null,
       "City": "Bandar Seri Begawan",
-      "Score": 2.997434922,
+      "Score": 2.9942159596,
       "HostCountry": "SG",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -57657,7 +57657,6 @@
         "Lat": 4.89,
         "Long": 114.94
       },
-      "Status": 1,
       "Servers": [
         {
           "EntryIP": "109.111.197.130",
@@ -57672,7 +57671,8 @@
           "ServicesDownReason": null
         }
       ],
-      "Load": 0
+      "Status": 1,
+      "Load": 4
     },
     {
       "Name": "BN#12",
@@ -57683,7 +57683,7 @@
       "Features": 12,
       "Region": null,
       "City": "Bandar Seri Begawan",
-      "Score": 2.995017065,
+      "Score": 2.9957255917,
       "HostCountry": "SG",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -57692,7 +57692,6 @@
         "Lat": 4.89,
         "Long": 114.94
       },
-      "Status": 1,
       "Servers": [
         {
           "EntryIP": "109.111.197.130",
@@ -57707,6 +57706,7 @@
           "ServicesDownReason": null
         }
       ],
+      "Status": 1,
       "Load": 8
     },
     {
@@ -57718,7 +57718,7 @@
       "Features": 28,
       "Region": null,
       "City": "Vancouver",
-      "Score": 2.9756501679,
+      "Score": 2.9846407348,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -57727,7 +57727,6 @@
         "Lat": 49.24,
         "Long": -123.11
       },
-      "Status": 1,
       "Servers": [
         {
           "EntryIP": "89.222.98.35",
@@ -57742,7 +57741,8 @@
           "ServicesDownReason": null
         }
       ],
-      "Load": 14
+      "Status": 1,
+      "Load": 33
     },
     {
       "Name": "CA#1069",
@@ -57753,7 +57753,7 @@
       "Features": 28,
       "Region": null,
       "City": "Vancouver",
-      "Score": 2.9724743646,
+      "Score": 2.9758082704,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -57762,7 +57762,6 @@
         "Lat": 49.24,
         "Long": -123.11
       },
-      "Status": 1,
       "Servers": [
         {
           "EntryIP": "89.222.98.35",
@@ -57777,7 +57776,8 @@
           "ServicesDownReason": null
         }
       ],
-      "Load": 19
+      "Status": 1,
+      "Load": 32
     },
     {
       "Name": "CA#1070",
@@ -57788,7 +57788,7 @@
       "Features": 28,
       "Region": null,
       "City": "Vancouver",
-      "Score": 2.9738906168,
+      "Score": 2.9822434662,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -57797,7 +57797,6 @@
         "Lat": 49.24,
         "Long": -123.11
       },
-      "Status": 1,
       "Servers": [
         {
           "EntryIP": "89.222.98.35",
@@ -57812,7 +57811,8 @@
           "ServicesDownReason": null
         }
       ],
-      "Load": 12
+      "Status": 1,
+      "Load": 24
     },
     {
       "Name": "CA#1071",
@@ -57823,7 +57823,7 @@
       "Features": 28,
       "Region": null,
       "City": "Vancouver",
-      "Score": 2.9765594659,
+      "Score": 2.9771200929,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -57832,7 +57832,6 @@
         "Lat": 49.24,
         "Long": -123.11
       },
-      "Status": 1,
       "Servers": [
         {
           "EntryIP": "89.222.98.35",
@@ -57847,7 +57846,8 @@
           "ServicesDownReason": null
         }
       ],
-      "Load": 17
+      "Status": 1,
+      "Load": 25
     },
     {
       "Name": "PK#27",
@@ -57858,7 +57858,7 @@
       "Features": 28,
       "Region": null,
       "City": "Karachi",
-      "Score": 2.9901144711,
+      "Score": 2.9969634143,
       "HostCountry": "SG",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -57867,7 +57867,6 @@
         "Lat": 24.84,
         "Long": 67.05
       },
-      "Status": 1,
       "Servers": [
         {
           "EntryIP": "217.113.171.2",
@@ -57882,6 +57881,7 @@
           "ServicesDownReason": null
         }
       ],
+      "Status": 1,
       "Load": 0
     },
     {
@@ -57893,7 +57893,7 @@
       "Features": 28,
       "Region": null,
       "City": "Karachi",
-      "Score": 2.9948866727,
+      "Score": 2.9939111219,
       "HostCountry": "SG",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -57902,7 +57902,6 @@
         "Lat": 24.84,
         "Long": 67.05
       },
-      "Status": 1,
       "Servers": [
         {
           "EntryIP": "217.113.171.2",
@@ -57917,7 +57916,8 @@
           "ServicesDownReason": null
         }
       ],
-      "Load": 6
+      "Status": 1,
+      "Load": 3
     },
     {
       "Name": "PK#29",
@@ -57928,7 +57928,7 @@
       "Features": 28,
       "Region": null,
       "City": "Karachi",
-      "Score": 2.9944301298,
+      "Score": 2.993918331,
       "HostCountry": "SG",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -57937,7 +57937,6 @@
         "Lat": 24.84,
         "Long": 67.05
       },
-      "Status": 1,
       "Servers": [
         {
           "EntryIP": "217.113.171.2",
@@ -57952,7 +57951,8 @@
           "ServicesDownReason": null
         }
       ],
-      "Load": 0
+      "Status": 1,
+      "Load": 2
     },
     {
       "Name": "PK#30",
@@ -57963,7 +57963,7 @@
       "Features": 28,
       "Region": null,
       "City": "Karachi",
-      "Score": 2.9934342696,
+      "Score": 2.9955827668,
       "HostCountry": "SG",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -57972,7 +57972,6 @@
         "Lat": 24.84,
         "Long": 67.05
       },
-      "Status": 1,
       "Servers": [
         {
           "EntryIP": "217.113.171.2",
@@ -57987,6 +57986,7 @@
           "ServicesDownReason": null
         }
       ],
+      "Status": 1,
       "Load": 0
     },
     {
@@ -57998,7 +57998,7 @@
       "Features": 12,
       "Region": null,
       "City": "Panama City",
-      "Score": 2.9760639033,
+      "Score": 2.9760829575,
       "HostCountry": "US",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -58007,7 +58007,6 @@
         "Lat": 8.99,
         "Long": -79.51
       },
-      "Status": 1,
       "Servers": [
         {
           "EntryIP": "51.179.177.2",
@@ -58022,7 +58021,8 @@
           "ServicesDownReason": null
         }
       ],
-      "Load": 1
+      "Status": 1,
+      "Load": 9
     },
     {
       "Name": "PA#10",
@@ -58033,7 +58033,7 @@
       "Features": 12,
       "Region": null,
       "City": "Panama City",
-      "Score": 2.976581111,
+      "Score": 2.9761006716000002,
       "HostCountry": "US",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -58042,7 +58042,6 @@
         "Lat": 8.99,
         "Long": -79.51
       },
-      "Status": 1,
       "Servers": [
         {
           "EntryIP": "51.179.177.2",
@@ -58057,7 +58056,8 @@
           "ServicesDownReason": null
         }
       ],
-      "Load": 2
+      "Status": 1,
+      "Load": 6
     },
     {
       "Name": "PA#11",
@@ -58068,7 +58068,7 @@
       "Features": 12,
       "Region": null,
       "City": "Panama City",
-      "Score": 2.9800428446,
+      "Score": 2.9806815132,
       "HostCountry": "US",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -58077,7 +58077,6 @@
         "Lat": 8.99,
         "Long": -79.51
       },
-      "Status": 1,
       "Servers": [
         {
           "EntryIP": "51.179.177.2",
@@ -58092,7 +58091,8 @@
           "ServicesDownReason": null
         }
       ],
-      "Load": 10
+      "Status": 1,
+      "Load": 13
     },
     {
       "Name": "PA#12",
@@ -58103,7 +58103,7 @@
       "Features": 12,
       "Region": null,
       "City": "Panama City",
-      "Score": 2.9821070979,
+      "Score": 2.9734570704,
       "HostCountry": "US",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -58112,7 +58112,6 @@
         "Lat": 8.99,
         "Long": -79.51
       },
-      "Status": 1,
       "Servers": [
         {
           "EntryIP": "51.179.177.2",
@@ -58127,7 +58126,8 @@
           "ServicesDownReason": null
         }
       ],
-      "Load": 7
+      "Status": 1,
+      "Load": 6
     },
     {
       "Name": "AZ#30",
@@ -58138,7 +58138,7 @@
       "Features": 28,
       "Region": null,
       "City": "Baku",
-      "Score": 2.9924050311,
+      "Score": 2.9889134625000002,
       "HostCountry": "SG",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -58147,7 +58147,6 @@
         "Lat": 40.4,
         "Long": 49.86
       },
-      "Status": 1,
       "Servers": [
         {
           "EntryIP": "217.138.89.2",
@@ -58162,6 +58161,7 @@
           "ServicesDownReason": null
         }
       ],
+      "Status": 1,
       "Load": 0
     },
     {
@@ -58173,7 +58173,7 @@
       "Features": 28,
       "Region": null,
       "City": "Baku",
-      "Score": 2.993825254,
+      "Score": 2.9962844371,
       "HostCountry": "SG",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -58182,7 +58182,6 @@
         "Lat": 40.4,
         "Long": 49.86
       },
-      "Status": 1,
       "Servers": [
         {
           "EntryIP": "217.138.89.2",
@@ -58197,7 +58196,8 @@
           "ServicesDownReason": null
         }
       ],
-      "Load": 0
+      "Status": 1,
+      "Load": 4
     },
     {
       "Name": "AZ#32",
@@ -58208,7 +58208,7 @@
       "Features": 28,
       "Region": null,
       "City": "Baku",
-      "Score": 2.9886913459,
+      "Score": 2.99306418,
       "HostCountry": "SG",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -58217,7 +58217,6 @@
         "Lat": 40.4,
         "Long": 49.86
       },
-      "Status": 1,
       "Servers": [
         {
           "EntryIP": "217.138.89.2",
@@ -58232,6 +58231,7 @@
           "ServicesDownReason": null
         }
       ],
+      "Status": 1,
       "Load": 0
     },
     {
@@ -58243,7 +58243,7 @@
       "Features": 28,
       "Region": null,
       "City": "Baku",
-      "Score": 2.9949927008,
+      "Score": 2.9960111155,
       "HostCountry": "SG",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -58252,7 +58252,6 @@
         "Lat": 40.4,
         "Long": 49.86
       },
-      "Status": 1,
       "Servers": [
         {
           "EntryIP": "217.138.89.2",
@@ -58267,7 +58266,8 @@
           "ServicesDownReason": null
         }
       ],
-      "Load": 5
+      "Status": 1,
+      "Load": 6
     },
     {
       "Name": "UZ#30",
@@ -58278,7 +58278,7 @@
       "Features": 28,
       "Region": null,
       "City": "Tashkent",
-      "Score": 2.9917703334,
+      "Score": 2.9885887597,
       "HostCountry": "SG",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -58287,7 +58287,6 @@
         "Lat": 41.31,
         "Long": 69.24
       },
-      "Status": 1,
       "Servers": [
         {
           "EntryIP": "217.138.10.130",
@@ -58302,7 +58301,8 @@
           "ServicesDownReason": null
         }
       ],
-      "Load": 0
+      "Status": 1,
+      "Load": 4
     },
     {
       "Name": "UZ#31",
@@ -58313,7 +58313,7 @@
       "Features": 28,
       "Region": null,
       "City": "Tashkent",
-      "Score": 2.9938677461,
+      "Score": 2.9976507056,
       "HostCountry": "SG",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -58322,7 +58322,6 @@
         "Lat": 41.31,
         "Long": 69.24
       },
-      "Status": 1,
       "Servers": [
         {
           "EntryIP": "217.138.10.130",
@@ -58337,7 +58336,8 @@
           "ServicesDownReason": null
         }
       ],
-      "Load": 5
+      "Status": 1,
+      "Load": 2
     },
     {
       "Name": "UZ#32",
@@ -58348,7 +58348,7 @@
       "Features": 28,
       "Region": null,
       "City": "Tashkent",
-      "Score": 2.9953803379,
+      "Score": 2.9930051469,
       "HostCountry": "SG",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -58357,7 +58357,6 @@
         "Lat": 41.31,
         "Long": 69.24
       },
-      "Status": 1,
       "Servers": [
         {
           "EntryIP": "217.138.10.130",
@@ -58372,7 +58371,8 @@
           "ServicesDownReason": null
         }
       ],
-      "Load": 3
+      "Status": 1,
+      "Load": 0
     },
     {
       "Name": "UZ#33",
@@ -58383,7 +58383,7 @@
       "Features": 28,
       "Region": null,
       "City": "Tashkent",
-      "Score": 2.9956600106,
+      "Score": 2.9977523857,
       "HostCountry": "SG",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -58392,7 +58392,6 @@
         "Lat": 41.31,
         "Long": 69.24
       },
-      "Status": 1,
       "Servers": [
         {
           "EntryIP": "217.138.10.130",
@@ -58407,7 +58406,8 @@
           "ServicesDownReason": null
         }
       ],
-      "Load": 4
+      "Status": 1,
+      "Load": 6
     },
     {
       "Name": "GE#30",
@@ -58418,7 +58418,7 @@
       "Features": 28,
       "Region": null,
       "City": "Tbilisi",
-      "Score": 2.9911527929,
+      "Score": 2.9959099548,
       "HostCountry": "RO",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -58427,7 +58427,6 @@
         "Lat": 41.71,
         "Long": 44.78
       },
-      "Status": 1,
       "Servers": [
         {
           "EntryIP": "138.199.53.236",
@@ -58442,7 +58441,8 @@
           "ServicesDownReason": null
         }
       ],
-      "Load": 6
+      "Status": 1,
+      "Load": 3
     },
     {
       "Name": "GE#31",
@@ -58453,7 +58453,7 @@
       "Features": 28,
       "Region": null,
       "City": "Tbilisi",
-      "Score": 2.9927915975,
+      "Score": 2.9874326733,
       "HostCountry": "RO",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -58462,7 +58462,6 @@
         "Lat": 41.71,
         "Long": 44.78
       },
-      "Status": 1,
       "Servers": [
         {
           "EntryIP": "138.199.53.236",
@@ -58477,7 +58476,8 @@
           "ServicesDownReason": null
         }
       ],
-      "Load": 3
+      "Status": 1,
+      "Load": 2
     },
     {
       "Name": "GE#32",
@@ -58488,7 +58488,7 @@
       "Features": 28,
       "Region": null,
       "City": "Tbilisi",
-      "Score": 2.9961468559,
+      "Score": 2.9921971209000002,
       "HostCountry": "RO",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -58497,7 +58497,6 @@
         "Lat": 41.71,
         "Long": 44.78
       },
-      "Status": 1,
       "Servers": [
         {
           "EntryIP": "138.199.53.236",
@@ -58512,7 +58511,8 @@
           "ServicesDownReason": null
         }
       ],
-      "Load": 0
+      "Status": 1,
+      "Load": 3
     },
     {
       "Name": "GE#33",
@@ -58523,7 +58523,7 @@
       "Features": 28,
       "Region": null,
       "City": "Tbilisi",
-      "Score": 2.9945896719,
+      "Score": 2.9956754138,
       "HostCountry": "RO",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -58532,7 +58532,6 @@
         "Lat": 41.71,
         "Long": 44.78
       },
-      "Status": 1,
       "Servers": [
         {
           "EntryIP": "138.199.53.236",
@@ -58547,7 +58546,8 @@
           "ServicesDownReason": null
         }
       ],
-      "Load": 4
+      "Status": 1,
+      "Load": 2
     },
     {
       "Name": "CR#30",
@@ -58558,7 +58558,7 @@
       "Features": 28,
       "Region": null,
       "City": "San Jose",
-      "Score": 2.9836379111999998,
+      "Score": 2.9815672671,
       "HostCountry": "US",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -58567,7 +58567,6 @@
         "Lat": 9.93,
         "Long": -84.08
       },
-      "Status": 1,
       "Servers": [
         {
           "EntryIP": "138.199.50.104",
@@ -58582,7 +58581,8 @@
           "ServicesDownReason": null
         }
       ],
-      "Load": 47
+      "Status": 1,
+      "Load": 49
     },
     {
       "Name": "CR#31",
@@ -58593,7 +58593,7 @@
       "Features": 28,
       "Region": null,
       "City": "San Jose",
-      "Score": 2.9768545494,
+      "Score": 2.9777799636999998,
       "HostCountry": "US",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -58602,7 +58602,6 @@
         "Lat": 9.93,
         "Long": -84.08
       },
-      "Status": 1,
       "Servers": [
         {
           "EntryIP": "138.199.50.104",
@@ -58617,7 +58616,8 @@
           "ServicesDownReason": null
         }
       ],
-      "Load": 51
+      "Status": 1,
+      "Load": 52
     },
     {
       "Name": "CR#32",
@@ -58628,7 +58628,7 @@
       "Features": 28,
       "Region": null,
       "City": "San Jose",
-      "Score": 2.9812051745,
+      "Score": 2.9784940579,
       "HostCountry": "US",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -58637,7 +58637,6 @@
         "Lat": 9.93,
         "Long": -84.08
       },
-      "Status": 1,
       "Servers": [
         {
           "EntryIP": "138.199.50.104",
@@ -58652,7 +58651,8 @@
           "ServicesDownReason": null
         }
       ],
-      "Load": 44
+      "Status": 1,
+      "Load": 55
     },
     {
       "Name": "CR#33",
@@ -58663,7 +58663,7 @@
       "Features": 28,
       "Region": null,
       "City": "San Jose",
-      "Score": 2.9758077355,
+      "Score": 2.9783438615,
       "HostCountry": "US",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -58672,7 +58672,6 @@
         "Lat": 9.93,
         "Long": -84.08
       },
-      "Status": 1,
       "Servers": [
         {
           "EntryIP": "138.199.50.104",
@@ -58687,7 +58686,8 @@
           "ServicesDownReason": null
         }
       ],
-      "Load": 52
+      "Status": 1,
+      "Load": 56
     },
     {
       "Name": "US-CA#813",
@@ -58698,7 +58698,7 @@
       "Features": 12,
       "Region": null,
       "City": "San Jose",
-      "Score": 1.9751547828,
+      "Score": 1.9846986264000002,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -58707,7 +58707,6 @@
         "Lat": 37.33,
         "Long": -121.89
       },
-      "Status": 1,
       "Servers": [
         {
           "EntryIP": "79.127.185.251",
@@ -58722,7 +58721,8 @@
           "ServicesDownReason": null
         }
       ],
-      "Load": 49
+      "Status": 1,
+      "Load": 51
     },
     {
       "Name": "US-CA#814",
@@ -58733,7 +58733,7 @@
       "Features": 12,
       "Region": null,
       "City": "San Jose",
-      "Score": 1.9790388234,
+      "Score": 1.9819306682,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -58742,7 +58742,6 @@
         "Lat": 37.33,
         "Long": -121.89
       },
-      "Status": 1,
       "Servers": [
         {
           "EntryIP": "79.127.185.251",
@@ -58757,7 +58756,8 @@
           "ServicesDownReason": null
         }
       ],
-      "Load": 44
+      "Status": 1,
+      "Load": 53
     },
     {
       "Name": "US-CA#815",
@@ -58768,7 +58768,7 @@
       "Features": 12,
       "Region": null,
       "City": "San Jose",
-      "Score": 1.9718254405,
+      "Score": 1.9812883366,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -58777,7 +58777,6 @@
         "Lat": 37.33,
         "Long": -121.89
       },
-      "Status": 1,
       "Servers": [
         {
           "EntryIP": "79.127.185.251",
@@ -58792,6 +58791,7 @@
           "ServicesDownReason": null
         }
       ],
+      "Status": 1,
       "Load": 44
     },
     {
@@ -58803,7 +58803,7 @@
       "Features": 12,
       "Region": null,
       "City": "San Jose",
-      "Score": 1.9777656548,
+      "Score": 1.9771698141,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -58812,7 +58812,6 @@
         "Lat": 37.33,
         "Long": -121.89
       },
-      "Status": 1,
       "Servers": [
         {
           "EntryIP": "79.127.185.251",
@@ -58827,7 +58826,8 @@
           "ServicesDownReason": null
         }
       ],
-      "Load": 43
+      "Status": 1,
+      "Load": 44
     },
     {
       "Name": "KZ#1",
@@ -58838,7 +58838,7 @@
       "Features": 28,
       "Region": null,
       "City": "Astana",
-      "Score": 2.9924218197,
+      "Score": 2.9913000221,
       "HostCountry": "SG",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -58847,7 +58847,6 @@
         "Lat": 51.16,
         "Long": 71.44
       },
-      "Status": 1,
       "Servers": [
         {
           "EntryIP": "217.138.11.2",
@@ -58862,6 +58861,7 @@
           "ServicesDownReason": null
         }
       ],
+      "Status": 1,
       "Load": 0
     },
     {
@@ -58873,7 +58873,7 @@
       "Features": 28,
       "Region": null,
       "City": "Astana",
-      "Score": 2.992859576,
+      "Score": 2.9901408436,
       "HostCountry": "SG",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -58882,7 +58882,6 @@
         "Lat": 51.16,
         "Long": 71.44
       },
-      "Status": 1,
       "Servers": [
         {
           "EntryIP": "217.138.11.2",
@@ -58897,7 +58896,8 @@
           "ServicesDownReason": null
         }
       ],
-      "Load": 0
+      "Status": 1,
+      "Load": 1
     },
     {
       "Name": "KZ#11",
@@ -58908,7 +58908,7 @@
       "Features": 28,
       "Region": null,
       "City": "Astana",
-      "Score": 2.9957240822999998,
+      "Score": 2.9895252606,
       "HostCountry": "SG",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -58917,7 +58917,6 @@
         "Lat": 51.16,
         "Long": 71.44
       },
-      "Status": 1,
       "Servers": [
         {
           "EntryIP": "217.138.11.2",
@@ -58932,7 +58931,8 @@
           "ServicesDownReason": null
         }
       ],
-      "Load": 3
+      "Status": 1,
+      "Load": 0
     },
     {
       "Name": "KZ#12",
@@ -58943,7 +58943,7 @@
       "Features": 28,
       "Region": null,
       "City": "Astana",
-      "Score": 2.9956758365000002,
+      "Score": 2.9884230235,
       "HostCountry": "SG",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -58952,7 +58952,6 @@
         "Lat": 51.16,
         "Long": 71.44
       },
-      "Status": 1,
       "Servers": [
         {
           "EntryIP": "217.138.11.2",
@@ -58967,7 +58966,8 @@
           "ServicesDownReason": null
         }
       ],
-      "Load": 1
+      "Status": 1,
+      "Load": 0
     },
     {
       "Name": "CA#1209",
@@ -58978,7 +58978,7 @@
       "Features": 12,
       "Region": null,
       "City": "Montreal",
-      "Score": 2.9417677783,
+      "Score": 2.9091460015,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -58987,7 +58987,6 @@
         "Lat": 45.5,
         "Long": -73.56
       },
-      "Status": 1,
       "Servers": [
         {
           "EntryIP": "84.20.16.29",
@@ -59002,7 +59001,8 @@
           "ServicesDownReason": null
         }
       ],
-      "Load": 30
+      "Status": 1,
+      "Load": 48
     },
     {
       "Name": "CA#1210",
@@ -59013,7 +59013,7 @@
       "Features": 12,
       "Region": null,
       "City": "Montreal",
-      "Score": 2.9433653317,
+      "Score": 2.9087418754,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -59022,7 +59022,6 @@
         "Lat": 45.5,
         "Long": -73.56
       },
-      "Status": 1,
       "Servers": [
         {
           "EntryIP": "84.20.16.29",
@@ -59037,7 +59036,8 @@
           "ServicesDownReason": null
         }
       ],
-      "Load": 33
+      "Status": 1,
+      "Load": 55
     },
     {
       "Name": "CA#1211",
@@ -59048,7 +59048,7 @@
       "Features": 12,
       "Region": null,
       "City": "Montreal",
-      "Score": 2.9378858941,
+      "Score": 2.9091242897000003,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -59057,7 +59057,6 @@
         "Lat": 45.5,
         "Long": -73.56
       },
-      "Status": 1,
       "Servers": [
         {
           "EntryIP": "84.20.16.29",
@@ -59072,7 +59071,8 @@
           "ServicesDownReason": null
         }
       ],
-      "Load": 25
+      "Status": 1,
+      "Load": 53
     },
     {
       "Name": "CA#1212",
@@ -59083,7 +59083,7 @@
       "Features": 12,
       "Region": null,
       "City": "Montreal",
-      "Score": 2.9377890372,
+      "Score": 2.9123099599,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -59092,7 +59092,6 @@
         "Lat": 45.5,
         "Long": -73.56
       },
-      "Status": 1,
       "Servers": [
         {
           "EntryIP": "84.20.16.29",
@@ -59107,7 +59106,8 @@
           "ServicesDownReason": null
         }
       ],
-      "Load": 24
+      "Status": 1,
+      "Load": 50
     }
   ],
   "Code": 1000
