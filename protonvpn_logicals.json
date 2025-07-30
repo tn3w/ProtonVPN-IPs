@@ -55857,6 +55857,77 @@
       "Load": 5
     },
     {
+      "Name": "US-FREE#38",
+      "EntryCountry": "US",
+      "ExitCountry": "US",
+      "Domain": "node-us-56.protonvpn.net",
+      "Tier": 0,
+      "Features": 16,
+      "Region": null,
+      "City": "Atlanta",
+      "Score": 4.996004192,
+      "HostCountry": null,
+      "OrganizationID": null,
+      "VPNGatewayID": null,
+      "ID": "k__3R6XWye6xIDO2CtysFIsBHFohjgA_5YMdC-L_cmbWE1AvHst1ysrwCqWylbKGNMn9dflhs1061mDe42e5kw==",
+      "Location": {
+        "Lat": 33.75,
+        "Long": -84.38
+      },
+      "Servers": [
+        {
+          "EntryIP": "89.187.171.225",
+          "ExitIP": "89.187.171.225",
+          "Domain": "node-us-56.protonvpn.net",
+          "ID": "v3NSTCr8lZs1fAk7_qYkrSr2Z65YaCgNJ0qC90gF_R94paWQjXoufCvtdw4ZPnVsyxVNW10JPY9Kni6lu_TNfg==",
+          "Label": "0",
+          "X25519PublicKey": "SC3K+dUvwvU3yammLuEZ0YEVmRe+YwYvQHftqJA2fms=",
+          "Generation": 0,
+          "Status": 1,
+          "ServicesDown": 0,
+          "ServicesDownReason": null
+        },
+        {
+          "EntryIP": "89.187.171.225",
+          "ExitIP": "89.187.171.225",
+          "Domain": "node-us-56.protonvpn.net",
+          "ID": "6HPetZHMk90bPR43JXmGgmhESuU6R3OHb03xI3fkkJ2HsubOix3BWZwDRxjlMbdh8yMmB3lvuSrSz6F53anaBQ==",
+          "Label": "1",
+          "X25519PublicKey": "SC3K+dUvwvU3yammLuEZ0YEVmRe+YwYvQHftqJA2fms=",
+          "Generation": 0,
+          "Status": 1,
+          "ServicesDown": 0,
+          "ServicesDownReason": null
+        },
+        {
+          "EntryIP": "89.187.171.225",
+          "ExitIP": "89.187.171.225",
+          "Domain": "node-us-56.protonvpn.net",
+          "ID": "RgI_c-xJYvatd_W-_rm_t9loe2-wQHtOvkraOY_llofM5XzbJUAzUDRYl5FHmdvcujOPo81GFhL8saUV500xDw==",
+          "Label": "2",
+          "X25519PublicKey": "SC3K+dUvwvU3yammLuEZ0YEVmRe+YwYvQHftqJA2fms=",
+          "Generation": 0,
+          "Status": 1,
+          "ServicesDown": 0,
+          "ServicesDownReason": null
+        },
+        {
+          "EntryIP": "89.187.171.225",
+          "ExitIP": "89.187.171.225",
+          "Domain": "node-us-56.protonvpn.net",
+          "ID": "ClpMH8LAP3alSDpoBFYQUEtn0w6SgNdmLcjHhhtLsK_hRc8uYflOZOGwY57sLURxEMW0DrAEtM_odbm2gWBCqg==",
+          "Label": "3",
+          "X25519PublicKey": "SC3K+dUvwvU3yammLuEZ0YEVmRe+YwYvQHftqJA2fms=",
+          "Generation": 0,
+          "Status": 1,
+          "ServicesDown": 0,
+          "ServicesDownReason": null
+        }
+      ],
+      "Status": 1,
+      "Load": 73
+    },
+    {
       "Name": "US-FREE#41",
       "EntryCountry": "US",
       "ExitCountry": "US",
@@ -55865,7 +55936,7 @@
       "Features": 16,
       "Region": null,
       "City": "Houston",
-      "Score": 4.9990152846,
+      "Score": 4.9973819401,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -55925,7 +55996,7 @@
         }
       ],
       "Status": 1,
-      "Load": 84
+      "Load": 86
     },
     {
       "Name": "US-FREE#42",
@@ -55936,7 +56007,7 @@
       "Features": 16,
       "Region": null,
       "City": "Houston",
-      "Score": 4.9952847256,
+      "Score": 4.9962646614,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -55996,7 +56067,7 @@
         }
       ],
       "Status": 1,
-      "Load": 95
+      "Load": 94
     },
     {
       "Name": "PL-FREE#5",
@@ -56007,7 +56078,7 @@
       "Features": 16,
       "Region": null,
       "City": "Warsaw",
-      "Score": 4.9981471617,
+      "Score": 4.9890049871999995,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -56067,7 +56138,7 @@
         }
       ],
       "Status": 1,
-      "Load": 91
+      "Load": 90
     },
     {
       "Name": "NL-FREE#165",
@@ -56078,7 +56149,7 @@
       "Features": 0,
       "Region": null,
       "City": "Amsterdam",
-      "Score": 4.9974203931,
+      "Score": 4.9983314859,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -56102,7 +56173,174 @@
         }
       ],
       "Status": 1,
-      "Load": 93
+      "Load": 94
+    },
+    {
+      "Name": "PL-FREE#2",
+      "EntryCountry": "PL",
+      "ExitCountry": "PL",
+      "Domain": "node-pl-14.protonvpn.net",
+      "Tier": 0,
+      "Features": 0,
+      "Region": null,
+      "City": "Warsaw",
+      "Score": 4.9875820521000005,
+      "HostCountry": null,
+      "OrganizationID": null,
+      "VPNGatewayID": null,
+      "ID": "fGCKvRszdanDTMOE8i2IEH9K6xnriq2AaR3wFCWbQRpfe2B341inZosRlNp6RpL8bndg1mja17na6UNE_LPAnQ==",
+      "Location": {
+        "Lat": 52.23,
+        "Long": 21.01
+      },
+      "Servers": [
+        {
+          "EntryIP": "217.138.209.18",
+          "ExitIP": "217.138.209.18",
+          "Domain": "node-pl-14.protonvpn.net",
+          "ID": "haFU7xtI6hheS6BR_okyo8-qyx3DqQonSNbar2627DCdPfIwGDwlmcrskrH657XL5TQgXcpASPJPAAb13AJHIw==",
+          "Label": "0",
+          "X25519PublicKey": "tw0rM/g0IiZKM+Hz0T7jJTSDk8aiOgGEUuG6NkR2mik=",
+          "Generation": 0,
+          "Status": 1,
+          "ServicesDown": 0,
+          "ServicesDownReason": null
+        },
+        {
+          "EntryIP": "217.138.209.18",
+          "ExitIP": "217.138.209.18",
+          "Domain": "node-pl-14.protonvpn.net",
+          "ID": "RB3u_LMOSoJpqvgQ2uW0oWji_qAbPX0MIh9kqqrKF2xU3Q8Y0U1B9aFEnwkKOWzq68wNFM_Av8MNnSQRRkXY-A==",
+          "Label": "1",
+          "X25519PublicKey": "tw0rM/g0IiZKM+Hz0T7jJTSDk8aiOgGEUuG6NkR2mik=",
+          "Generation": 0,
+          "Status": 1,
+          "ServicesDown": 0,
+          "ServicesDownReason": null
+        },
+        {
+          "EntryIP": "217.138.209.18",
+          "ExitIP": "217.138.209.18",
+          "Domain": "node-pl-14.protonvpn.net",
+          "ID": "gpKcNYp_8g2pFmNqPFoxTnK8H915ydbvySBkJfouyjoNQh5av1Xxepf8iDRSt948w58-88KAm4Ra-44lY2_95g==",
+          "Label": "2",
+          "X25519PublicKey": "tw0rM/g0IiZKM+Hz0T7jJTSDk8aiOgGEUuG6NkR2mik=",
+          "Generation": 0,
+          "Status": 1,
+          "ServicesDown": 0,
+          "ServicesDownReason": null
+        },
+        {
+          "EntryIP": "217.138.209.18",
+          "ExitIP": "217.138.209.18",
+          "Domain": "node-pl-14.protonvpn.net",
+          "ID": "0a0aDDAL3-lizeS-0URllqPpweS-D_-2T6yro8lNaoZIHBMOXUJ4cGe8Il7nc-VLeL-1yl-m8r2X31-eCfRqwQ==",
+          "Label": "3",
+          "X25519PublicKey": "tw0rM/g0IiZKM+Hz0T7jJTSDk8aiOgGEUuG6NkR2mik=",
+          "Generation": 0,
+          "Status": 1,
+          "ServicesDown": 0,
+          "ServicesDownReason": null
+        },
+        {
+          "EntryIP": "217.138.209.18",
+          "ExitIP": "217.138.209.18",
+          "Domain": "node-pl-14.protonvpn.net",
+          "ID": "EqQ0XILaMzzSOMuRzzyGuBDk9iJhfQ1VnkufGItPNSHZUQ1XgOfXB9HalN4yZQ-g9yPMrdREn7pqvUqfE8YAjA==",
+          "Label": "4",
+          "X25519PublicKey": "tw0rM/g0IiZKM+Hz0T7jJTSDk8aiOgGEUuG6NkR2mik=",
+          "Generation": 0,
+          "Status": 1,
+          "ServicesDown": 0,
+          "ServicesDownReason": null
+        },
+        {
+          "EntryIP": "217.138.209.18",
+          "ExitIP": "217.138.209.18",
+          "Domain": "node-pl-14.protonvpn.net",
+          "ID": "Mbq8VtD1Iko4Qy8o5iqzMoRg8PNBXXsu9u_h1okjosfTrUeR0bsXWdH-PJSzn016UCpIoxk1TH8mooNUSum2Ig==",
+          "Label": "5",
+          "X25519PublicKey": "tw0rM/g0IiZKM+Hz0T7jJTSDk8aiOgGEUuG6NkR2mik=",
+          "Generation": 0,
+          "Status": 1,
+          "ServicesDown": 0,
+          "ServicesDownReason": null
+        },
+        {
+          "EntryIP": "217.138.209.18",
+          "ExitIP": "217.138.209.18",
+          "Domain": "node-pl-14.protonvpn.net",
+          "ID": "kHgkGnSw0CHqR4GnmkJTqRcPhPPlcahyojdq2ShAr-GhLnex4G1kWEQItMuGHQFfUExDlsP04Z0e406c8yyG8g==",
+          "Label": "6",
+          "X25519PublicKey": "tw0rM/g0IiZKM+Hz0T7jJTSDk8aiOgGEUuG6NkR2mik=",
+          "Generation": 0,
+          "Status": 1,
+          "ServicesDown": 0,
+          "ServicesDownReason": null
+        },
+        {
+          "EntryIP": "217.138.209.18",
+          "ExitIP": "217.138.209.18",
+          "Domain": "node-pl-14.protonvpn.net",
+          "ID": "dQtiw2-ev7RdP7-Sv9JJWjEZYKWmnKndBtS01KQD-zlgbFsQcFmwUz6uDH_7YGYyDXeZ3GShGSuKSIPyccN40A==",
+          "Label": "7",
+          "X25519PublicKey": "tw0rM/g0IiZKM+Hz0T7jJTSDk8aiOgGEUuG6NkR2mik=",
+          "Generation": 0,
+          "Status": 1,
+          "ServicesDown": 0,
+          "ServicesDownReason": null
+        },
+        {
+          "EntryIP": "217.138.209.18",
+          "ExitIP": "217.138.209.18",
+          "Domain": "node-pl-14.protonvpn.net",
+          "ID": "fic2B2hOCxKsmCH0_g5pYtA59pjYBkpOeEwm8EXURDMUNNPNw2jBbWYL6tm3UbLNOwmJbgksUeX-Zwu9XMqVOg==",
+          "Label": "8",
+          "X25519PublicKey": "tw0rM/g0IiZKM+Hz0T7jJTSDk8aiOgGEUuG6NkR2mik=",
+          "Generation": 0,
+          "Status": 1,
+          "ServicesDown": 0,
+          "ServicesDownReason": null
+        },
+        {
+          "EntryIP": "217.138.209.18",
+          "ExitIP": "217.138.209.18",
+          "Domain": "node-pl-14.protonvpn.net",
+          "ID": "koRLkZe8uqsnTdY5HapqsSKuJptc-ljNqvPnXesV-dvVcsilCNaBjQCIfs1kv8BRCIY8fzzTIPT1yZZAYiST-A==",
+          "Label": "9",
+          "X25519PublicKey": "tw0rM/g0IiZKM+Hz0T7jJTSDk8aiOgGEUuG6NkR2mik=",
+          "Generation": 0,
+          "Status": 1,
+          "ServicesDown": 0,
+          "ServicesDownReason": null
+        },
+        {
+          "EntryIP": "217.138.209.18",
+          "ExitIP": "217.138.209.18",
+          "Domain": "node-pl-14.protonvpn.net",
+          "ID": "AQb8wItJVs_J3liuf0SnOLJHnEUS-bOs1Bfxn5NB7D5Qy5LOE3Qyev-RX3CpgBiwpzNk7WAYFIXtc6Tg_tT7jw==",
+          "Label": "10",
+          "X25519PublicKey": "tw0rM/g0IiZKM+Hz0T7jJTSDk8aiOgGEUuG6NkR2mik=",
+          "Generation": 0,
+          "Status": 1,
+          "ServicesDown": 0,
+          "ServicesDownReason": null
+        },
+        {
+          "EntryIP": "217.138.209.18",
+          "ExitIP": "217.138.209.18",
+          "Domain": "node-pl-14.protonvpn.net",
+          "ID": "Mufvxv1Zlm57a66y5ff4rHnDf-2ocGXNIJ3jsn6a5Yr2l87PCvlZ7tOFWk2iyJ3MitqsP07eXUzwGhAn30k2lQ==",
+          "Label": "11",
+          "X25519PublicKey": "tw0rM/g0IiZKM+Hz0T7jJTSDk8aiOgGEUuG6NkR2mik=",
+          "Generation": 0,
+          "Status": 1,
+          "ServicesDown": 0,
+          "ServicesDownReason": null
+        }
+      ],
+      "Status": 1,
+      "Load": 69
     },
     {
       "Name": "NL-FREE#232",
@@ -56113,7 +56351,7 @@
       "Features": 0,
       "Region": null,
       "City": "Amsterdam",
-      "Score": 4.998780915,
+      "Score": 4.9934682776,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -56305,7 +56543,210 @@
         }
       ],
       "Status": 1,
-      "Load": 85
+      "Load": 80
+    },
+    {
+      "Name": "NL-FREE#233",
+      "EntryCountry": "NL",
+      "ExitCountry": "NL",
+      "Domain": "node-nl-259.protonvpn.net",
+      "Tier": 0,
+      "Features": 0,
+      "Region": null,
+      "City": "Amsterdam",
+      "Score": 4.9930704589,
+      "HostCountry": null,
+      "OrganizationID": null,
+      "VPNGatewayID": null,
+      "ID": "VAzQNmwqXUDbcAqNNTo3YJkye1Nggpnt5xhmUZzza9PQWwtda9Ema5ogBHKyWGEMsC4ohgWlFrV-CV2045TJDg==",
+      "Location": {
+        "Lat": 52.37,
+        "Long": 4.89
+      },
+      "Servers": [
+        {
+          "EntryIP": "190.2.148.229",
+          "ExitIP": "190.2.148.229",
+          "Domain": "node-nl-259.protonvpn.net",
+          "ID": "8kRuCWMQ4WX6NFy4vOeMb0tsm6CuBHZS_NyG4OO4S_D1Q4e2rC5s72ldifJjwu5iRr_wkQCyvLteCl2KrvQV6Q==",
+          "Label": "0",
+          "X25519PublicKey": "nSh+p9xSul8JZ93OqYsXVXCgcu0xwIXIbG+6YfgyKnk=",
+          "Generation": 0,
+          "Status": 1,
+          "ServicesDown": 0,
+          "ServicesDownReason": null
+        },
+        {
+          "EntryIP": "190.2.148.229",
+          "ExitIP": "190.2.148.229",
+          "Domain": "node-nl-259.protonvpn.net",
+          "ID": "ZeyUM0f1AROXFOpDAxriuWCQIom3mlzehQGHHxc0bUjZ9xvqYbSO6sagQ8hnFL8-nItie_mGmQworIzYbZCQnQ==",
+          "Label": "1",
+          "X25519PublicKey": "nSh+p9xSul8JZ93OqYsXVXCgcu0xwIXIbG+6YfgyKnk=",
+          "Generation": 0,
+          "Status": 1,
+          "ServicesDown": 0,
+          "ServicesDownReason": null
+        },
+        {
+          "EntryIP": "190.2.148.229",
+          "ExitIP": "190.2.148.229",
+          "Domain": "node-nl-259.protonvpn.net",
+          "ID": "Vh54NmmEc2IeowKC3cwHPXMPHvieFYUKi1D-Axp9pnVxLsogpqXNJP_g6nodhIXuG2SRh_OAG2s9fMJY3OUVGw==",
+          "Label": "2",
+          "X25519PublicKey": "nSh+p9xSul8JZ93OqYsXVXCgcu0xwIXIbG+6YfgyKnk=",
+          "Generation": 0,
+          "Status": 1,
+          "ServicesDown": 0,
+          "ServicesDownReason": null
+        },
+        {
+          "EntryIP": "190.2.148.229",
+          "ExitIP": "190.2.148.229",
+          "Domain": "node-nl-259.protonvpn.net",
+          "ID": "7mv_WV11LUYx61EHDVhEquVqEaa9sbA0xcCRUQrjHSswFrYBXwYMKLuu-zWBLEFftyOZuLQ7_unrt9CyiAYpng==",
+          "Label": "3",
+          "X25519PublicKey": "nSh+p9xSul8JZ93OqYsXVXCgcu0xwIXIbG+6YfgyKnk=",
+          "Generation": 0,
+          "Status": 1,
+          "ServicesDown": 0,
+          "ServicesDownReason": null
+        },
+        {
+          "EntryIP": "190.2.148.229",
+          "ExitIP": "190.2.148.229",
+          "Domain": "node-nl-259.protonvpn.net",
+          "ID": "Zyvu_y3oa7CM2gkn3S88loXGa_cB3TDmNHrUKukldVzgBSg3maLMbgztNs07QPFRRTd9hArmvNC8uheFJqMIpg==",
+          "Label": "4",
+          "X25519PublicKey": "nSh+p9xSul8JZ93OqYsXVXCgcu0xwIXIbG+6YfgyKnk=",
+          "Generation": 0,
+          "Status": 1,
+          "ServicesDown": 0,
+          "ServicesDownReason": null
+        },
+        {
+          "EntryIP": "190.2.148.229",
+          "ExitIP": "190.2.148.229",
+          "Domain": "node-nl-259.protonvpn.net",
+          "ID": "-4ADCy750T6GQbRNcYFu10_MSq-JIOHKpc6cVjq0ZMr_ratL3Vi1cT4Fq_B-QtF-P98KbiOndAY0cgevzDOijA==",
+          "Label": "5",
+          "X25519PublicKey": "nSh+p9xSul8JZ93OqYsXVXCgcu0xwIXIbG+6YfgyKnk=",
+          "Generation": 0,
+          "Status": 1,
+          "ServicesDown": 0,
+          "ServicesDownReason": null
+        },
+        {
+          "EntryIP": "190.2.148.229",
+          "ExitIP": "190.2.148.229",
+          "Domain": "node-nl-259.protonvpn.net",
+          "ID": "WTJy1Wc0bbEbuzZY-ktXFUFFBPaoebkWcI-AHQeCh8n76q2no4-bYui6vKBaSsSW6w7RKtMFw9SfXI4C-apQ0A==",
+          "Label": "6",
+          "X25519PublicKey": "nSh+p9xSul8JZ93OqYsXVXCgcu0xwIXIbG+6YfgyKnk=",
+          "Generation": 0,
+          "Status": 1,
+          "ServicesDown": 0,
+          "ServicesDownReason": null
+        },
+        {
+          "EntryIP": "190.2.148.229",
+          "ExitIP": "190.2.148.229",
+          "Domain": "node-nl-259.protonvpn.net",
+          "ID": "t3RXJzgQKmKu3skOwEwork49Vet_E_wAZs6gwoh8sjoJc3hbx1Y8U_T8QoJni_VlBHDrpihrENKdd9McJ9SEtg==",
+          "Label": "7",
+          "X25519PublicKey": "nSh+p9xSul8JZ93OqYsXVXCgcu0xwIXIbG+6YfgyKnk=",
+          "Generation": 0,
+          "Status": 1,
+          "ServicesDown": 0,
+          "ServicesDownReason": null
+        },
+        {
+          "EntryIP": "190.2.148.229",
+          "ExitIP": "190.2.148.229",
+          "Domain": "node-nl-259.protonvpn.net",
+          "ID": "wVN2Wvr2T7j7N1sp5AkWpVQXxOSd1jhiUa9L9gMWpbVfeeVf-mBDyS6fatxqPJQ1zhp7927D_F6_iWChEDuz8w==",
+          "Label": "8",
+          "X25519PublicKey": "nSh+p9xSul8JZ93OqYsXVXCgcu0xwIXIbG+6YfgyKnk=",
+          "Generation": 0,
+          "Status": 1,
+          "ServicesDown": 0,
+          "ServicesDownReason": null
+        },
+        {
+          "EntryIP": "190.2.148.229",
+          "ExitIP": "190.2.148.229",
+          "Domain": "node-nl-259.protonvpn.net",
+          "ID": "fru1Xa0oKUuz_F-7CfNYIYxhaHsm9IfU8HPwJww_qD0s231VDmv5FysufPqwdi-dKWHOJpRcDb8MTONhvqJYEg==",
+          "Label": "9",
+          "X25519PublicKey": "nSh+p9xSul8JZ93OqYsXVXCgcu0xwIXIbG+6YfgyKnk=",
+          "Generation": 0,
+          "Status": 1,
+          "ServicesDown": 0,
+          "ServicesDownReason": null
+        },
+        {
+          "EntryIP": "190.2.148.229",
+          "ExitIP": "190.2.148.229",
+          "Domain": "node-nl-259.protonvpn.net",
+          "ID": "2PaS039hEG_c4rhoWxcsGX7ObtjwlJa8J764y5bFimmGrlPLc339GrGub1jCxTjVKUFifYPWVE8Q6wAxO7HFFA==",
+          "Label": "10",
+          "X25519PublicKey": "nSh+p9xSul8JZ93OqYsXVXCgcu0xwIXIbG+6YfgyKnk=",
+          "Generation": 0,
+          "Status": 1,
+          "ServicesDown": 0,
+          "ServicesDownReason": null
+        },
+        {
+          "EntryIP": "190.2.148.229",
+          "ExitIP": "190.2.148.229",
+          "Domain": "node-nl-259.protonvpn.net",
+          "ID": "MUlnAAoRTAsUQ43CdO6QQdRFMKStCzGqcWd2Zg4HfZjHJuYD6ovHlnkG92uW159uF1dT1aWO_xN2mVIkBwSLig==",
+          "Label": "11",
+          "X25519PublicKey": "nSh+p9xSul8JZ93OqYsXVXCgcu0xwIXIbG+6YfgyKnk=",
+          "Generation": 0,
+          "Status": 1,
+          "ServicesDown": 0,
+          "ServicesDownReason": null
+        },
+        {
+          "EntryIP": "190.2.148.229",
+          "ExitIP": "190.2.148.229",
+          "Domain": "node-nl-259.protonvpn.net",
+          "ID": "q1hgGXmc8trLONUlNqA32xdBxoC_1tzIdbtCaYLmvCQ35y4Y1kBQId1yqIreezjkhZsHlcuQ-vzokFSmdsk9iA==",
+          "Label": "12",
+          "X25519PublicKey": "nSh+p9xSul8JZ93OqYsXVXCgcu0xwIXIbG+6YfgyKnk=",
+          "Generation": 0,
+          "Status": 1,
+          "ServicesDown": 0,
+          "ServicesDownReason": null
+        },
+        {
+          "EntryIP": "190.2.148.229",
+          "ExitIP": "190.2.148.229",
+          "Domain": "node-nl-259.protonvpn.net",
+          "ID": "fB7mhCgqnuKzCIWNukJTD5XWMCDJa_oM7S266od0F_P2dtPmXl3BbRnhqfJzrUy2G3gjpsLH7pZ7IGo_JwO24w==",
+          "Label": "13",
+          "X25519PublicKey": "nSh+p9xSul8JZ93OqYsXVXCgcu0xwIXIbG+6YfgyKnk=",
+          "Generation": 0,
+          "Status": 1,
+          "ServicesDown": 0,
+          "ServicesDownReason": null
+        },
+        {
+          "EntryIP": "190.2.148.229",
+          "ExitIP": "190.2.148.229",
+          "Domain": "node-nl-259.protonvpn.net",
+          "ID": "0J2-9olfQw3iDN5QR2eUDh3ovRWcm8-k8UTrMFoRd_7lvaOhaWchagNPrwabw2fr3N0-fROlVtjYesesbi7iHg==",
+          "Label": "14",
+          "X25519PublicKey": "nSh+p9xSul8JZ93OqYsXVXCgcu0xwIXIbG+6YfgyKnk=",
+          "Generation": 0,
+          "Status": 1,
+          "ServicesDown": 0,
+          "ServicesDownReason": null
+        }
+      ],
+      "Status": 1,
+      "Load": 40
     },
     {
       "Name": "NL-FREE#250",
@@ -56316,7 +56757,7 @@
       "Features": 0,
       "Region": null,
       "City": "Amsterdam",
-      "Score": 4.9963296207,
+      "Score": 4.9941727277,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -56508,42 +56949,7 @@
         }
       ],
       "Status": 1,
-      "Load": 64
-    },
-    {
-      "Name": "IS-BR#2",
-      "EntryCountry": "IS",
-      "ExitCountry": "BR",
-      "Domain": "is-br-01.protonvpn.net",
-      "Tier": 2,
-      "Features": 1,
-      "Region": null,
-      "City": "S\u00e3o Paulo",
-      "Score": 5.9968666602,
-      "HostCountry": "US",
-      "OrganizationID": null,
-      "VPNGatewayID": null,
-      "ID": "RuB8bTTBVpIGrdRUcceshLiwOgtcHh06IZlr4QreH-vWJZqlekIUd3nQOahz-1Va5GZZiPZ25AUVbdrxpHxB7A==",
-      "Location": {
-        "Lat": -23.55,
-        "Long": -46.63
-      },
-      "Servers": [
-        {
-          "EntryIP": "185.159.158.177",
-          "ExitIP": "185.159.158.177",
-          "Domain": "node-br-04.protonvpn.net",
-          "ID": "MurIJdNEb-1eJCb3mxjyKMxOdbFVNpGAQ4ocKLA1hCieCzGXQ2_IK3CvPXdbgVfmpSrd1mtnWdf_A8KaxtbVyg==",
-          "Label": "",
-          "X25519PublicKey": "0FnhfTGup0LHPmBCsuDN4tVqlgOaItDwayQokhWapFQ=",
-          "Generation": 0,
-          "Status": 1,
-          "ServicesDown": 0,
-          "ServicesDownReason": null
-        }
-      ],
-      "Status": 1,
-      "Load": 53
+      "Load": 72
     },
     {
       "Name": "US-TX#269",
@@ -56554,7 +56960,7 @@
       "Features": 12,
       "Region": null,
       "City": "McAllen",
-      "Score": 1.9526168125,
+      "Score": 1.9487430619000001,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -56578,7 +56984,7 @@
         }
       ],
       "Status": 1,
-      "Load": 53
+      "Load": 51
     },
     {
       "Name": "US-TX#270",
@@ -56589,7 +56995,7 @@
       "Features": 12,
       "Region": null,
       "City": "McAllen",
-      "Score": 1.9515628012000001,
+      "Score": 1.9490177711999999,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -56613,7 +57019,7 @@
         }
       ],
       "Status": 1,
-      "Load": 59
+      "Load": 53
     },
     {
       "Name": "US-TX#271",
@@ -56624,7 +57030,7 @@
       "Features": 12,
       "Region": null,
       "City": "McAllen",
-      "Score": 1.9582476585,
+      "Score": 1.9537407131,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -56648,7 +57054,7 @@
         }
       ],
       "Status": 1,
-      "Load": 55
+      "Load": 49
     },
     {
       "Name": "US-TX#272",
@@ -56659,7 +57065,7 @@
       "Features": 12,
       "Region": null,
       "City": "McAllen",
-      "Score": 1.9573746029999999,
+      "Score": 1.9497125818,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -56683,7 +57089,7 @@
         }
       ],
       "Status": 1,
-      "Load": 58
+      "Load": 56
     },
     {
       "Name": "US-TN#1",
@@ -56694,7 +57100,7 @@
       "Features": 12,
       "Region": null,
       "City": "Memphis",
-      "Score": 1.961746535,
+      "Score": 1.9651250071000002,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -56718,7 +57124,7 @@
         }
       ],
       "Status": 1,
-      "Load": 62
+      "Load": 53
     },
     {
       "Name": "US-TN#10",
@@ -56729,7 +57135,7 @@
       "Features": 12,
       "Region": null,
       "City": "Memphis",
-      "Score": 1.9659034537,
+      "Score": 1.9631612621999999,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -56753,7 +57159,7 @@
         }
       ],
       "Status": 1,
-      "Load": 60
+      "Load": 55
     },
     {
       "Name": "US-TN#11",
@@ -56764,7 +57170,7 @@
       "Features": 12,
       "Region": null,
       "City": "Memphis",
-      "Score": 1.9634967495,
+      "Score": 1.9599096765000001,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -56788,7 +57194,7 @@
         }
       ],
       "Status": 1,
-      "Load": 55
+      "Load": 46
     },
     {
       "Name": "US-TN#12",
@@ -56799,7 +57205,7 @@
       "Features": 12,
       "Region": null,
       "City": "Memphis",
-      "Score": 1.9664249609,
+      "Score": 1.9674144059,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -56823,7 +57229,7 @@
         }
       ],
       "Status": 1,
-      "Load": 53
+      "Load": 47
     },
     {
       "Name": "AM#1",
@@ -56834,7 +57240,7 @@
       "Features": 12,
       "Region": null,
       "City": "Yerevan",
-      "Score": 2.9920869507,
+      "Score": 2.9894722159000002,
       "HostCountry": "RO",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -56858,7 +57264,7 @@
         }
       ],
       "Status": 1,
-      "Load": 11
+      "Load": 8
     },
     {
       "Name": "AM#10",
@@ -56869,7 +57275,7 @@
       "Features": 12,
       "Region": null,
       "City": "Yerevan",
-      "Score": 2.996830946,
+      "Score": 2.9886971461,
       "HostCountry": "RO",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -56893,7 +57299,7 @@
         }
       ],
       "Status": 1,
-      "Load": 10
+      "Load": 3
     },
     {
       "Name": "AM#11",
@@ -56904,7 +57310,7 @@
       "Features": 12,
       "Region": null,
       "City": "Yerevan",
-      "Score": 2.9965736871999997,
+      "Score": 2.988929403,
       "HostCountry": "RO",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -56928,7 +57334,7 @@
         }
       ],
       "Status": 1,
-      "Load": 10
+      "Load": 6
     },
     {
       "Name": "AM#12",
@@ -56939,7 +57345,7 @@
       "Features": 12,
       "Region": null,
       "City": "Yerevan",
-      "Score": 2.991246335,
+      "Score": 2.9905445851,
       "HostCountry": "RO",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -56963,7 +57369,7 @@
         }
       ],
       "Status": 1,
-      "Load": 16
+      "Load": 12
     },
     {
       "Name": "LA#1",
@@ -56974,7 +57380,7 @@
       "Features": 12,
       "Region": null,
       "City": "Vientiane",
-      "Score": 2.992978132,
+      "Score": 2.9949679219,
       "HostCountry": "SG",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -57009,7 +57415,7 @@
       "Features": 12,
       "Region": null,
       "City": "Vientiane",
-      "Score": 2.9917363677999997,
+      "Score": 2.9910112131,
       "HostCountry": "SG",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -57033,7 +57439,7 @@
         }
       ],
       "Status": 1,
-      "Load": 10
+      "Load": 7
     },
     {
       "Name": "LA#11",
@@ -57044,7 +57450,7 @@
       "Features": 12,
       "Region": null,
       "City": "Vientiane",
-      "Score": 2.99638531,
+      "Score": 2.9960463502,
       "HostCountry": "SG",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -57068,7 +57474,7 @@
         }
       ],
       "Status": 1,
-      "Load": 1
+      "Load": 0
     },
     {
       "Name": "LA#12",
@@ -57079,7 +57485,7 @@
       "Features": 12,
       "Region": null,
       "City": "Vientiane",
-      "Score": 2.9958310205,
+      "Score": 2.9913327828,
       "HostCountry": "SG",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -57103,7 +57509,7 @@
         }
       ],
       "Status": 1,
-      "Load": 9
+      "Load": 4
     },
     {
       "Name": "MN#1",
@@ -57114,7 +57520,7 @@
       "Features": 12,
       "Region": null,
       "City": "Ulaanbaatar",
-      "Score": 2.9942261171,
+      "Score": 2.9881912551000003,
       "HostCountry": "JP",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -57149,7 +57555,7 @@
       "Features": 12,
       "Region": null,
       "City": "Ulaanbaatar",
-      "Score": 2.996651122,
+      "Score": 2.9971376375,
       "HostCountry": "JP",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -57173,7 +57579,7 @@
         }
       ],
       "Status": 1,
-      "Load": 4
+      "Load": 6
     },
     {
       "Name": "MN#11",
@@ -57184,7 +57590,7 @@
       "Features": 12,
       "Region": null,
       "City": "Ulaanbaatar",
-      "Score": 2.9951128187,
+      "Score": 2.9927683006,
       "HostCountry": "JP",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -57219,7 +57625,7 @@
       "Features": 12,
       "Region": null,
       "City": "Ulaanbaatar",
-      "Score": 2.9908252292,
+      "Score": 2.997356995,
       "HostCountry": "JP",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -57243,7 +57649,7 @@
         }
       ],
       "Status": 1,
-      "Load": 5
+      "Load": 3
     },
     {
       "Name": "BN#1",
@@ -57254,7 +57660,7 @@
       "Features": 12,
       "Region": null,
       "City": "Bandar Seri Begawan",
-      "Score": 2.9982211321,
+      "Score": 2.990563679,
       "HostCountry": "SG",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -57278,7 +57684,7 @@
         }
       ],
       "Status": 1,
-      "Load": 5
+      "Load": 6
     },
     {
       "Name": "BN#10",
@@ -57289,7 +57695,7 @@
       "Features": 12,
       "Region": null,
       "City": "Bandar Seri Begawan",
-      "Score": 2.9927566884,
+      "Score": 2.9939011774999997,
       "HostCountry": "SG",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -57313,7 +57719,7 @@
         }
       ],
       "Status": 1,
-      "Load": 2
+      "Load": 0
     },
     {
       "Name": "BN#11",
@@ -57324,7 +57730,7 @@
       "Features": 12,
       "Region": null,
       "City": "Bandar Seri Begawan",
-      "Score": 2.9937193615,
+      "Score": 2.9955444837,
       "HostCountry": "SG",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -57348,7 +57754,7 @@
         }
       ],
       "Status": 1,
-      "Load": 10
+      "Load": 9
     },
     {
       "Name": "BN#12",
@@ -57359,7 +57765,7 @@
       "Features": 12,
       "Region": null,
       "City": "Bandar Seri Begawan",
-      "Score": 2.9968247172,
+      "Score": 2.9980808118,
       "HostCountry": "SG",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -57383,7 +57789,7 @@
         }
       ],
       "Status": 1,
-      "Load": 2
+      "Load": 0
     },
     {
       "Name": "CA#1068",
@@ -57394,7 +57800,7 @@
       "Features": 28,
       "Region": null,
       "City": "Vancouver",
-      "Score": 2.9670591248,
+      "Score": 2.9653389393,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -57418,7 +57824,7 @@
         }
       ],
       "Status": 1,
-      "Load": 22
+      "Load": 21
     },
     {
       "Name": "CA#1069",
@@ -57429,7 +57835,7 @@
       "Features": 28,
       "Region": null,
       "City": "Vancouver",
-      "Score": 2.9652889224,
+      "Score": 2.9580709908,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -57453,7 +57859,7 @@
         }
       ],
       "Status": 1,
-      "Load": 20
+      "Load": 16
     },
     {
       "Name": "CA#1070",
@@ -57464,7 +57870,7 @@
       "Features": 28,
       "Region": null,
       "City": "Vancouver",
-      "Score": 2.9613128721,
+      "Score": 2.9616594895,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -57488,7 +57894,7 @@
         }
       ],
       "Status": 1,
-      "Load": 28
+      "Load": 22
     },
     {
       "Name": "CA#1071",
@@ -57499,7 +57905,7 @@
       "Features": 28,
       "Region": null,
       "City": "Vancouver",
-      "Score": 2.9645887043,
+      "Score": 2.9614501885999998,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -57523,7 +57929,7 @@
         }
       ],
       "Status": 1,
-      "Load": 24
+      "Load": 18
     },
     {
       "Name": "PK#27",
@@ -57534,7 +57940,7 @@
       "Features": 28,
       "Region": null,
       "City": "Karachi",
-      "Score": 2.994152372,
+      "Score": 2.9951703336,
       "HostCountry": "SG",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -57558,7 +57964,7 @@
         }
       ],
       "Status": 1,
-      "Load": 8
+      "Load": 7
     },
     {
       "Name": "PK#28",
@@ -57569,7 +57975,7 @@
       "Features": 28,
       "Region": null,
       "City": "Karachi",
-      "Score": 2.996668057,
+      "Score": 2.9967617130999997,
       "HostCountry": "SG",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -57604,7 +58010,7 @@
       "Features": 28,
       "Region": null,
       "City": "Karachi",
-      "Score": 2.9935583072,
+      "Score": 2.9953974665,
       "HostCountry": "SG",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -57639,7 +58045,7 @@
       "Features": 28,
       "Region": null,
       "City": "Karachi",
-      "Score": 2.9918308947,
+      "Score": 2.9917681931,
       "HostCountry": "SG",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -57663,7 +58069,7 @@
         }
       ],
       "Status": 1,
-      "Load": 8
+      "Load": 7
     },
     {
       "Name": "PA#1",
@@ -57674,7 +58080,7 @@
       "Features": 12,
       "Region": null,
       "City": "Panama City",
-      "Score": 2.9877928771,
+      "Score": 2.9787375442,
       "HostCountry": "US",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -57709,7 +58115,7 @@
       "Features": 12,
       "Region": null,
       "City": "Panama City",
-      "Score": 2.9870594292,
+      "Score": 2.9794218907,
       "HostCountry": "US",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -57733,7 +58139,7 @@
         }
       ],
       "Status": 1,
-      "Load": 17
+      "Load": 16
     },
     {
       "Name": "PA#11",
@@ -57744,7 +58150,7 @@
       "Features": 12,
       "Region": null,
       "City": "Panama City",
-      "Score": 2.9842496146,
+      "Score": 2.9811750008,
       "HostCountry": "US",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -57779,7 +58185,7 @@
       "Features": 12,
       "Region": null,
       "City": "Panama City",
-      "Score": 2.9818939176,
+      "Score": 2.978587308,
       "HostCountry": "US",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -57803,7 +58209,7 @@
         }
       ],
       "Status": 1,
-      "Load": 14
+      "Load": 11
     },
     {
       "Name": "AZ#30",
@@ -57814,7 +58220,7 @@
       "Features": 28,
       "Region": null,
       "City": "Baku",
-      "Score": 2.9960871611,
+      "Score": 2.9970428495,
       "HostCountry": "SG",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -57838,7 +58244,7 @@
         }
       ],
       "Status": 1,
-      "Load": 6
+      "Load": 7
     },
     {
       "Name": "AZ#31",
@@ -57849,7 +58255,7 @@
       "Features": 28,
       "Region": null,
       "City": "Baku",
-      "Score": 2.9897852232,
+      "Score": 2.9916863511000003,
       "HostCountry": "SG",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -57873,7 +58279,7 @@
         }
       ],
       "Status": 1,
-      "Load": 2
+      "Load": 5
     },
     {
       "Name": "AZ#32",
@@ -57884,7 +58290,7 @@
       "Features": 28,
       "Region": null,
       "City": "Baku",
-      "Score": 2.9939199673,
+      "Score": 2.9890301447,
       "HostCountry": "SG",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -57908,7 +58314,7 @@
         }
       ],
       "Status": 1,
-      "Load": 5
+      "Load": 4
     },
     {
       "Name": "AZ#33",
@@ -57919,7 +58325,7 @@
       "Features": 28,
       "Region": null,
       "City": "Baku",
-      "Score": 2.9949209289,
+      "Score": 2.9980903883,
       "HostCountry": "SG",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -57954,7 +58360,7 @@
       "Features": 28,
       "Region": null,
       "City": "Tashkent",
-      "Score": 2.9905862048,
+      "Score": 2.9975580548,
       "HostCountry": "SG",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -57978,7 +58384,7 @@
         }
       ],
       "Status": 1,
-      "Load": 2
+      "Load": 3
     },
     {
       "Name": "UZ#31",
@@ -57989,7 +58395,7 @@
       "Features": 28,
       "Region": null,
       "City": "Tashkent",
-      "Score": 2.9986511783000003,
+      "Score": 2.991939383,
       "HostCountry": "SG",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -58024,7 +58430,7 @@
       "Features": 28,
       "Region": null,
       "City": "Tashkent",
-      "Score": 2.9894706523,
+      "Score": 2.9945968369,
       "HostCountry": "SG",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -58048,7 +58454,7 @@
         }
       ],
       "Status": 1,
-      "Load": 1
+      "Load": 0
     },
     {
       "Name": "UZ#33",
@@ -58059,7 +58465,7 @@
       "Features": 28,
       "Region": null,
       "City": "Tashkent",
-      "Score": 2.9985624128,
+      "Score": 2.9979097885,
       "HostCountry": "SG",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -58094,7 +58500,7 @@
       "Features": 28,
       "Region": null,
       "City": "Tbilisi",
-      "Score": 2.9958742089,
+      "Score": 2.9900368061,
       "HostCountry": "RO",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -58118,7 +58524,7 @@
         }
       ],
       "Status": 1,
-      "Load": 7
+      "Load": 10
     },
     {
       "Name": "GE#31",
@@ -58129,7 +58535,7 @@
       "Features": 28,
       "Region": null,
       "City": "Tbilisi",
-      "Score": 2.9948384123,
+      "Score": 2.9897130076,
       "HostCountry": "RO",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -58153,7 +58559,7 @@
         }
       ],
       "Status": 1,
-      "Load": 10
+      "Load": 13
     },
     {
       "Name": "GE#32",
@@ -58164,7 +58570,7 @@
       "Features": 28,
       "Region": null,
       "City": "Tbilisi",
-      "Score": 2.989397845,
+      "Score": 2.9908057538,
       "HostCountry": "RO",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -58188,7 +58594,7 @@
         }
       ],
       "Status": 1,
-      "Load": 11
+      "Load": 16
     },
     {
       "Name": "GE#33",
@@ -58199,7 +58605,7 @@
       "Features": 28,
       "Region": null,
       "City": "Tbilisi",
-      "Score": 2.9892141733999997,
+      "Score": 2.9957533932000002,
       "HostCountry": "RO",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -58223,7 +58629,7 @@
         }
       ],
       "Status": 1,
-      "Load": 9
+      "Load": 12
     },
     {
       "Name": "CR#30",
@@ -58234,7 +58640,7 @@
       "Features": 28,
       "Region": null,
       "City": "San Jose",
-      "Score": 2.9764836164,
+      "Score": 2.9811283529,
       "HostCountry": "US",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -58258,7 +58664,7 @@
         }
       ],
       "Status": 1,
-      "Load": 49
+      "Load": 33
     },
     {
       "Name": "CR#31",
@@ -58269,7 +58675,7 @@
       "Features": 28,
       "Region": null,
       "City": "San Jose",
-      "Score": 2.9762360959,
+      "Score": 2.9760585151,
       "HostCountry": "US",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -58293,7 +58699,7 @@
         }
       ],
       "Status": 1,
-      "Load": 45
+      "Load": 29
     },
     {
       "Name": "CR#32",
@@ -58304,7 +58710,7 @@
       "Features": 28,
       "Region": null,
       "City": "San Jose",
-      "Score": 2.9821135416,
+      "Score": 2.9812273847,
       "HostCountry": "US",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -58328,7 +58734,7 @@
         }
       ],
       "Status": 1,
-      "Load": 48
+      "Load": 36
     },
     {
       "Name": "CR#33",
@@ -58339,7 +58745,7 @@
       "Features": 28,
       "Region": null,
       "City": "San Jose",
-      "Score": 2.9765938873,
+      "Score": 2.9789623365,
       "HostCountry": "US",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -58363,7 +58769,7 @@
         }
       ],
       "Status": 1,
-      "Load": 42
+      "Load": 28
     },
     {
       "Name": "US-CA#813",
@@ -58374,7 +58780,7 @@
       "Features": 12,
       "Region": null,
       "City": "San Jose",
-      "Score": 1.9293172262,
+      "Score": 1.9238627183,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -58398,7 +58804,7 @@
         }
       ],
       "Status": 1,
-      "Load": 51
+      "Load": 43
     },
     {
       "Name": "US-CA#814",
@@ -58409,7 +58815,7 @@
       "Features": 12,
       "Region": null,
       "City": "San Jose",
-      "Score": 1.9280744424,
+      "Score": 1.9252790759,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -58433,7 +58839,7 @@
         }
       ],
       "Status": 1,
-      "Load": 54
+      "Load": 48
     },
     {
       "Name": "US-CA#815",
@@ -58444,7 +58850,7 @@
       "Features": 12,
       "Region": null,
       "City": "San Jose",
-      "Score": 1.9268026443,
+      "Score": 1.9276247752,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -58468,7 +58874,7 @@
         }
       ],
       "Status": 1,
-      "Load": 58
+      "Load": 48
     },
     {
       "Name": "US-CA#816",
@@ -58479,7 +58885,7 @@
       "Features": 12,
       "Region": null,
       "City": "San Jose",
-      "Score": 1.9292832063,
+      "Score": 1.9273482406,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -58503,7 +58909,7 @@
         }
       ],
       "Status": 1,
-      "Load": 59
+      "Load": 48
     },
     {
       "Name": "KZ#1",
@@ -58514,7 +58920,7 @@
       "Features": 28,
       "Region": null,
       "City": "Astana",
-      "Score": 2.9935047552,
+      "Score": 2.9960218878,
       "HostCountry": "SG",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -58538,7 +58944,7 @@
         }
       ],
       "Status": 1,
-      "Load": 8
+      "Load": 7
     },
     {
       "Name": "KZ#10",
@@ -58549,7 +58955,7 @@
       "Features": 28,
       "Region": null,
       "City": "Astana",
-      "Score": 2.9924527635000002,
+      "Score": 2.9944432141,
       "HostCountry": "SG",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -58573,7 +58979,7 @@
         }
       ],
       "Status": 1,
-      "Load": 6
+      "Load": 9
     },
     {
       "Name": "KZ#11",
@@ -58584,7 +58990,7 @@
       "Features": 28,
       "Region": null,
       "City": "Astana",
-      "Score": 2.9945866755,
+      "Score": 2.9928715208,
       "HostCountry": "SG",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -58608,7 +59014,7 @@
         }
       ],
       "Status": 1,
-      "Load": 3
+      "Load": 2
     },
     {
       "Name": "KZ#12",
@@ -58619,7 +59025,7 @@
       "Features": 28,
       "Region": null,
       "City": "Astana",
-      "Score": 2.9925341866,
+      "Score": 2.9885648348,
       "HostCountry": "SG",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -58643,7 +59049,7 @@
         }
       ],
       "Status": 1,
-      "Load": 5
+      "Load": 4
     },
     {
       "Name": "CA#1209",
@@ -58654,7 +59060,7 @@
       "Features": 12,
       "Region": null,
       "City": "Montreal",
-      "Score": 2.9823625253,
+      "Score": 2.9794644209,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -58678,7 +59084,7 @@
         }
       ],
       "Status": 1,
-      "Load": 18
+      "Load": 20
     },
     {
       "Name": "CA#1210",
@@ -58689,7 +59095,7 @@
       "Features": 12,
       "Region": null,
       "City": "Montreal",
-      "Score": 2.9741053443,
+      "Score": 2.9828358397,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -58713,7 +59119,7 @@
         }
       ],
       "Status": 1,
-      "Load": 13
+      "Load": 17
     },
     {
       "Name": "CA#1211",
@@ -58724,7 +59130,7 @@
       "Features": 12,
       "Region": null,
       "City": "Montreal",
-      "Score": 2.9758989057000003,
+      "Score": 2.9804654896000002,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -58748,7 +59154,7 @@
         }
       ],
       "Status": 1,
-      "Load": 19
+      "Load": 25
     },
     {
       "Name": "CA#1212",
@@ -58759,7 +59165,7 @@
       "Features": 12,
       "Region": null,
       "City": "Montreal",
-      "Score": 2.9821984283000003,
+      "Score": 2.9825508581999998,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -58783,7 +59189,7 @@
         }
       ],
       "Status": 1,
-      "Load": 22
+      "Load": 26
     }
   ],
   "Code": 1000
