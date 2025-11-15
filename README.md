@@ -2,206 +2,145 @@
   
 # ProtonVPN-IPs
 
-🔒 An automatically updated list of IP addresses associated with the widely used free and privacy-focused VPN provider, ProtonVPN.
+An automatically updated list of IP addresses associated with the widely used free and privacy-focused VPN provider, ProtonVPN.
 
 ![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/tn3w/ProtonVPN-IPs/main.yml?label=Build&style=for-the-badge)
 
 ### IPInfo Category
+
 [IPSet](https://github.com/tn3w/IPSet) | [ProtonVPN-IPs](https://github.com/tn3w/ProtonVPN-IPs) | [TunnelBear-IPs](https://github.com/tn3w/TunnelBear-IPs)
 
 </div>
 
-## 📊 Data Files
+## Table of Contents
 
-The repository maintains six regularly updated data files:
+- [Data Files](#data-files)
+- [Token Authentication](#token-authentication)
+- [Usage Examples](#usage-examples)
+- [License](#license)
 
-1. `protonvpn_logicals.json` - Contains the raw response from ProtonVPN's API, including detailed information about all logical servers and their configurations.
+## Data Files
 
-2. `protonvpn_ips.json` - A JSON array containing only the unique exit IP addresses used by ProtonVPN servers. This is a simplified version of the data focusing only on the IP addresses.
+| File                        | Raw Link                                                                                                | Purpose                                                             |
+| --------------------------- | ------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- |
+| `protonvpn_logicals.json`   | [Raw](https://raw.githubusercontent.com/tn3w/ProtonVPN-IPs/refs/heads/master/protonvpn_logicals.json)   | Complete ProtonVPN API response with detailed server configurations |
+| `protonvpn_ips.json`        | [Raw](https://raw.githubusercontent.com/tn3w/ProtonVPN-IPs/refs/heads/master/protonvpn_ips.json)        | Unique exit IP addresses (JSON array)                               |
+| `protonvpn_ips.txt`         | [Raw](https://raw.githubusercontent.com/tn3w/ProtonVPN-IPs/refs/heads/master/protonvpn_ips.txt)         | Unique exit IP addresses (plain text, one per line)                 |
+| `protonvpn_entry_ips.json`  | [Raw](https://raw.githubusercontent.com/tn3w/ProtonVPN-IPs/refs/heads/master/protonvpn_entry_ips.json)  | Unique entry IP addresses (JSON array)                              |
+| `protonvpn_entry_ips.txt`   | [Raw](https://raw.githubusercontent.com/tn3w/ProtonVPN-IPs/refs/heads/master/protonvpn_entry_ips.txt)   | Unique entry IP addresses (plain text, one per line)                |
+| `protonvpn_subdomains.json` | [Raw](https://raw.githubusercontent.com/tn3w/ProtonVPN-IPs/refs/heads/master/protonvpn_subdomains.json) | Unique ProtonVPN subdomains                                         |
 
-3. `protonvpn_ips.txt` - A plain text file with one IP address per line, making it easy to use in scripts or other tools that expect a simple list format.
+## Token Authentication
 
-4. `protonvpn_subdomains.json` - A JSON array containing unique subdomains used by ProtonVPN servers.
+The project uses Proton API authentication tokens with automatic refresh capability. The workflow automatically updates expired tokens.
 
-5. `protonvpn_entry_ips.json` - A JSON array containing the unique entry IP addresses used by ProtonVPN servers.
+### Required Repository Secrets
 
-6. `protonvpn_entry_ips.txt` - A plain text file with one IP address per line, making it easy to use in scripts or other tools that expect a simple list format.
+| Secret          | Source                           | Purpose                   |
+| --------------- | -------------------------------- | ------------------------- |
+| `AUTH_PM_UID`   | ProtonVPN cookie `AUTH-{uid}`    | Account identifier        |
+| `AUTH_TOKEN`    | ProtonVPN cookie value           | Authentication token      |
+| `REFRESH_TOKEN` | ProtonVPN cookie `REFRESH-{uid}` | Token refresh credentials |
+| `SESSION_ID`    | ProtonVPN cookie `Session-Id`    | Session identifier        |
+| `GH_TOKEN`      | GitHub fine-grained token        | Update repository secrets |
 
-## 🛠️ Usage Examples
+### Quick Setup
 
-### Checking if an IP address is a ProtonVPN IP
+1. **Extract ProtonVPN tokens**: Login to [account.protonvpn.com](https://account.protonvpn.com), open browser dev tools (F12), go to Web Storage → Cookies, extract cookie values
+2. **Create GitHub token**: Go to GitHub Settings → Developer settings → Personal access tokens → Fine-grained tokens, create with `Contents: Read/Write` and `Secrets: Read/Write` permissions
+3. **Add secrets**: In your repository, go to Settings → Secrets and variables → Actions, add all required secrets
+4. **Test**: Run the workflow from Actions tab
 
-#### Python Example - Check Exit IP
+### Token Details
+
+From your browser's Web Storage → Cookies, extract:
+
+- **AUTH_PM_UID**: The `{uid}` from `AUTH-{uid}` cookie name
+- **AUTH_TOKEN**: Value of `AUTH-{uid}` cookie
+- **REFRESH_TOKEN**: Value of `REFRESH-{uid}` cookie
+- **SESSION_ID**: Value of `Session-Id` cookie
+
+### Notes
+
+- Tokens refresh automatically every ~24 hours
+- `REFRESH_TOKEN` expires after ~180 days (manual renewal required)
+- Free accounts access fewer servers than paid accounts
+- Never share tokens publicly
+
+## Usage Examples
+
+### Check Exit IP
 
 ```python
 import json
 import netaddr
 
-def is_protonvpn_exit_ip(ip_to_check, json_path='protonvpn_ips.json'):
-    """Check if an IP address is a ProtonVPN exit IP"""
+def is_protonvpn_exit_ip(ip_to_check):
     try:
-        # Validate IP address format
         netaddr.IPAddress(ip_to_check)
-        
-        # Load the ProtonVPN IPs list
-        with open(json_path, 'r') as f:
+        with open('protonvpn_ips.json', 'r') as f:
             protonvpn_ips = json.load(f)
-            
-        # Check if IP is in the list
         return ip_to_check in protonvpn_ips
-    except netaddr.AddrFormatError:
-        print(f"Error: {ip_to_check} is not a valid IP address")
-        return False
-    except Exception as e:
-        print(f"Error: {e}")
+    except:
         return False
 
-# Usage example
-ip = "84.247.50.181"  # Example IP address
-if is_protonvpn_exit_ip(ip):
-    print(f"{ip} is a ProtonVPN exit IP")
-else:
-    print(f"{ip} is not a ProtonVPN exit IP")
+# Usage
+if is_protonvpn_exit_ip("84.247.50.181"):
+    print("ProtonVPN exit IP detected")
 ```
 
-#### Python Example - Check Entry IP
+### Check Entry IP
 
 ```python
 import json
 import netaddr
 
-def is_protonvpn_entry_ip(ip_to_check, json_path='protonvpn_entry_ips.json'):
-    """Check if an IP address is a ProtonVPN entry IP"""
+def is_protonvpn_entry_ip(ip_to_check):
     try:
-        # Validate IP address format
         netaddr.IPAddress(ip_to_check)
-        
-        # Load the ProtonVPN IPs list
-        with open(json_path, 'r') as f:
+        with open('protonvpn_entry_ips.json', 'r') as f:
             protonvpn_ips = json.load(f)
-            
-        # Check if IP is in the list
         return ip_to_check in protonvpn_ips
-    except netaddr.AddrFormatError:
-        print(f"Error: {ip_to_check} is not a valid IP address")
-        return False
-    except Exception as e:
-        print(f"Error: {e}")
+    except:
         return False
 
-# Usage example
-ip = "146.70.120.210"  # Example IP address
-if is_protonvpn_entry_ip(ip):
-    print(f"{ip} is a ProtonVPN entry IP")
-else:
-    print(f"{ip} is not a ProtonVPN entry IP")
+# Usage
+if is_protonvpn_entry_ip("146.70.120.210"):
+    print("ProtonVPN entry IP detected")
 ```
 
-#### Bulk IP Checking (Python)
+### Bulk IP Check
 
 ```python
 import json
-import netaddr
 from typing import List, Dict
 
 def check_multiple_ips(ips_to_check: List[str]) -> Dict[str, Dict[str, bool]]:
-    """Check multiple IPs against both entry and exit IP lists"""
-    # Load IP lists
     try:
         with open('protonvpn_ips.json', 'r') as f:
             exit_ips = set(json.load(f))
-        
         with open('protonvpn_entry_ips.json', 'r') as f:
             entry_ips = set(json.load(f))
-            
-        # Check each IP
+
         results = {}
         for ip in ips_to_check:
-            try:
-                netaddr.IPAddress(ip)  # Validate IP format
-                results[ip] = {
-                    'is_exit_ip': ip in exit_ips,
-                    'is_entry_ip': ip in entry_ips
-                }
-            except netaddr.AddrFormatError:
-                results[ip] = {'error': f"Invalid IP address format"}
-                
+            results[ip] = {
+                'is_exit_ip': ip in exit_ips,
+                'is_entry_ip': ip in entry_ips
+            }
         return results
-    
     except Exception as e:
         return {'error': str(e)}
 
-# Example usage
+# Usage
 ips = ["146.70.120.210", "84.247.50.181", "192.168.1.1"]
 results = check_multiple_ips(ips)
-
 for ip, status in results.items():
-    print(f"IP: {ip}")
-    if 'error' in status:
-        print(f"  Error: {status['error']}")
-    else:
-        print(f"  ProtonVPN Exit IP: {'Yes' if status['is_exit_ip'] else 'No'}")
-        print(f"  ProtonVPN Entry IP: {'Yes' if status['is_entry_ip'] else 'No'}")
+    print(f"{ip}: Exit={status.get('is_exit_ip', False)}, Entry={status.get('is_entry_ip', False)}")
 ```
 
-## 🔄 Token Authentication
+## License
 
-The project uses Proton API authentication tokens to fetch VPN server data. It now supports automatic token refresh, which helps maintain uninterrupted access to the API even when tokens expire.
-
-### Required Secrets
-
-For GitHub Actions to work properly, set the following repository secrets:
-
-- `AUTH_PM_UID`: Your Proton account UID (not changed by token refresh)
-- `AUTH_TOKEN`: Initial authentication token
-- `REFRESH_TOKEN`: Token used to refresh authentication credentials
-- `SESSION_ID`: Your session ID
-- `GH_TOKEN`: GitHub fine grained token with `Secrets: Read and Write` and `Contents: Read and Write` permissions used to update repository secrets
-
-The workflow automatically refreshes tokens when needed and updates repository secrets accordingly.
-
-## 🔬 Technical Implementation
-
-### Exit IP Discovery (`main.py`)
-
-The exit IP discovery process implements authenticated API interaction with ProtonVPN's official endpoints:
-
-1. **Authentication Flow**:
-   - Implements cookie-based authentication using `AUTH-{uid}` and `Session-Id` tokens
-   - Handles token refresh via `/api/auth/refresh` endpoint on token expiration
-   - Extracts new tokens from HTTP response headers (`Set-Cookie`)
-
-2. **API Integration**:
-   - Fetches server data from `account.protonvpn.com/api/vpn/logicals` endpoint
-   - Uses HTTP headers including `x-pm-appversion`, `x-pm-uid` for API versioning
-   - Dynamically identifies latest app version from manifest.json
-
-3. **Data Processing**:
-   - Traverses the nested JSON structure (`LogicalServers[].Servers[].ExitIP`)
-   - Performs deduplication using Python sets (`set()`)
-   - Combines API data with local base data for enhanced coverage
-   - Serializes to both JSON and plain text formats
-
-### Entry IP Discovery (`entry_ips.py`)
-
-The entry IP discovery process employs passive reconnaissance techniques:
-
-1. **Subdomain Enumeration**:
-   - Leverages Certificate Transparency logs via crt.sh API
-   - Implements retry logic (10 attempts with 30s intervals) for API resilience
-   - Filters and normalizes subdomains
-
-2. **DNS Resolution**:
-   - Uses socket library with specific address family parameters (AF_INET, AF_INET6)
-   - Directly resolves both IPv4 (A records) and IPv6 (AAAA records)
-   - Utilizes concurrent execution (`ThreadPoolExecutor`) for parallel DNS resolution
-
-3. **IP Processing**:
-   - Employs set data structures for efficient deduplication
-   - Maintains mixed IPv4/IPv6 collections in output
-   - Handles network errors gracefully with specific exception handling
-
-## 📜 License
 Copyright 2025 TN3W
 
 Licensed under the Apache License, Version 2.0 (the "License");
