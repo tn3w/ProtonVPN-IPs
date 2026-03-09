@@ -55865,7 +55865,7 @@
       "Features": 16,
       "Region": null,
       "City": "Atlanta",
-      "Score": 4.9951915324,
+      "Score": 3.9886399595,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -55925,7 +55925,7 @@
         }
       ],
       "Status": 1,
-      "Load": 87
+      "Load": 84
     },
     {
       "Name": "US-FREE#41",
@@ -55936,7 +55936,7 @@
       "Features": 16,
       "Region": null,
       "City": "Houston",
-      "Score": 3.9776305684,
+      "Score": 4.9917039067,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -55996,7 +55996,7 @@
         }
       ],
       "Status": 1,
-      "Load": 79
+      "Load": 85
     },
     {
       "Name": "US-FREE#42",
@@ -56007,7 +56007,7 @@
       "Features": 16,
       "Region": null,
       "City": "Houston",
-      "Score": 3.9846985698,
+      "Score": 4.9970456682,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -56067,7 +56067,7 @@
         }
       ],
       "Status": 1,
-      "Load": 72
+      "Load": 77
     },
     {
       "Name": "PL-FREE#5",
@@ -56078,7 +56078,7 @@
       "Features": 16,
       "Region": null,
       "City": "Warsaw",
-      "Score": 4.9944950839,
+      "Score": 4.9990636761000005,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -56138,7 +56138,7 @@
         }
       ],
       "Status": 1,
-      "Load": 92
+      "Load": 100
     },
     {
       "Name": "SG-FREE#11",
@@ -56149,7 +56149,7 @@
       "Features": 0,
       "Region": null,
       "City": "Singapore",
-      "Score": 4.992193331,
+      "Score": 4.9959033662,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -56209,7 +56209,7 @@
         }
       ],
       "Status": 1,
-      "Load": 70
+      "Load": 75
     },
     {
       "Name": "SG-FREE#9",
@@ -56220,7 +56220,7 @@
       "Features": 0,
       "Region": null,
       "City": "Singapore",
-      "Score": 4.9922013342,
+      "Score": 4.9938124641,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -56280,7 +56280,7 @@
         }
       ],
       "Status": 1,
-      "Load": 72
+      "Load": 71
     },
     {
       "Name": "SG-FREE#2",
@@ -56291,7 +56291,7 @@
       "Features": 0,
       "Region": null,
       "City": "Singapore",
-      "Score": 4.9976517268,
+      "Score": 4.9989489434,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -56351,7 +56351,7 @@
         }
       ],
       "Status": 1,
-      "Load": 83
+      "Load": 76
     },
     {
       "Name": "NL-FREE#232",
@@ -56362,7 +56362,7 @@
       "Features": 0,
       "Region": null,
       "City": "Amsterdam",
-      "Score": 4.9942018168,
+      "Score": 4.9920464521,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -56554,7 +56554,7 @@
         }
       ],
       "Status": 1,
-      "Load": 66
+      "Load": 58
     },
     {
       "Name": "NL-FREE#235",
@@ -56565,7 +56565,7 @@
       "Features": 0,
       "Region": null,
       "City": "Amsterdam",
-      "Score": 4.991512919,
+      "Score": 4.9926784953,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -56757,7 +56757,7 @@
         }
       ],
       "Status": 1,
-      "Load": 65
+      "Load": 60
     },
     {
       "Name": "NL-FREE#238",
@@ -56768,7 +56768,7 @@
       "Features": 0,
       "Region": null,
       "City": "Amsterdam",
-      "Score": 4.9954817026,
+      "Score": 4.9932171296,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -56960,7 +56960,7 @@
         }
       ],
       "Status": 1,
-      "Load": 59
+      "Load": 51
     },
     {
       "Name": "NL-FREE#239",
@@ -56971,7 +56971,7 @@
       "Features": 0,
       "Region": null,
       "City": "Amsterdam",
-      "Score": 4.9910996845,
+      "Score": 4.9900151001,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -57163,7 +57163,7 @@
         }
       ],
       "Status": 1,
-      "Load": 66
+      "Load": 59
     },
     {
       "Name": "NL-FREE#241",
@@ -57174,7 +57174,7 @@
       "Features": 0,
       "Region": null,
       "City": "Amsterdam",
-      "Score": 4.9949767154,
+      "Score": 4.9931351794,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -57366,7 +57366,7 @@
         }
       ],
       "Status": 1,
-      "Load": 65
+      "Load": 57
     },
     {
       "Name": "NL-FREE#245",
@@ -57377,7 +57377,7 @@
       "Features": 0,
       "Region": null,
       "City": "Amsterdam",
-      "Score": 4.9886688949,
+      "Score": 4.9875479403,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -57569,7 +57569,7 @@
         }
       ],
       "Status": 1,
-      "Load": 62
+      "Load": 53
     },
     {
       "Name": "NL-FREE#250",
@@ -57580,7 +57580,7 @@
       "Features": 0,
       "Region": null,
       "City": "Amsterdam",
-      "Score": 4.9912933982,
+      "Score": 4.9889225829,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -57772,7 +57772,7 @@
         }
       ],
       "Status": 1,
-      "Load": 63
+      "Load": 55
     },
     {
       "Name": "NL-FREE#259",
@@ -57783,7 +57783,7 @@
       "Features": 0,
       "Region": null,
       "City": "Amsterdam",
-      "Score": 4.9888468399,
+      "Score": 4.9932814894,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -57915,7 +57915,7 @@
         }
       ],
       "Status": 1,
-      "Load": 57
+      "Load": 46
     },
     {
       "Name": "NL-FREE#260",
@@ -57926,7 +57926,7 @@
       "Features": 0,
       "Region": null,
       "City": "Amsterdam",
-      "Score": 4.9939362585,
+      "Score": 4.9884345822,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -58058,7 +58058,7 @@
         }
       ],
       "Status": 1,
-      "Load": 49
+      "Load": 37
     },
     {
       "Name": "NL-FREE#279",
@@ -58069,7 +58069,7 @@
       "Features": 0,
       "Region": null,
       "City": "Amsterdam",
-      "Score": 4.9903412588,
+      "Score": 4.9915270331,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -58225,7 +58225,7 @@
         }
       ],
       "Status": 1,
-      "Load": 67
+      "Load": 48
     },
     {
       "Name": "JP-FREE#33",
@@ -58236,7 +58236,7 @@
       "Features": 16,
       "Region": null,
       "City": "Tokyo",
-      "Score": 4.9941995754,
+      "Score": 4.9925469424,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -58307,7 +58307,7 @@
       "Features": 16,
       "Region": null,
       "City": "Oslo",
-      "Score": 4.9902026701,
+      "Score": 4.9842310191,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -58367,7 +58367,7 @@
         }
       ],
       "Status": 1,
-      "Load": 54
+      "Load": 50
     },
     {
       "Name": "NO-FREE#4",
@@ -58378,7 +58378,7 @@
       "Features": 16,
       "Region": null,
       "City": "Oslo",
-      "Score": 4.99226714,
+      "Score": 4.9931041756,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -58438,7 +58438,7 @@
         }
       ],
       "Status": 1,
-      "Load": 63
+      "Load": 61
     },
     {
       "Name": "MX-FREE#6",
@@ -58449,7 +58449,7 @@
       "Features": 0,
       "Region": null,
       "City": "Mexico City",
-      "Score": 14.9790100098,
+      "Score": 14.976788129,
       "HostCountry": "US",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -58509,7 +58509,7 @@
         }
       ],
       "Status": 1,
-      "Load": 67
+      "Load": 64
     },
     {
       "Name": "CA-FREE#11",
@@ -58520,7 +58520,7 @@
       "Features": 16,
       "Region": null,
       "City": "Vancouver",
-      "Score": 4.9980609509,
+      "Score": 4.9992287404999995,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -58580,7 +58580,7 @@
         }
       ],
       "Status": 1,
-      "Load": 87
+      "Load": 88
     },
     {
       "Name": "CA-FREE#3",
@@ -58591,7 +58591,7 @@
       "Features": 16,
       "Region": null,
       "City": "Toronto",
-      "Score": 4.9967923843,
+      "Score": 4.9959620005000005,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -58651,7 +58651,7 @@
         }
       ],
       "Status": 1,
-      "Load": 85
+      "Load": 84
     },
     {
       "Name": "CA-FREE#4",
@@ -58662,7 +58662,7 @@
       "Features": 16,
       "Region": null,
       "City": "Toronto",
-      "Score": 4.9975147567,
+      "Score": 4.9935272008,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -58722,7 +58722,7 @@
         }
       ],
       "Status": 1,
-      "Load": 84
+      "Load": 82
     },
     {
       "Name": "CH-FREE#2",
@@ -58733,7 +58733,7 @@
       "Features": 16,
       "Region": null,
       "City": "Zurich",
-      "Score": 4.9981978303,
+      "Score": 4.992956952,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -58793,7 +58793,7 @@
         }
       ],
       "Status": 1,
-      "Load": 91
+      "Load": 83
     },
     {
       "Name": "CH-FREE#6",
@@ -58804,7 +58804,7 @@
       "Features": 16,
       "Region": null,
       "City": "Zurich",
-      "Score": 4.9970736671000004,
+      "Score": 4.9886050457,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -58864,7 +58864,7 @@
         }
       ],
       "Status": 1,
-      "Load": 82
+      "Load": 84
     },
     {
       "Name": "SG-FREE#13",
@@ -58875,7 +58875,7 @@
       "Features": 0,
       "Region": null,
       "City": "Singapore",
-      "Score": 4.9943108807,
+      "Score": 4.9966833645,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -58935,7 +58935,7 @@
         }
       ],
       "Status": 1,
-      "Load": 73
+      "Load": 78
     },
     {
       "Name": "SG-FREE#17",
@@ -58946,7 +58946,7 @@
       "Features": 0,
       "Region": null,
       "City": "Singapore",
-      "Score": 4.9985751716,
+      "Score": 4.9994812259,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -59006,7 +59006,7 @@
         }
       ],
       "Status": 1,
-      "Load": 66
+      "Load": 70
     },
     {
       "Name": "SG-FREE#21",
@@ -59017,7 +59017,7 @@
       "Features": 0,
       "Region": null,
       "City": "Singapore",
-      "Score": 4.9904510416,
+      "Score": 4.9925022667,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -59077,7 +59077,7 @@
         }
       ],
       "Status": 1,
-      "Load": 75
+      "Load": 77
     },
     {
       "Name": "US-FREE#68",
@@ -59088,7 +59088,7 @@
       "Features": 0,
       "Region": null,
       "City": "Secaucus",
-      "Score": 4.9974108824,
+      "Score": 4.9998282022,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -59244,7 +59244,7 @@
         }
       ],
       "Status": 1,
-      "Load": 79
+      "Load": 80
     },
     {
       "Name": "US-FREE#74",
@@ -59255,7 +59255,7 @@
       "Features": 0,
       "Region": null,
       "City": "Secaucus",
-      "Score": 3.9827496443,
+      "Score": 3.970064726,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -59411,7 +59411,7 @@
         }
       ],
       "Status": 1,
-      "Load": 76
+      "Load": 75
     },
     {
       "Name": "US-FREE#85",
@@ -59422,7 +59422,7 @@
       "Features": 16,
       "Region": null,
       "City": "Seattle",
-      "Score": 3.9750866568,
+      "Score": 3.9781128222,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -59482,7 +59482,7 @@
         }
       ],
       "Status": 1,
-      "Load": 67
+      "Load": 73
     },
     {
       "Name": "MX-FREE#2",
@@ -59493,7 +59493,7 @@
       "Features": 0,
       "Region": null,
       "City": "Mexico City",
-      "Score": 14.975622552699999,
+      "Score": 14.9682131977,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -59697,7 +59697,7 @@
         }
       ],
       "Status": 1,
-      "Load": 54
+      "Load": 53
     },
     {
       "Name": "US-FREE#86",
@@ -59708,7 +59708,7 @@
       "Features": 16,
       "Region": null,
       "City": "Los Angeles",
-      "Score": 3.9558280888,
+      "Score": 3.9757572857,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -59768,7 +59768,7 @@
         }
       ],
       "Status": 1,
-      "Load": 73
+      "Load": 76
     },
     {
       "Name": "MX-FREE#10",
@@ -59779,7 +59779,7 @@
       "Features": 0,
       "Region": null,
       "City": "Mexico City",
-      "Score": 14.976077203,
+      "Score": 14.9726933505,
       "HostCountry": "US",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -59839,7 +59839,7 @@
         }
       ],
       "Status": 1,
-      "Load": 67
+      "Load": 62
     },
     {
       "Name": "MX-FREE#14",
@@ -59850,7 +59850,7 @@
       "Features": 0,
       "Region": null,
       "City": "Mexico City",
-      "Score": 14.9715522756,
+      "Score": 14.9744638125,
       "HostCountry": "US",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -59910,7 +59910,7 @@
         }
       ],
       "Status": 1,
-      "Load": 72
+      "Load": 74
     },
     {
       "Name": "SE-NO#1",
@@ -59921,7 +59921,7 @@
       "Features": 1,
       "Region": null,
       "City": "Oslo",
-      "Score": 2.9970310342,
+      "Score": 2.9973219882,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -59956,7 +59956,7 @@
       "Features": 1,
       "Region": null,
       "City": "Chisinau",
-      "Score": 2.9924532782,
+      "Score": 2.9923204646,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -59980,7 +59980,42 @@
         }
       ],
       "Status": 1,
-      "Load": 17
+      "Load": 25
+    },
+    {
+      "Name": "IS-BR#2",
+      "EntryCountry": "IS",
+      "ExitCountry": "BR",
+      "Domain": "is-br-01.protonvpn.net",
+      "Tier": 2,
+      "Features": 1,
+      "Region": null,
+      "City": "S\u00e3o Paulo",
+      "Score": 5.9998534491,
+      "HostCountry": "US",
+      "OrganizationID": null,
+      "VPNGatewayID": null,
+      "ID": "RuB8bTTBVpIGrdRUcceshLiwOgtcHh06IZlr4QreH-vWJZqlekIUd3nQOahz-1Va5GZZiPZ25AUVbdrxpHxB7A==",
+      "Location": {
+        "Lat": -23.55,
+        "Long": -46.63
+      },
+      "Servers": [
+        {
+          "EntryIP": "185.159.158.177",
+          "ExitIP": "185.159.158.177",
+          "Domain": "node-br-04.protonvpn.net",
+          "ID": "MurIJdNEb-1eJCb3mxjyKMxOdbFVNpGAQ4ocKLA1hCieCzGXQ2_IK3CvPXdbgVfmpSrd1mtnWdf_A8KaxtbVyg==",
+          "Label": "",
+          "X25519PublicKey": "0FnhfTGup0LHPmBCsuDN4tVqlgOaItDwayQokhWapFQ=",
+          "Generation": 0,
+          "Status": 1,
+          "ServicesDown": 0,
+          "ServicesDownReason": null
+        }
+      ],
+      "Status": 1,
+      "Load": 60
     },
     {
       "Name": "CH-CR#1",
@@ -59991,7 +60026,7 @@
       "Features": 1,
       "Region": null,
       "City": "San Jos\u00e9",
-      "Score": 2.9942189174,
+      "Score": 2.9905667922,
       "HostCountry": "US",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -60015,7 +60050,7 @@
         }
       ],
       "Status": 1,
-      "Load": 57
+      "Load": 63
     },
     {
       "Name": "NO#21",
@@ -60026,7 +60061,7 @@
       "Features": 24,
       "Region": null,
       "City": "Oslo",
-      "Score": 2.9875750838,
+      "Score": 2.9924104913000003,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -60050,7 +60085,7 @@
         }
       ],
       "Status": 1,
-      "Load": 38
+      "Load": 32
     },
     {
       "Name": "NO#22",
@@ -60061,7 +60096,7 @@
       "Features": 24,
       "Region": null,
       "City": "Oslo",
-      "Score": 2.9880686213,
+      "Score": 2.9863857873,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -60085,7 +60120,7 @@
         }
       ],
       "Status": 1,
-      "Load": 34
+      "Load": 28
     },
     {
       "Name": "NO#23",
@@ -60096,7 +60131,7 @@
       "Features": 24,
       "Region": null,
       "City": "Oslo",
-      "Score": 2.9910236329,
+      "Score": 2.9874640822,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -60120,7 +60155,7 @@
         }
       ],
       "Status": 1,
-      "Load": 40
+      "Load": 34
     },
     {
       "Name": "NO#24",
@@ -60131,7 +60166,7 @@
       "Features": 24,
       "Region": null,
       "City": "Oslo",
-      "Score": 2.9913814182,
+      "Score": 2.9849408192,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -60155,7 +60190,7 @@
         }
       ],
       "Status": 1,
-      "Load": 41
+      "Load": 36
     },
     {
       "Name": "RU#29",
@@ -60166,7 +60201,7 @@
       "Features": 0,
       "Region": null,
       "City": "Moscow",
-      "Score": 6.992222845300001,
+      "Score": 6.9912605081,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -60190,7 +60225,7 @@
         }
       ],
       "Status": 1,
-      "Load": 16
+      "Load": 12
     },
     {
       "Name": "RU#30",
@@ -60201,7 +60236,7 @@
       "Features": 0,
       "Region": null,
       "City": "Moscow",
-      "Score": 6.9922408392,
+      "Score": 6.9895227846,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -60225,7 +60260,7 @@
         }
       ],
       "Status": 1,
-      "Load": 16
+      "Load": 14
     },
     {
       "Name": "RU#31",
@@ -60236,7 +60271,7 @@
       "Features": 0,
       "Region": null,
       "City": "Moscow",
-      "Score": 6.9875263845,
+      "Score": 6.9906303636,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -60260,7 +60295,7 @@
         }
       ],
       "Status": 1,
-      "Load": 13
+      "Load": 10
     },
     {
       "Name": "RU#32",
@@ -60271,7 +60306,7 @@
       "Features": 0,
       "Region": null,
       "City": "Moscow",
-      "Score": 6.9886662674,
+      "Score": 6.9872571545,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -60295,7 +60330,7 @@
         }
       ],
       "Status": 1,
-      "Load": 13
+      "Load": 10
     },
     {
       "Name": "CH-RU#1",
@@ -60306,7 +60341,7 @@
       "Features": 1,
       "Region": null,
       "City": "Moscow",
-      "Score": 5.9937030015,
+      "Score": 5.9949118652,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -60354,7 +60389,7 @@
         }
       ],
       "Status": 1,
-      "Load": 20
+      "Load": 26
     },
     {
       "Name": "JP#174",
@@ -60365,7 +60400,7 @@
       "Features": 12,
       "Region": null,
       "City": "Tokyo",
-      "Score": 2.9883419774,
+      "Score": 2.996989799,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -60389,7 +60424,7 @@
         }
       ],
       "Status": 1,
-      "Load": 7
+      "Load": 4
     },
     {
       "Name": "JP#175",
@@ -60400,7 +60435,7 @@
       "Features": 12,
       "Region": null,
       "City": "Tokyo",
-      "Score": 2.9920578648,
+      "Score": 2.9927440239000003,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -60424,7 +60459,7 @@
         }
       ],
       "Status": 1,
-      "Load": 15
+      "Load": 12
     },
     {
       "Name": "JP#176",
@@ -60435,7 +60470,7 @@
       "Features": 12,
       "Region": null,
       "City": "Tokyo",
-      "Score": 2.9929302492,
+      "Score": 2.9889181809,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -60459,7 +60494,7 @@
         }
       ],
       "Status": 1,
-      "Load": 15
+      "Load": 11
     },
     {
       "Name": "JP#177",
@@ -60470,7 +60505,7 @@
       "Features": 12,
       "Region": null,
       "City": "Tokyo",
-      "Score": 2.9928776529,
+      "Score": 2.9887992701,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -60494,7 +60529,7 @@
         }
       ],
       "Status": 1,
-      "Load": 11
+      "Load": 9
     },
     {
       "Name": "AL#25",
@@ -60505,7 +60540,7 @@
       "Features": 12,
       "Region": null,
       "City": "Tirana",
-      "Score": 5.9932725115,
+      "Score": 5.9918415846,
       "HostCountry": "FR",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -60529,7 +60564,7 @@
         }
       ],
       "Status": 1,
-      "Load": 36
+      "Load": 24
     },
     {
       "Name": "AL#26",
@@ -60540,7 +60575,7 @@
       "Features": 12,
       "Region": null,
       "City": "Tirana",
-      "Score": 5.9884687795,
+      "Score": 5.9959655157,
       "HostCountry": "FR",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -60564,7 +60599,7 @@
         }
       ],
       "Status": 1,
-      "Load": 40
+      "Load": 29
     },
     {
       "Name": "AL#27",
@@ -60575,7 +60610,7 @@
       "Features": 12,
       "Region": null,
       "City": "Tirana",
-      "Score": 5.9920428936,
+      "Score": 5.9892352071,
       "HostCountry": "FR",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -60599,7 +60634,7 @@
         }
       ],
       "Status": 1,
-      "Load": 37
+      "Load": 26
     },
     {
       "Name": "AL#28",
@@ -60610,7 +60645,7 @@
       "Features": 12,
       "Region": null,
       "City": "Tirana",
-      "Score": 5.9883585199,
+      "Score": 5.9902380791,
       "HostCountry": "FR",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -60634,7 +60669,7 @@
         }
       ],
       "Status": 1,
-      "Load": 43
+      "Load": 31
     },
     {
       "Name": "AO#1",
@@ -60645,7 +60680,7 @@
       "Features": 12,
       "Region": null,
       "City": "Luanda",
-      "Score": 2.9996178975,
+      "Score": 2.9912075984,
       "HostCountry": "FR",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -60680,7 +60715,7 @@
       "Features": 12,
       "Region": null,
       "City": "Luanda",
-      "Score": 2.9922529034,
+      "Score": 2.9959216058,
       "HostCountry": "FR",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -60704,7 +60739,7 @@
         }
       ],
       "Status": 1,
-      "Load": 11
+      "Load": 9
     },
     {
       "Name": "AO#3",
@@ -60715,7 +60750,7 @@
       "Features": 12,
       "Region": null,
       "City": "Luanda",
-      "Score": 2.9930001473,
+      "Score": 2.9943192282,
       "HostCountry": "FR",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -60750,7 +60785,7 @@
       "Features": 12,
       "Region": null,
       "City": "Luanda",
-      "Score": 2.9996919637,
+      "Score": 2.9931467374,
       "HostCountry": "FR",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -60774,7 +60809,7 @@
         }
       ],
       "Status": 1,
-      "Load": 8
+      "Load": 7
     },
     {
       "Name": "AZ#25",
@@ -60785,7 +60820,7 @@
       "Features": 12,
       "Region": null,
       "City": "Baku",
-      "Score": 2.9980329549,
+      "Score": 2.9971218909,
       "HostCountry": "FR",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -60820,7 +60855,7 @@
       "Features": 12,
       "Region": null,
       "City": "Baku",
-      "Score": 2.9977658929,
+      "Score": 2.9902634826,
       "HostCountry": "FR",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -60855,7 +60890,7 @@
       "Features": 12,
       "Region": null,
       "City": "Baku",
-      "Score": 2.994458373,
+      "Score": 2.9966811257,
       "HostCountry": "FR",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -60890,7 +60925,7 @@
       "Features": 12,
       "Region": null,
       "City": "Baku",
-      "Score": 2.9914621424,
+      "Score": 2.9908220233,
       "HostCountry": "FR",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -60925,7 +60960,7 @@
       "Features": 4,
       "Region": null,
       "City": "Manama",
-      "Score": 2.9975778063,
+      "Score": 2.9922274570000003,
       "HostCountry": "FR",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -60949,7 +60984,7 @@
         }
       ],
       "Status": 1,
-      "Load": 3
+      "Load": 8
     },
     {
       "Name": "BH#2",
@@ -60960,7 +60995,7 @@
       "Features": 4,
       "Region": null,
       "City": "Manama",
-      "Score": 2.9912962971,
+      "Score": 2.9910093153,
       "HostCountry": "FR",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -60984,7 +61019,7 @@
         }
       ],
       "Status": 1,
-      "Load": 3
+      "Load": 6
     },
     {
       "Name": "BH#3",
@@ -60995,7 +61030,7 @@
       "Features": 4,
       "Region": null,
       "City": "Manama",
-      "Score": 2.9987859369,
+      "Score": 2.9910057631,
       "HostCountry": "FR",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -61019,7 +61054,7 @@
         }
       ],
       "Status": 1,
-      "Load": 1
+      "Load": 5
     },
     {
       "Name": "BH#4",
@@ -61030,7 +61065,7 @@
       "Features": 4,
       "Region": null,
       "City": "Manama",
-      "Score": 2.9980438109,
+      "Score": 2.9890968916,
       "HostCountry": "FR",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -61054,7 +61089,7 @@
         }
       ],
       "Status": 1,
-      "Load": 2
+      "Load": 5
     },
     {
       "Name": "BY#25",
@@ -61065,7 +61100,7 @@
       "Features": 12,
       "Region": null,
       "City": "Minsk",
-      "Score": 2.991490019,
+      "Score": 2.9941504629,
       "HostCountry": "FR",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -61089,7 +61124,7 @@
         }
       ],
       "Status": 1,
-      "Load": 12
+      "Load": 15
     },
     {
       "Name": "BY#26",
@@ -61100,7 +61135,7 @@
       "Features": 12,
       "Region": null,
       "City": "Minsk",
-      "Score": 2.9883435715999997,
+      "Score": 2.988279953,
       "HostCountry": "FR",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -61124,7 +61159,7 @@
         }
       ],
       "Status": 1,
-      "Load": 6
+      "Load": 10
     },
     {
       "Name": "BY#27",
@@ -61135,7 +61170,7 @@
       "Features": 12,
       "Region": null,
       "City": "Minsk",
-      "Score": 2.9918983748,
+      "Score": 2.9913563651,
       "HostCountry": "FR",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -61159,7 +61194,7 @@
         }
       ],
       "Status": 1,
-      "Load": 10
+      "Load": 14
     },
     {
       "Name": "BY#28",
@@ -61170,7 +61205,7 @@
       "Features": 12,
       "Region": null,
       "City": "Minsk",
-      "Score": 2.992933261,
+      "Score": 2.9899795423,
       "HostCountry": "FR",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -61194,7 +61229,7 @@
         }
       ],
       "Status": 1,
-      "Load": 5
+      "Load": 9
     },
     {
       "Name": "CM#1",
@@ -61205,7 +61240,7 @@
       "Features": 12,
       "Region": null,
       "City": "Yaound\u00e9",
-      "Score": 2.9985631431,
+      "Score": 2.9942731673000003,
       "HostCountry": "FR",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -61229,7 +61264,7 @@
         }
       ],
       "Status": 1,
-      "Load": 1
+      "Load": 0
     },
     {
       "Name": "CM#2",
@@ -61240,7 +61275,7 @@
       "Features": 12,
       "Region": null,
       "City": "Yaound\u00e9",
-      "Score": 2.9916429901,
+      "Score": 2.9954062474,
       "HostCountry": "FR",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -61275,7 +61310,7 @@
       "Features": 12,
       "Region": null,
       "City": "Yaound\u00e9",
-      "Score": 2.9924295798,
+      "Score": 2.9948335737000003,
       "HostCountry": "FR",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -61310,7 +61345,7 @@
       "Features": 12,
       "Region": null,
       "City": "Yaound\u00e9",
-      "Score": 2.9899193833,
+      "Score": 2.9891666345,
       "HostCountry": "FR",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -61334,7 +61369,7 @@
         }
       ],
       "Status": 1,
-      "Load": 5
+      "Load": 3
     },
     {
       "Name": "UG#1",
@@ -61345,7 +61380,7 @@
       "Features": 12,
       "Region": null,
       "City": "Kampala",
-      "Score": 2.9985566599,
+      "Score": 2.9982231244,
       "HostCountry": "FR",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -61380,7 +61415,7 @@
       "Features": 12,
       "Region": null,
       "City": "Kampala",
-      "Score": 2.9975748704000003,
+      "Score": 2.9924207752000003,
       "HostCountry": "FR",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -61415,7 +61450,7 @@
       "Features": 12,
       "Region": null,
       "City": "Kampala",
-      "Score": 2.992200376,
+      "Score": 2.9926434372,
       "HostCountry": "FR",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -61450,7 +61485,7 @@
       "Features": 12,
       "Region": null,
       "City": "Kampala",
-      "Score": 2.9966511860000002,
+      "Score": 2.9922302205999998,
       "HostCountry": "FR",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -61485,7 +61520,7 @@
       "Features": 4,
       "Region": null,
       "City": "Moroni",
-      "Score": 2.9937042673,
+      "Score": 2.9914435538,
       "HostCountry": "FR",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -61509,7 +61544,7 @@
         }
       ],
       "Status": 1,
-      "Load": 4
+      "Load": 29
     },
     {
       "Name": "KM#26",
@@ -61520,7 +61555,7 @@
       "Features": 4,
       "Region": null,
       "City": "Moroni",
-      "Score": 2.9964321265000002,
+      "Score": 2.9920151039,
       "HostCountry": "FR",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -61544,7 +61579,7 @@
         }
       ],
       "Status": 1,
-      "Load": 6
+      "Load": 31
     },
     {
       "Name": "KM#27",
@@ -61555,7 +61590,7 @@
       "Features": 4,
       "Region": null,
       "City": "Moroni",
-      "Score": 2.9929778547,
+      "Score": 2.9939859611,
       "HostCountry": "FR",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -61579,7 +61614,7 @@
         }
       ],
       "Status": 1,
-      "Load": 0
+      "Load": 24
     },
     {
       "Name": "KM#28",
@@ -61590,7 +61625,7 @@
       "Features": 4,
       "Region": null,
       "City": "Moroni",
-      "Score": 2.9978445895,
+      "Score": 2.9928106126,
       "HostCountry": "FR",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -61614,7 +61649,7 @@
         }
       ],
       "Status": 1,
-      "Load": 0
+      "Load": 22
     },
     {
       "Name": "ER#1",
@@ -61625,7 +61660,7 @@
       "Features": 4,
       "Region": null,
       "City": "Asmara",
-      "Score": 2.9941268817999998,
+      "Score": 2.9911628891,
       "HostCountry": "FR",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -61660,7 +61695,7 @@
       "Features": 4,
       "Region": null,
       "City": "Asmara",
-      "Score": 2.9916616339999997,
+      "Score": 2.9945806134,
       "HostCountry": "FR",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -61684,7 +61719,7 @@
         }
       ],
       "Status": 1,
-      "Load": 3
+      "Load": 4
     },
     {
       "Name": "ER#3",
@@ -61695,7 +61730,7 @@
       "Features": 4,
       "Region": null,
       "City": "Asmara",
-      "Score": 2.9924372225,
+      "Score": 2.9898898289,
       "HostCountry": "FR",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -61730,7 +61765,7 @@
       "Features": 4,
       "Region": null,
       "City": "Asmara",
-      "Score": 2.9991041378,
+      "Score": 2.9977944066999997,
       "HostCountry": "FR",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -61765,7 +61800,7 @@
       "Features": 4,
       "Region": null,
       "City": "Addis Ababa",
-      "Score": 2.9993956531,
+      "Score": 2.9961918084,
       "HostCountry": "FR",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -61789,7 +61824,7 @@
         }
       ],
       "Status": 1,
-      "Load": 8
+      "Load": 7
     },
     {
       "Name": "ET#2",
@@ -61800,7 +61835,7 @@
       "Features": 4,
       "Region": null,
       "City": "Addis Ababa",
-      "Score": 2.9986294158,
+      "Score": 2.9978633760999998,
       "HostCountry": "FR",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -61835,7 +61870,7 @@
       "Features": 4,
       "Region": null,
       "City": "Addis Ababa",
-      "Score": 2.9936085501000003,
+      "Score": 2.9930966821,
       "HostCountry": "FR",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -61859,7 +61894,7 @@
         }
       ],
       "Status": 1,
-      "Load": 9
+      "Load": 8
     },
     {
       "Name": "ET#4",
@@ -61870,7 +61905,7 @@
       "Features": 4,
       "Region": null,
       "City": "Addis Ababa",
-      "Score": 2.999699733,
+      "Score": 2.9977249256,
       "HostCountry": "FR",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -61905,7 +61940,7 @@
       "Features": 4,
       "Region": null,
       "City": "Baghdad",
-      "Score": 2.9902781762,
+      "Score": 2.9919637382,
       "HostCountry": "FR",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -61929,7 +61964,7 @@
         }
       ],
       "Status": 1,
-      "Load": 8
+      "Load": 7
     },
     {
       "Name": "IQ#2",
@@ -61940,7 +61975,7 @@
       "Features": 4,
       "Region": null,
       "City": "Baghdad",
-      "Score": 2.9946990126,
+      "Score": 2.9929160275999998,
       "HostCountry": "FR",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -61964,7 +61999,7 @@
         }
       ],
       "Status": 1,
-      "Load": 9
+      "Load": 7
     },
     {
       "Name": "IQ#3",
@@ -61975,7 +62010,7 @@
       "Features": 4,
       "Region": null,
       "City": "Baghdad",
-      "Score": 2.9955916065,
+      "Score": 2.9913442613,
       "HostCountry": "FR",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -61999,7 +62034,7 @@
         }
       ],
       "Status": 1,
-      "Load": 1
+      "Load": 0
     },
     {
       "Name": "IQ#4",
@@ -62010,7 +62045,7 @@
       "Features": 4,
       "Region": null,
       "City": "Baghdad",
-      "Score": 2.9942244346,
+      "Score": 2.9959358931,
       "HostCountry": "FR",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -62045,7 +62080,7 @@
       "Features": 4,
       "Region": null,
       "City": "Amman",
-      "Score": 2.9922104651,
+      "Score": 2.9932038605,
       "HostCountry": "FR",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -62069,7 +62104,7 @@
         }
       ],
       "Status": 1,
-      "Load": 9
+      "Load": 6
     },
     {
       "Name": "JO#2",
@@ -62080,7 +62115,7 @@
       "Features": 4,
       "Region": null,
       "City": "Amman",
-      "Score": 2.9926262186,
+      "Score": 2.9878406244,
       "HostCountry": "FR",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -62104,7 +62139,7 @@
         }
       ],
       "Status": 1,
-      "Load": 10
+      "Load": 6
     },
     {
       "Name": "JO#3",
@@ -62115,7 +62150,7 @@
       "Features": 4,
       "Region": null,
       "City": "Amman",
-      "Score": 2.9920588634,
+      "Score": 2.9883569552,
       "HostCountry": "FR",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -62139,7 +62174,7 @@
         }
       ],
       "Status": 1,
-      "Load": 8
+      "Load": 3
     },
     {
       "Name": "JO#4",
@@ -62150,7 +62185,7 @@
       "Features": 4,
       "Region": null,
       "City": "Amman",
-      "Score": 2.9905727873,
+      "Score": 2.995925559,
       "HostCountry": "FR",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -62174,7 +62209,7 @@
         }
       ],
       "Status": 1,
-      "Load": 12
+      "Load": 8
     },
     {
       "Name": "KE#1",
@@ -62185,7 +62220,7 @@
       "Features": 4,
       "Region": null,
       "City": "Nairobi",
-      "Score": 2.9999254108,
+      "Score": 2.9958927382000002,
       "HostCountry": "FR",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -62220,7 +62255,7 @@
       "Features": 4,
       "Region": null,
       "City": "Nairobi",
-      "Score": 2.9962196306999997,
+      "Score": 2.9903063041999998,
       "HostCountry": "FR",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -62255,7 +62290,7 @@
       "Features": 4,
       "Region": null,
       "City": "Nairobi",
-      "Score": 2.990831226,
+      "Score": 2.9933888629,
       "HostCountry": "FR",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -62279,7 +62314,7 @@
         }
       ],
       "Status": 1,
-      "Load": 1
+      "Load": 2
     },
     {
       "Name": "KE#4",
@@ -62290,7 +62325,7 @@
       "Features": 4,
       "Region": null,
       "City": "Nairobi",
-      "Score": 2.9914292416,
+      "Score": 2.9902561896,
       "HostCountry": "FR",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -62325,7 +62360,7 @@
       "Features": 4,
       "Region": null,
       "City": "Port Louis",
-      "Score": 2.9936842588,
+      "Score": 2.9986867591,
       "HostCountry": "FR",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -62349,7 +62384,7 @@
         }
       ],
       "Status": 1,
-      "Load": 2
+      "Load": 0
     },
     {
       "Name": "MU#26",
@@ -62360,7 +62395,7 @@
       "Features": 4,
       "Region": null,
       "City": "Port Louis",
-      "Score": 2.9994263774,
+      "Score": 2.9999198095,
       "HostCountry": "FR",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -62384,7 +62419,7 @@
         }
       ],
       "Status": 1,
-      "Load": 7
+      "Load": 5
     },
     {
       "Name": "MU#27",
@@ -62395,7 +62430,7 @@
       "Features": 4,
       "Region": null,
       "City": "Port Louis",
-      "Score": 2.9954856424000003,
+      "Score": 2.9971749095,
       "HostCountry": "FR",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -62419,7 +62454,7 @@
         }
       ],
       "Status": 1,
-      "Load": 9
+      "Load": 6
     },
     {
       "Name": "MU#28",
@@ -62430,7 +62465,7 @@
       "Features": 4,
       "Region": null,
       "City": "Port Louis",
-      "Score": 2.9965588941,
+      "Score": 2.9927239759,
       "HostCountry": "FR",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -62454,7 +62489,7 @@
         }
       ],
       "Status": 1,
-      "Load": 3
+      "Load": 1
     },
     {
       "Name": "SD#25",
@@ -62465,7 +62500,7 @@
       "Features": 4,
       "Region": null,
       "City": "Khartoum",
-      "Score": 2.9949327298,
+      "Score": 2.9957656378,
       "HostCountry": "FR",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -62500,7 +62535,7 @@
       "Features": 4,
       "Region": null,
       "City": "Khartoum",
-      "Score": 2.9984847699,
+      "Score": 2.9967052184,
       "HostCountry": "FR",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -62524,7 +62559,7 @@
         }
       ],
       "Status": 1,
-      "Load": 6
+      "Load": 5
     },
     {
       "Name": "SD#27",
@@ -62535,7 +62570,7 @@
       "Features": 4,
       "Region": null,
       "City": "Khartoum",
-      "Score": 2.9972616126,
+      "Score": 2.9977683381,
       "HostCountry": "FR",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -62570,7 +62605,7 @@
       "Features": 4,
       "Region": null,
       "City": "Khartoum",
-      "Score": 2.9980488763,
+      "Score": 2.9980056564,
       "HostCountry": "FR",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -62594,7 +62629,7 @@
         }
       ],
       "Status": 1,
-      "Load": 3
+      "Load": 2
     },
     {
       "Name": "SO#25",
@@ -62605,7 +62640,7 @@
       "Features": 4,
       "Region": null,
       "City": "Mogadishu",
-      "Score": 2.9926385973,
+      "Score": 2.9960833065,
       "HostCountry": "FR",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -62629,7 +62664,7 @@
         }
       ],
       "Status": 1,
-      "Load": 4
+      "Load": 15
     },
     {
       "Name": "SO#26",
@@ -62640,7 +62675,7 @@
       "Features": 4,
       "Region": null,
       "City": "Mogadishu",
-      "Score": 2.9917561474,
+      "Score": 2.9900558454,
       "HostCountry": "FR",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -62664,7 +62699,7 @@
         }
       ],
       "Status": 1,
-      "Load": 2
+      "Load": 14
     },
     {
       "Name": "SO#27",
@@ -62675,7 +62710,7 @@
       "Features": 4,
       "Region": null,
       "City": "Mogadishu",
-      "Score": 2.9971308173,
+      "Score": 2.9927463578999998,
       "HostCountry": "FR",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -62699,7 +62734,7 @@
         }
       ],
       "Status": 1,
-      "Load": 2
+      "Load": 13
     },
     {
       "Name": "SO#28",
@@ -62710,7 +62745,7 @@
       "Features": 4,
       "Region": null,
       "City": "Mogadishu",
-      "Score": 2.9934965642,
+      "Score": 2.9918976638,
       "HostCountry": "FR",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -62734,7 +62769,7 @@
         }
       ],
       "Status": 1,
-      "Load": 3
+      "Load": 15
     },
     {
       "Name": "KW#1",
@@ -62745,7 +62780,7 @@
       "Features": 4,
       "Region": null,
       "City": "Kuwait City",
-      "Score": 2.9933113061,
+      "Score": 2.9887050199000003,
       "HostCountry": "FR",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -62769,7 +62804,7 @@
         }
       ],
       "Status": 1,
-      "Load": 6
+      "Load": 7
     },
     {
       "Name": "KW#2",
@@ -62780,7 +62815,7 @@
       "Features": 4,
       "Region": null,
       "City": "Kuwait City",
-      "Score": 2.9966550992,
+      "Score": 2.9970048586,
       "HostCountry": "FR",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -62804,7 +62839,7 @@
         }
       ],
       "Status": 1,
-      "Load": 2
+      "Load": 4
     },
     {
       "Name": "KW#3",
@@ -62815,7 +62850,7 @@
       "Features": 4,
       "Region": null,
       "City": "Kuwait City",
-      "Score": 2.9981150388,
+      "Score": 2.9917069472,
       "HostCountry": "FR",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -62839,7 +62874,7 @@
         }
       ],
       "Status": 1,
-      "Load": 4
+      "Load": 5
     },
     {
       "Name": "KW#4",
@@ -62850,7 +62885,7 @@
       "Features": 4,
       "Region": null,
       "City": "Kuwait City",
-      "Score": 2.9937602563,
+      "Score": 2.9891697556,
       "HostCountry": "FR",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -62874,7 +62909,7 @@
         }
       ],
       "Status": 1,
-      "Load": 9
+      "Load": 10
     },
     {
       "Name": "LY#1",
@@ -62885,7 +62920,7 @@
       "Features": 4,
       "Region": null,
       "City": "Tripoli",
-      "Score": 2.9925692943,
+      "Score": 2.9913552685,
       "HostCountry": "FR",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -62909,7 +62944,7 @@
         }
       ],
       "Status": 1,
-      "Load": 5
+      "Load": 4
     },
     {
       "Name": "LY#2",
@@ -62920,7 +62955,7 @@
       "Features": 4,
       "Region": null,
       "City": "Tripoli",
-      "Score": 2.9913065999,
+      "Score": 2.9953187534,
       "HostCountry": "FR",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -62944,7 +62979,7 @@
         }
       ],
       "Status": 1,
-      "Load": 6
+      "Load": 5
     },
     {
       "Name": "LY#3",
@@ -62955,7 +62990,7 @@
       "Features": 4,
       "Region": null,
       "City": "Tripoli",
-      "Score": 2.9894180679,
+      "Score": 2.9866033916,
       "HostCountry": "FR",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -62979,7 +63014,7 @@
         }
       ],
       "Status": 1,
-      "Load": 6
+      "Load": 5
     },
     {
       "Name": "LY#4",
@@ -62990,7 +63025,7 @@
       "Features": 4,
       "Region": null,
       "City": "Tripoli",
-      "Score": 2.9918592832,
+      "Score": 2.9947059466,
       "HostCountry": "FR",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -63014,7 +63049,7 @@
         }
       ],
       "Status": 1,
-      "Load": 6
+      "Load": 5
     },
     {
       "Name": "OM#1",
@@ -63025,7 +63060,7 @@
       "Features": 12,
       "Region": null,
       "City": "Muscat",
-      "Score": 2.9989873529,
+      "Score": 2.9948439831,
       "HostCountry": "FR",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -63049,7 +63084,7 @@
         }
       ],
       "Status": 1,
-      "Load": 9
+      "Load": 8
     },
     {
       "Name": "OM#2",
@@ -63060,7 +63095,7 @@
       "Features": 12,
       "Region": null,
       "City": "Muscat",
-      "Score": 2.9904162413,
+      "Score": 2.9888497297,
       "HostCountry": "FR",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -63084,7 +63119,7 @@
         }
       ],
       "Status": 1,
-      "Load": 8
+      "Load": 6
     },
     {
       "Name": "OM#3",
@@ -63095,7 +63130,7 @@
       "Features": 12,
       "Region": null,
       "City": "Muscat",
-      "Score": 2.9916632769,
+      "Score": 2.9897843986,
       "HostCountry": "FR",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -63119,7 +63154,7 @@
         }
       ],
       "Status": 1,
-      "Load": 8
+      "Load": 7
     },
     {
       "Name": "OM#4",
@@ -63130,7 +63165,7 @@
       "Features": 12,
       "Region": null,
       "City": "Muscat",
-      "Score": 2.9905762322,
+      "Score": 2.994481791,
       "HostCountry": "FR",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -63154,7 +63189,7 @@
         }
       ],
       "Status": 1,
-      "Load": 3
+      "Load": 2
     },
     {
       "Name": "SA#1",
@@ -63165,7 +63200,7 @@
       "Features": 4,
       "Region": null,
       "City": "Riyadh",
-      "Score": 2.9992112563999997,
+      "Score": 2.9919485471,
       "HostCountry": "FR",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -63189,7 +63224,7 @@
         }
       ],
       "Status": 1,
-      "Load": 19
+      "Load": 20
     },
     {
       "Name": "SA#10",
@@ -63200,7 +63235,7 @@
       "Features": 4,
       "Region": null,
       "City": "Riyadh",
-      "Score": 2.9965927742,
+      "Score": 2.989487406,
       "HostCountry": "FR",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -63224,7 +63259,7 @@
         }
       ],
       "Status": 1,
-      "Load": 27
+      "Load": 28
     },
     {
       "Name": "SA#11",
@@ -63235,7 +63270,7 @@
       "Features": 4,
       "Region": null,
       "City": "Riyadh",
-      "Score": 2.9992075695000002,
+      "Score": 2.9948750357,
       "HostCountry": "FR",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -63259,7 +63294,7 @@
         }
       ],
       "Status": 1,
-      "Load": 20
+      "Load": 21
     },
     {
       "Name": "SA#12",
@@ -63270,7 +63305,7 @@
       "Features": 4,
       "Region": null,
       "City": "Riyadh",
-      "Score": 2.9949909513,
+      "Score": 2.9950350432,
       "HostCountry": "FR",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -63305,7 +63340,7 @@
       "Features": 4,
       "Region": null,
       "City": "Damascus",
-      "Score": 2.9928250219,
+      "Score": 2.9886705278,
       "HostCountry": "FR",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -63329,7 +63364,7 @@
         }
       ],
       "Status": 1,
-      "Load": 8
+      "Load": 16
     },
     {
       "Name": "SY#2",
@@ -63340,7 +63375,7 @@
       "Features": 4,
       "Region": null,
       "City": "Damascus",
-      "Score": 2.9980814065,
+      "Score": 2.9890501708,
       "HostCountry": "FR",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -63364,7 +63399,7 @@
         }
       ],
       "Status": 1,
-      "Load": 7
+      "Load": 15
     },
     {
       "Name": "SY#3",
@@ -63375,7 +63410,7 @@
       "Features": 4,
       "Region": null,
       "City": "Damascus",
-      "Score": 2.9980393537,
+      "Score": 2.9893057013,
       "HostCountry": "FR",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -63399,7 +63434,7 @@
         }
       ],
       "Status": 1,
-      "Load": 4
+      "Load": 13
     },
     {
       "Name": "SY#4",
@@ -63410,7 +63445,7 @@
       "Features": 4,
       "Region": null,
       "City": "Damascus",
-      "Score": 2.9895660126,
+      "Score": 2.9888545458999998,
       "HostCountry": "FR",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -63434,7 +63469,7 @@
         }
       ],
       "Status": 1,
-      "Load": 1
+      "Load": 9
     },
     {
       "Name": "TN#1",
@@ -63445,7 +63480,7 @@
       "Features": 4,
       "Region": null,
       "City": "Tunis",
-      "Score": 2.9901238128,
+      "Score": 2.989529194,
       "HostCountry": "FR",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -63469,7 +63504,7 @@
         }
       ],
       "Status": 1,
-      "Load": 7
+      "Load": 5
     },
     {
       "Name": "TN#2",
@@ -63480,7 +63515,7 @@
       "Features": 4,
       "Region": null,
       "City": "Tunis",
-      "Score": 2.9939512252,
+      "Score": 2.9906853552,
       "HostCountry": "FR",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -63504,7 +63539,7 @@
         }
       ],
       "Status": 1,
-      "Load": 9
+      "Load": 6
     },
     {
       "Name": "TN#3",
@@ -63515,7 +63550,7 @@
       "Features": 4,
       "Region": null,
       "City": "Tunis",
-      "Score": 2.990763081,
+      "Score": 2.9950661198,
       "HostCountry": "FR",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -63550,7 +63585,7 @@
       "Features": 4,
       "Region": null,
       "City": "Tunis",
-      "Score": 2.9951107985,
+      "Score": 2.9902845537,
       "HostCountry": "FR",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -63574,7 +63609,7 @@
         }
       ],
       "Status": 1,
-      "Load": 8
+      "Load": 6
     },
     {
       "Name": "TZ#1",
@@ -63585,7 +63620,7 @@
       "Features": 12,
       "Region": null,
       "City": "Dodoma",
-      "Score": 2.9972591543,
+      "Score": 2.9984871025,
       "HostCountry": "FR",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -63620,7 +63655,7 @@
       "Features": 12,
       "Region": null,
       "City": "Dodoma",
-      "Score": 2.9949364607,
+      "Score": 2.9899705955,
       "HostCountry": "FR",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -63655,7 +63690,7 @@
       "Features": 12,
       "Region": null,
       "City": "Dodoma",
-      "Score": 2.9944756563,
+      "Score": 2.9922538437,
       "HostCountry": "FR",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -63690,7 +63725,7 @@
       "Features": 12,
       "Region": null,
       "City": "Dodoma",
-      "Score": 2.9907725029,
+      "Score": 2.9906601661,
       "HostCountry": "FR",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -63714,7 +63749,7 @@
         }
       ],
       "Status": 1,
-      "Load": 2
+      "Load": 0
     },
     {
       "Name": "AF#1",
@@ -63725,7 +63760,7 @@
       "Features": 4,
       "Region": null,
       "City": "Kabul",
-      "Score": 2.9971530596,
+      "Score": 2.9969421138,
       "HostCountry": "FR",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -63749,7 +63784,7 @@
         }
       ],
       "Status": 1,
-      "Load": 22
+      "Load": 20
     },
     {
       "Name": "AF#2",
@@ -63760,7 +63795,7 @@
       "Features": 4,
       "Region": null,
       "City": "Kabul",
-      "Score": 2.9923727481,
+      "Score": 2.9908468776,
       "HostCountry": "FR",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -63784,7 +63819,7 @@
         }
       ],
       "Status": 1,
-      "Load": 18
+      "Load": 16
     },
     {
       "Name": "AF#3",
@@ -63795,7 +63830,7 @@
       "Features": 4,
       "Region": null,
       "City": "Kabul",
-      "Score": 2.9971770843,
+      "Score": 2.9979363979,
       "HostCountry": "FR",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -63819,7 +63854,7 @@
         }
       ],
       "Status": 1,
-      "Load": 15
+      "Load": 12
     },
     {
       "Name": "YE#1",
@@ -63830,7 +63865,7 @@
       "Features": 4,
       "Region": null,
       "City": "Sana'a",
-      "Score": 2.9921505661,
+      "Score": 2.9962707401,
       "HostCountry": "FR",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -63865,7 +63900,7 @@
       "Features": 4,
       "Region": null,
       "City": "Sana'a",
-      "Score": 2.9944948453,
+      "Score": 2.9959704341,
       "HostCountry": "FR",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -63889,7 +63924,7 @@
         }
       ],
       "Status": 1,
-      "Load": 8
+      "Load": 6
     },
     {
       "Name": "YE#3",
@@ -63900,7 +63935,7 @@
       "Features": 4,
       "Region": null,
       "City": "Sana'a",
-      "Score": 2.9977601310999997,
+      "Score": 2.9896231052999998,
       "HostCountry": "FR",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -63935,7 +63970,7 @@
       "Features": 4,
       "Region": null,
       "City": "Sana'a",
-      "Score": 2.9964538978,
+      "Score": 2.9983383446,
       "HostCountry": "FR",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -63959,7 +63994,7 @@
         }
       ],
       "Status": 1,
-      "Load": 3
+      "Load": 0
     },
     {
       "Name": "EG#13",
@@ -63970,7 +64005,7 @@
       "Features": 12,
       "Region": null,
       "City": "Cairo",
-      "Score": 2.9908392483,
+      "Score": 2.9955964568,
       "HostCountry": "FR",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -63994,7 +64029,7 @@
         }
       ],
       "Status": 1,
-      "Load": 12
+      "Load": 6
     },
     {
       "Name": "EG#14",
@@ -64005,7 +64040,7 @@
       "Features": 12,
       "Region": null,
       "City": "Cairo",
-      "Score": 2.9982614519,
+      "Score": 2.990113118,
       "HostCountry": "FR",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -64029,7 +64064,7 @@
         }
       ],
       "Status": 1,
-      "Load": 3
+      "Load": 0
     },
     {
       "Name": "EG#15",
@@ -64040,7 +64075,7 @@
       "Features": 12,
       "Region": null,
       "City": "Cairo",
-      "Score": 2.9933034262,
+      "Score": 2.991430975,
       "HostCountry": "FR",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -64064,7 +64099,7 @@
         }
       ],
       "Status": 1,
-      "Load": 3
+      "Load": 0
     },
     {
       "Name": "EG#16",
@@ -64075,7 +64110,7 @@
       "Features": 12,
       "Region": null,
       "City": "Cairo",
-      "Score": 2.9986329825,
+      "Score": 2.9929163932,
       "HostCountry": "FR",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -64099,7 +64134,7 @@
         }
       ],
       "Status": 1,
-      "Load": 3
+      "Load": 0
     },
     {
       "Name": "DK#100",
@@ -64110,7 +64145,7 @@
       "Features": 8,
       "Region": null,
       "City": "Copenhagen",
-      "Score": 2.9939115599,
+      "Score": 2.9881528172,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -64134,7 +64169,7 @@
         }
       ],
       "Status": 1,
-      "Load": 15
+      "Load": 23
     },
     {
       "Name": "DK#101",
@@ -64145,7 +64180,7 @@
       "Features": 8,
       "Region": null,
       "City": "Copenhagen",
-      "Score": 2.9908053704,
+      "Score": 2.9893841451,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -64169,7 +64204,7 @@
         }
       ],
       "Status": 1,
-      "Load": 12
+      "Load": 18
     },
     {
       "Name": "DK#102",
@@ -64180,7 +64215,7 @@
       "Features": 8,
       "Region": null,
       "City": "Copenhagen",
-      "Score": 2.9950751031,
+      "Score": 2.9882656826,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -64204,7 +64239,7 @@
         }
       ],
       "Status": 1,
-      "Load": 20
+      "Load": 27
     },
     {
       "Name": "DK#103",
@@ -64215,7 +64250,7 @@
       "Features": 8,
       "Region": null,
       "City": "Copenhagen",
-      "Score": 2.9901960786,
+      "Score": 2.9908243775,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -64239,7 +64274,7 @@
         }
       ],
       "Status": 1,
-      "Load": 14
+      "Load": 22
     },
     {
       "Name": "CH#402",
@@ -64250,7 +64285,7 @@
       "Features": 28,
       "Region": null,
       "City": "Zurich",
-      "Score": 2.9949156381,
+      "Score": 2.9889221103,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -64274,7 +64309,7 @@
         }
       ],
       "Status": 1,
-      "Load": 55
+      "Load": 60
     },
     {
       "Name": "CH#403",
@@ -64285,7 +64320,7 @@
       "Features": 28,
       "Region": null,
       "City": "Zurich",
-      "Score": 2.9899872777,
+      "Score": 2.9904925558,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -64309,7 +64344,7 @@
         }
       ],
       "Status": 1,
-      "Load": 61
+      "Load": 67
     },
     {
       "Name": "CH#404",
@@ -64320,7 +64355,7 @@
       "Features": 28,
       "Region": null,
       "City": "Zurich",
-      "Score": 2.9944896677,
+      "Score": 2.9903946012000002,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -64344,7 +64379,7 @@
         }
       ],
       "Status": 1,
-      "Load": 52
+      "Load": 59
     },
     {
       "Name": "CH#405",
@@ -64355,7 +64390,7 @@
       "Features": 28,
       "Region": null,
       "City": "Zurich",
-      "Score": 2.9922486575000002,
+      "Score": 2.9914637403,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -64379,7 +64414,7 @@
         }
       ],
       "Status": 1,
-      "Load": 60
+      "Load": 65
     },
     {
       "Name": "IS-BG#1",
@@ -64390,7 +64425,7 @@
       "Features": 17,
       "Region": null,
       "City": "Sofia",
-      "Score": 2.9922771318,
+      "Score": 2.9971940909,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -64414,7 +64449,7 @@
         }
       ],
       "Status": 1,
-      "Load": 22
+      "Load": 29
     },
     {
       "Name": "SE-RS#1",
@@ -64425,7 +64460,7 @@
       "Features": 1,
       "Region": null,
       "City": "Belgrade",
-      "Score": 2.9898981309,
+      "Score": 2.9965166262,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -64460,7 +64495,7 @@
       "Features": 1,
       "Region": null,
       "City": "Kyiv",
-      "Score": 2.9888555474,
+      "Score": 2.9888503355,
       "HostCountry": "RO",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -64484,7 +64519,7 @@
         }
       ],
       "Status": 1,
-      "Load": 1
+      "Load": 3
     },
     {
       "Name": "US-TX#269",
@@ -64495,7 +64530,7 @@
       "Features": 12,
       "Region": null,
       "City": "McAllen",
-      "Score": 1.9747105223,
+      "Score": 1.9677030879,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -64519,7 +64554,7 @@
         }
       ],
       "Status": 1,
-      "Load": 29
+      "Load": 48
     },
     {
       "Name": "US-TX#270",
@@ -64530,7 +64565,7 @@
       "Features": 12,
       "Region": null,
       "City": "McAllen",
-      "Score": 1.9732834991,
+      "Score": 1.9667199711999999,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -64554,7 +64589,7 @@
         }
       ],
       "Status": 1,
-      "Load": 20
+      "Load": 39
     },
     {
       "Name": "US-TX#271",
@@ -64565,7 +64600,7 @@
       "Features": 12,
       "Region": null,
       "City": "McAllen",
-      "Score": 1.9749081916,
+      "Score": 1.9613098212,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -64589,7 +64624,7 @@
         }
       ],
       "Status": 1,
-      "Load": 21
+      "Load": 40
     },
     {
       "Name": "US-TX#272",
@@ -64600,7 +64635,7 @@
       "Features": 12,
       "Region": null,
       "City": "McAllen",
-      "Score": 1.9684637666,
+      "Score": 1.9639552752,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -64624,7 +64659,7 @@
         }
       ],
       "Status": 1,
-      "Load": 28
+      "Load": 47
     },
     {
       "Name": "US-TN#1",
@@ -64635,7 +64670,7 @@
       "Features": 12,
       "Region": null,
       "City": "Memphis",
-      "Score": 1.9735997245,
+      "Score": 1.9021712112,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -64670,7 +64705,7 @@
       "Features": 12,
       "Region": null,
       "City": "Memphis",
-      "Score": 1.9789065572,
+      "Score": 1.9101466250999999,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -64705,7 +64740,7 @@
       "Features": 12,
       "Region": null,
       "City": "Memphis",
-      "Score": 1.9717465345,
+      "Score": 1.9064901519,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -64740,7 +64775,7 @@
       "Features": 12,
       "Region": null,
       "City": "Memphis",
-      "Score": 1.9777246265000001,
+      "Score": 1.9005857847,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -64764,7 +64799,7 @@
         }
       ],
       "Status": 1,
-      "Load": 58
+      "Load": 59
     },
     {
       "Name": "CM#5",
@@ -64775,7 +64810,7 @@
       "Features": 12,
       "Region": null,
       "City": "Yaound\u00e9",
-      "Score": 2.9907480032000002,
+      "Score": 2.9888460836,
       "HostCountry": "UK",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -64810,7 +64845,7 @@
       "Features": 12,
       "Region": null,
       "City": "Yaound\u00e9",
-      "Score": 2.9914425679,
+      "Score": 2.9947819208,
       "HostCountry": "UK",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -64845,7 +64880,7 @@
       "Features": 12,
       "Region": null,
       "City": "Yaound\u00e9",
-      "Score": 2.9897632602,
+      "Score": 2.9937335654,
       "HostCountry": "UK",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -64869,7 +64904,7 @@
         }
       ],
       "Status": 1,
-      "Load": 6
+      "Load": 5
     },
     {
       "Name": "CM#8",
@@ -64880,7 +64915,7 @@
       "Features": 12,
       "Region": null,
       "City": "Yaound\u00e9",
-      "Score": 2.9954454793,
+      "Score": 2.99499792,
       "HostCountry": "UK",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -64915,7 +64950,7 @@
       "Features": 12,
       "Region": null,
       "City": "Kampala",
-      "Score": 2.9968092883,
+      "Score": 2.9965476807,
       "HostCountry": "UK",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -64939,7 +64974,7 @@
         }
       ],
       "Status": 1,
-      "Load": 0
+      "Load": 1
     },
     {
       "Name": "UG#6",
@@ -64950,7 +64985,7 @@
       "Features": 12,
       "Region": null,
       "City": "Kampala",
-      "Score": 2.9968119510999998,
+      "Score": 2.9971281048,
       "HostCountry": "UK",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -64985,7 +65020,7 @@
       "Features": 12,
       "Region": null,
       "City": "Kampala",
-      "Score": 2.9995719735,
+      "Score": 2.9906550266,
       "HostCountry": "UK",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -65020,7 +65055,7 @@
       "Features": 12,
       "Region": null,
       "City": "Kampala",
-      "Score": 2.9943044783,
+      "Score": 2.9974913855,
       "HostCountry": "UK",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -65055,7 +65090,7 @@
       "Features": 24,
       "Region": null,
       "City": "Toronto",
-      "Score": 2.9795528371,
+      "Score": 2.9336329075,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -65079,7 +65114,7 @@
         }
       ],
       "Status": 1,
-      "Load": 57
+      "Load": 55
     },
     {
       "Name": "CA#605",
@@ -65090,7 +65125,7 @@
       "Features": 24,
       "Region": null,
       "City": "Toronto",
-      "Score": 2.9753885327000003,
+      "Score": 2.9296317476000002,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -65114,7 +65149,7 @@
         }
       ],
       "Status": 1,
-      "Load": 55
+      "Load": 53
     },
     {
       "Name": "CA#606",
@@ -65125,7 +65160,7 @@
       "Features": 24,
       "Region": null,
       "City": "Toronto",
-      "Score": 2.979401981,
+      "Score": 2.9284871468,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -65149,7 +65184,7 @@
         }
       ],
       "Status": 1,
-      "Load": 56
+      "Load": 54
     },
     {
       "Name": "CA#607",
@@ -65160,7 +65195,7 @@
       "Features": 24,
       "Region": null,
       "City": "Toronto",
-      "Score": 2.9786396575,
+      "Score": 2.9345653541,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -65184,7 +65219,7 @@
         }
       ],
       "Status": 1,
-      "Load": 55
+      "Load": 53
     },
     {
       "Name": "HU#37",
@@ -65195,7 +65230,7 @@
       "Features": 12,
       "Region": null,
       "City": "Budapest",
-      "Score": 2.9910197818,
+      "Score": 2.9923187686,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -65219,7 +65254,7 @@
         }
       ],
       "Status": 1,
-      "Load": 33
+      "Load": 26
     },
     {
       "Name": "HU#38",
@@ -65230,7 +65265,7 @@
       "Features": 12,
       "Region": null,
       "City": "Budapest",
-      "Score": 2.9945707446,
+      "Score": 2.9953481161999997,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -65254,7 +65289,7 @@
         }
       ],
       "Status": 1,
-      "Load": 34
+      "Load": 25
     },
     {
       "Name": "HU#39",
@@ -65265,7 +65300,7 @@
       "Features": 12,
       "Region": null,
       "City": "Budapest",
-      "Score": 2.9908306228,
+      "Score": 2.991830061,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -65289,7 +65324,7 @@
         }
       ],
       "Status": 1,
-      "Load": 33
+      "Load": 25
     },
     {
       "Name": "HU#40",
@@ -65300,7 +65335,7 @@
       "Features": 12,
       "Region": null,
       "City": "Budapest",
-      "Score": 2.9974023602999997,
+      "Score": 2.9897576313,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -65324,7 +65359,7 @@
         }
       ],
       "Status": 1,
-      "Load": 42
+      "Load": 34
     },
     {
       "Name": "IS-HU#1",
@@ -65335,7 +65370,7 @@
       "Features": 1,
       "Region": null,
       "City": "Budapest",
-      "Score": 2.9903117784999997,
+      "Score": 2.9908223685,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -65359,7 +65394,7 @@
         }
       ],
       "Status": 1,
-      "Load": 35
+      "Load": 28
     },
     {
       "Name": "US-UT#100",
@@ -65370,7 +65405,7 @@
       "Features": 12,
       "Region": null,
       "City": "Salt Lake City",
-      "Score": 1.9826842945999998,
+      "Score": 1.9673489263000001,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -65394,7 +65429,7 @@
         }
       ],
       "Status": 1,
-      "Load": 69
+      "Load": 61
     },
     {
       "Name": "US-UT#101",
@@ -65405,7 +65440,7 @@
       "Features": 12,
       "Region": null,
       "City": "Salt Lake City",
-      "Score": 1.9782696944,
+      "Score": 1.9611595797999999,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -65429,7 +65464,7 @@
         }
       ],
       "Status": 1,
-      "Load": 74
+      "Load": 67
     },
     {
       "Name": "US-UT#102",
@@ -65440,7 +65475,7 @@
       "Features": 12,
       "Region": null,
       "City": "Salt Lake City",
-      "Score": 1.9836838465,
+      "Score": 1.9599641661,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -65464,7 +65499,7 @@
         }
       ],
       "Status": 1,
-      "Load": 71
+      "Load": 64
     },
     {
       "Name": "US-UT#103",
@@ -65475,7 +65510,7 @@
       "Features": 12,
       "Region": null,
       "City": "Salt Lake City",
-      "Score": 1.9816996294,
+      "Score": 1.9596305954,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -65499,7 +65534,7 @@
         }
       ],
       "Status": 1,
-      "Load": 73
+      "Load": 64
     },
     {
       "Name": "PL#100",
@@ -65510,7 +65545,7 @@
       "Features": 12,
       "Region": null,
       "City": "Warsaw",
-      "Score": 2.9920521166,
+      "Score": 2.993249533,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -65534,7 +65569,7 @@
         }
       ],
       "Status": 1,
-      "Load": 32
+      "Load": 17
     },
     {
       "Name": "PL#101",
@@ -65545,7 +65580,7 @@
       "Features": 12,
       "Region": null,
       "City": "Warsaw",
-      "Score": 2.988248463,
+      "Score": 2.9906139169,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -65569,7 +65604,7 @@
         }
       ],
       "Status": 1,
-      "Load": 19
+      "Load": 28
     },
     {
       "Name": "PL#102",
@@ -65580,7 +65615,7 @@
       "Features": 12,
       "Region": null,
       "City": "Warsaw",
-      "Score": 2.9874647176,
+      "Score": 2.9894437272,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -65604,7 +65639,7 @@
         }
       ],
       "Status": 1,
-      "Load": 22
+      "Load": 31
     },
     {
       "Name": "PL#103",
@@ -65615,7 +65650,7 @@
       "Features": 12,
       "Region": null,
       "City": "Warsaw",
-      "Score": 2.9892373903,
+      "Score": 2.98891743,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -65639,7 +65674,7 @@
         }
       ],
       "Status": 1,
-      "Load": 16
+      "Load": 24
     },
     {
       "Name": "SE-PL#1",
@@ -65650,7 +65685,7 @@
       "Features": 1,
       "Region": null,
       "City": "Warsaw",
-      "Score": 2.9963465485,
+      "Score": 2.989551706,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -65674,7 +65709,7 @@
         }
       ],
       "Status": 1,
-      "Load": 26
+      "Load": 10
     },
     {
       "Name": "SE-ES#1",
@@ -65685,7 +65720,7 @@
       "Features": 17,
       "Region": null,
       "City": "Madrid",
-      "Score": 2.9986085925,
+      "Score": 2.9965687731,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -65709,7 +65744,7 @@
         }
       ],
       "Status": 1,
-      "Load": 41
+      "Load": 25
     },
     {
       "Name": "AM#1",
@@ -65720,7 +65755,7 @@
       "Features": 12,
       "Region": null,
       "City": "Yerevan",
-      "Score": 2.9888516513,
+      "Score": 2.9939839828,
       "HostCountry": "RO",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -65744,7 +65779,7 @@
         }
       ],
       "Status": 1,
-      "Load": 12
+      "Load": 17
     },
     {
       "Name": "AM#10",
@@ -65755,7 +65790,7 @@
       "Features": 12,
       "Region": null,
       "City": "Yerevan",
-      "Score": 2.9893634395,
+      "Score": 2.9906938469,
       "HostCountry": "RO",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -65779,7 +65814,7 @@
         }
       ],
       "Status": 1,
-      "Load": 6
+      "Load": 12
     },
     {
       "Name": "AM#11",
@@ -65790,7 +65825,7 @@
       "Features": 12,
       "Region": null,
       "City": "Yerevan",
-      "Score": 2.9888879599,
+      "Score": 2.9889763092,
       "HostCountry": "RO",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -65814,7 +65849,7 @@
         }
       ],
       "Status": 1,
-      "Load": 12
+      "Load": 17
     },
     {
       "Name": "AM#12",
@@ -65825,7 +65860,7 @@
       "Features": 12,
       "Region": null,
       "City": "Yerevan",
-      "Score": 2.9949194715000003,
+      "Score": 2.9898195063,
       "HostCountry": "RO",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -65849,7 +65884,7 @@
         }
       ],
       "Status": 1,
-      "Load": 10
+      "Load": 15
     },
     {
       "Name": "LA#1",
@@ -65860,7 +65895,7 @@
       "Features": 12,
       "Region": null,
       "City": "Vientiane",
-      "Score": 2.9892059588,
+      "Score": 2.9968276601,
       "HostCountry": "SG",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -65884,7 +65919,7 @@
         }
       ],
       "Status": 1,
-      "Load": 22
+      "Load": 16
     },
     {
       "Name": "LA#10",
@@ -65895,7 +65930,7 @@
       "Features": 12,
       "Region": null,
       "City": "Vientiane",
-      "Score": 2.9928148403,
+      "Score": 2.9966125855,
       "HostCountry": "SG",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -65919,7 +65954,7 @@
         }
       ],
       "Status": 1,
-      "Load": 14
+      "Load": 7
     },
     {
       "Name": "LA#11",
@@ -65930,7 +65965,7 @@
       "Features": 12,
       "Region": null,
       "City": "Vientiane",
-      "Score": 2.9942848729,
+      "Score": 2.9954737272000003,
       "HostCountry": "SG",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -65954,7 +65989,7 @@
         }
       ],
       "Status": 1,
-      "Load": 18
+      "Load": 13
     },
     {
       "Name": "LA#12",
@@ -65965,7 +66000,7 @@
       "Features": 12,
       "Region": null,
       "City": "Vientiane",
-      "Score": 2.9932367891,
+      "Score": 2.9924825708,
       "HostCountry": "SG",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -65989,7 +66024,7 @@
         }
       ],
       "Status": 1,
-      "Load": 13
+      "Load": 7
     },
     {
       "Name": "MN#1",
@@ -66000,7 +66035,7 @@
       "Features": 12,
       "Region": null,
       "City": "Ulaanbaatar",
-      "Score": 2.9906820213,
+      "Score": 2.993268139,
       "HostCountry": "JP",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -66024,7 +66059,7 @@
         }
       ],
       "Status": 1,
-      "Load": 15
+      "Load": 16
     },
     {
       "Name": "MN#10",
@@ -66035,7 +66070,7 @@
       "Features": 12,
       "Region": null,
       "City": "Ulaanbaatar",
-      "Score": 2.9881550221,
+      "Score": 2.9877801114,
       "HostCountry": "JP",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -66070,7 +66105,7 @@
       "Features": 12,
       "Region": null,
       "City": "Ulaanbaatar",
-      "Score": 2.9902577683000002,
+      "Score": 2.9927786124,
       "HostCountry": "JP",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -66094,7 +66129,7 @@
         }
       ],
       "Status": 1,
-      "Load": 11
+      "Load": 13
     },
     {
       "Name": "MN#12",
@@ -66105,7 +66140,7 @@
       "Features": 12,
       "Region": null,
       "City": "Ulaanbaatar",
-      "Score": 2.988666836,
+      "Score": 2.9876926623999998,
       "HostCountry": "JP",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -66129,7 +66164,7 @@
         }
       ],
       "Status": 1,
-      "Load": 8
+      "Load": 9
     },
     {
       "Name": "BN#1",
@@ -66140,7 +66175,7 @@
       "Features": 12,
       "Region": null,
       "City": "Bandar Seri Begawan",
-      "Score": 2.997161563,
+      "Score": 2.9968304814,
       "HostCountry": "SG",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -66164,7 +66199,7 @@
         }
       ],
       "Status": 1,
-      "Load": 17
+      "Load": 23
     },
     {
       "Name": "BN#10",
@@ -66175,7 +66210,7 @@
       "Features": 12,
       "Region": null,
       "City": "Bandar Seri Begawan",
-      "Score": 2.9898776014,
+      "Score": 2.994582505,
       "HostCountry": "SG",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -66199,7 +66234,7 @@
         }
       ],
       "Status": 1,
-      "Load": 15
+      "Load": 21
     },
     {
       "Name": "BN#11",
@@ -66210,7 +66245,7 @@
       "Features": 12,
       "Region": null,
       "City": "Bandar Seri Begawan",
-      "Score": 2.9989866116,
+      "Score": 2.9928601808,
       "HostCountry": "SG",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -66234,7 +66269,7 @@
         }
       ],
       "Status": 1,
-      "Load": 14
+      "Load": 19
     },
     {
       "Name": "BN#12",
@@ -66245,7 +66280,7 @@
       "Features": 12,
       "Region": null,
       "City": "Bandar Seri Begawan",
-      "Score": 2.9981272935,
+      "Score": 2.9912959996,
       "HostCountry": "SG",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -66269,7 +66304,7 @@
         }
       ],
       "Status": 1,
-      "Load": 15
+      "Load": 21
     },
     {
       "Name": "CA#660",
@@ -66280,7 +66315,7 @@
       "Features": 12,
       "Region": null,
       "City": "Vancouver",
-      "Score": 2.9615933372,
+      "Score": 2.9699136955,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -66304,7 +66339,7 @@
         }
       ],
       "Status": 1,
-      "Load": 68
+      "Load": 69
     },
     {
       "Name": "CA#661",
@@ -66315,7 +66350,7 @@
       "Features": 12,
       "Region": null,
       "City": "Vancouver",
-      "Score": 2.9574709306,
+      "Score": 2.9721350198,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -66339,7 +66374,7 @@
         }
       ],
       "Status": 1,
-      "Load": 71
+      "Load": 74
     },
     {
       "Name": "CA#662",
@@ -66350,7 +66385,7 @@
       "Features": 12,
       "Region": null,
       "City": "Vancouver",
-      "Score": 2.9556579481,
+      "Score": 2.9766079123,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -66374,7 +66409,7 @@
         }
       ],
       "Status": 1,
-      "Load": 72
+      "Load": 74
     },
     {
       "Name": "CA#663",
@@ -66385,7 +66420,7 @@
       "Features": 12,
       "Region": null,
       "City": "Vancouver",
-      "Score": 2.9621922,
+      "Score": 2.9773812027,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -66409,7 +66444,7 @@
         }
       ],
       "Status": 1,
-      "Load": 69
+      "Load": 70
     },
     {
       "Name": "CA#664",
@@ -66420,7 +66455,7 @@
       "Features": 8,
       "Region": null,
       "City": "Vancouver",
-      "Score": 2.9558711231,
+      "Score": 2.977635576,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -66444,7 +66479,7 @@
         }
       ],
       "Status": 1,
-      "Load": 64
+      "Load": 65
     },
     {
       "Name": "CA#665",
@@ -66455,7 +66490,7 @@
       "Features": 8,
       "Region": null,
       "City": "Vancouver",
-      "Score": 2.9605261464,
+      "Score": 2.9710024752999997,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -66479,7 +66514,7 @@
         }
       ],
       "Status": 1,
-      "Load": 72
+      "Load": 74
     },
     {
       "Name": "CA#666",
@@ -66490,7 +66525,7 @@
       "Features": 8,
       "Region": null,
       "City": "Vancouver",
-      "Score": 2.9644350141,
+      "Score": 2.9696248732,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -66514,7 +66549,7 @@
         }
       ],
       "Status": 1,
-      "Load": 67
+      "Load": 68
     },
     {
       "Name": "CA#667",
@@ -66525,7 +66560,7 @@
       "Features": 8,
       "Region": null,
       "City": "Vancouver",
-      "Score": 2.9617542789,
+      "Score": 2.9758543868,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -66549,7 +66584,7 @@
         }
       ],
       "Status": 1,
-      "Load": 72
+      "Load": 74
     },
     {
       "Name": "CA#813",
@@ -66560,7 +66595,7 @@
       "Features": 28,
       "Region": null,
       "City": "Toronto",
-      "Score": 2.9783312069,
+      "Score": 2.891729804,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -66584,7 +66619,7 @@
         }
       ],
       "Status": 1,
-      "Load": 41
+      "Load": 53
     },
     {
       "Name": "CA#814",
@@ -66595,7 +66630,7 @@
       "Features": 28,
       "Region": null,
       "City": "Toronto",
-      "Score": 2.9825041915,
+      "Score": 2.8979203292999998,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -66619,7 +66654,7 @@
         }
       ],
       "Status": 1,
-      "Load": 43
+      "Load": 54
     },
     {
       "Name": "CA#815",
@@ -66630,7 +66665,7 @@
       "Features": 28,
       "Region": null,
       "City": "Toronto",
-      "Score": 2.9754495034,
+      "Score": 2.8999499481999997,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -66654,7 +66689,7 @@
         }
       ],
       "Status": 1,
-      "Load": 45
+      "Load": 56
     },
     {
       "Name": "CA#816",
@@ -66665,7 +66700,7 @@
       "Features": 28,
       "Region": null,
       "City": "Toronto",
-      "Score": 2.979397191,
+      "Score": 2.8974795558,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -66689,7 +66724,7 @@
         }
       ],
       "Status": 1,
-      "Load": 42
+      "Load": 55
     },
     {
       "Name": "CA#1068",
@@ -66700,7 +66735,7 @@
       "Features": 28,
       "Region": null,
       "City": "Vancouver",
-      "Score": 2.9446061184,
+      "Score": 2.9770885694,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -66724,7 +66759,7 @@
         }
       ],
       "Status": 1,
-      "Load": 37
+      "Load": 46
     },
     {
       "Name": "CA#1069",
@@ -66735,7 +66770,7 @@
       "Features": 28,
       "Region": null,
       "City": "Vancouver",
-      "Score": 2.9466103424,
+      "Score": 2.9765228989,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -66759,7 +66794,7 @@
         }
       ],
       "Status": 1,
-      "Load": 35
+      "Load": 44
     },
     {
       "Name": "CA#1070",
@@ -66770,7 +66805,7 @@
       "Features": 28,
       "Region": null,
       "City": "Vancouver",
-      "Score": 2.9417425907,
+      "Score": 2.9691370967,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -66794,7 +66829,7 @@
         }
       ],
       "Status": 1,
-      "Load": 28
+      "Load": 37
     },
     {
       "Name": "CA#1071",
@@ -66805,7 +66840,7 @@
       "Features": 28,
       "Region": null,
       "City": "Vancouver",
-      "Score": 2.9491922716,
+      "Score": 2.9707268025999998,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -66829,7 +66864,7 @@
         }
       ],
       "Status": 1,
-      "Load": 28
+      "Load": 37
     },
     {
       "Name": "PK#27",
@@ -66840,7 +66875,7 @@
       "Features": 28,
       "Region": null,
       "City": "Karachi",
-      "Score": 2.9910142156,
+      "Score": 2.9919644243,
       "HostCountry": "SG",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -66864,7 +66899,7 @@
         }
       ],
       "Status": 1,
-      "Load": 3
+      "Load": 0
     },
     {
       "Name": "PK#28",
@@ -66875,7 +66910,7 @@
       "Features": 28,
       "Region": null,
       "City": "Karachi",
-      "Score": 2.9960059471,
+      "Score": 2.9976458766,
       "HostCountry": "SG",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -66899,7 +66934,7 @@
         }
       ],
       "Status": 1,
-      "Load": 5
+      "Load": 3
     },
     {
       "Name": "PK#29",
@@ -66910,7 +66945,7 @@
       "Features": 28,
       "Region": null,
       "City": "Karachi",
-      "Score": 2.9898646507,
+      "Score": 2.9933642794,
       "HostCountry": "SG",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -66934,7 +66969,7 @@
         }
       ],
       "Status": 1,
-      "Load": 7
+      "Load": 4
     },
     {
       "Name": "PK#30",
@@ -66945,7 +66980,7 @@
       "Features": 28,
       "Region": null,
       "City": "Karachi",
-      "Score": 2.9949077858,
+      "Score": 2.9978196442,
       "HostCountry": "SG",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -66969,7 +67004,7 @@
         }
       ],
       "Status": 1,
-      "Load": 3
+      "Load": 1
     },
     {
       "Name": "PA#1",
@@ -66980,7 +67015,7 @@
       "Features": 12,
       "Region": null,
       "City": "Panama City",
-      "Score": 2.9845454852,
+      "Score": 2.9761378338,
       "HostCountry": "US",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -67004,7 +67039,7 @@
         }
       ],
       "Status": 1,
-      "Load": 30
+      "Load": 41
     },
     {
       "Name": "PA#10",
@@ -67015,7 +67050,7 @@
       "Features": 12,
       "Region": null,
       "City": "Panama City",
-      "Score": 2.9910176802,
+      "Score": 2.9759896963,
       "HostCountry": "US",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -67039,7 +67074,7 @@
         }
       ],
       "Status": 1,
-      "Load": 26
+      "Load": 37
     },
     {
       "Name": "PA#11",
@@ -67050,7 +67085,7 @@
       "Features": 12,
       "Region": null,
       "City": "Panama City",
-      "Score": 2.9885060027,
+      "Score": 2.9839147932,
       "HostCountry": "US",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -67074,7 +67109,7 @@
         }
       ],
       "Status": 1,
-      "Load": 30
+      "Load": 42
     },
     {
       "Name": "PA#12",
@@ -67085,7 +67120,7 @@
       "Features": 12,
       "Region": null,
       "City": "Panama City",
-      "Score": 2.9852795215,
+      "Score": 2.983775522,
       "HostCountry": "US",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -67109,7 +67144,7 @@
         }
       ],
       "Status": 1,
-      "Load": 25
+      "Load": 37
     },
     {
       "Name": "AZ#30",
@@ -67120,7 +67155,7 @@
       "Features": 28,
       "Region": null,
       "City": "Baku",
-      "Score": 2.9965793357,
+      "Score": 2.9914192766,
       "HostCountry": "SG",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -67144,7 +67179,7 @@
         }
       ],
       "Status": 1,
-      "Load": 2
+      "Load": 1
     },
     {
       "Name": "AZ#31",
@@ -67155,7 +67190,7 @@
       "Features": 28,
       "Region": null,
       "City": "Baku",
-      "Score": 2.9940515382,
+      "Score": 2.993924706,
       "HostCountry": "SG",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -67179,7 +67214,7 @@
         }
       ],
       "Status": 1,
-      "Load": 6
+      "Load": 5
     },
     {
       "Name": "AZ#32",
@@ -67190,7 +67225,7 @@
       "Features": 28,
       "Region": null,
       "City": "Baku",
-      "Score": 2.9975249714,
+      "Score": 2.994146297,
       "HostCountry": "SG",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -67225,7 +67260,7 @@
       "Features": 28,
       "Region": null,
       "City": "Baku",
-      "Score": 2.9961309801000002,
+      "Score": 2.9957716847,
       "HostCountry": "SG",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -67260,7 +67295,7 @@
       "Features": 28,
       "Region": null,
       "City": "Tashkent",
-      "Score": 2.9962586135000002,
+      "Score": 2.9906502894,
       "HostCountry": "SG",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -67295,7 +67330,7 @@
       "Features": 28,
       "Region": null,
       "City": "Tashkent",
-      "Score": 2.9943267248,
+      "Score": 2.9916506231,
       "HostCountry": "SG",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -67319,7 +67354,7 @@
         }
       ],
       "Status": 1,
-      "Load": 0
+      "Load": 2
     },
     {
       "Name": "UZ#32",
@@ -67330,7 +67365,7 @@
       "Features": 28,
       "Region": null,
       "City": "Tashkent",
-      "Score": 2.9962984633,
+      "Score": 2.9924816863,
       "HostCountry": "SG",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -67365,7 +67400,7 @@
       "Features": 28,
       "Region": null,
       "City": "Tashkent",
-      "Score": 2.9900567396,
+      "Score": 2.9891971462,
       "HostCountry": "SG",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -67389,7 +67424,7 @@
         }
       ],
       "Status": 1,
-      "Load": 5
+      "Load": 7
     },
     {
       "Name": "GE#30",
@@ -67400,7 +67435,7 @@
       "Features": 28,
       "Region": null,
       "City": "Tbilisi",
-      "Score": 2.9920575044,
+      "Score": 2.9961780146,
       "HostCountry": "RO",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -67435,7 +67470,7 @@
       "Features": 28,
       "Region": null,
       "City": "Tbilisi",
-      "Score": 2.989232822,
+      "Score": 2.9919900711,
       "HostCountry": "RO",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -67470,7 +67505,7 @@
       "Features": 28,
       "Region": null,
       "City": "Tbilisi",
-      "Score": 2.9964614404,
+      "Score": 2.9970877468,
       "HostCountry": "RO",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -67494,7 +67529,7 @@
         }
       ],
       "Status": 1,
-      "Load": 12
+      "Load": 11
     },
     {
       "Name": "GE#33",
@@ -67505,7 +67540,7 @@
       "Features": 28,
       "Region": null,
       "City": "Tbilisi",
-      "Score": 2.9891584252,
+      "Score": 2.9895070881,
       "HostCountry": "RO",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -67540,7 +67575,7 @@
       "Features": 28,
       "Region": null,
       "City": "San Jos\u00e9",
-      "Score": 2.9880983488,
+      "Score": 2.9988183371,
       "HostCountry": "US",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -67564,7 +67599,7 @@
         }
       ],
       "Status": 1,
-      "Load": 57
+      "Load": 63
     },
     {
       "Name": "CR#31",
@@ -67575,7 +67610,7 @@
       "Features": 28,
       "Region": null,
       "City": "San Jos\u00e9",
-      "Score": 2.9848227094,
+      "Score": 2.9985243343,
       "HostCountry": "US",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -67599,7 +67634,7 @@
         }
       ],
       "Status": 1,
-      "Load": 58
+      "Load": 65
     },
     {
       "Name": "CR#32",
@@ -67610,7 +67645,7 @@
       "Features": 28,
       "Region": null,
       "City": "San Jos\u00e9",
-      "Score": 2.9927472826,
+      "Score": 2.9967119653,
       "HostCountry": "US",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -67634,7 +67669,7 @@
         }
       ],
       "Status": 1,
-      "Load": 65
+      "Load": 70
     },
     {
       "Name": "CR#33",
@@ -67645,7 +67680,7 @@
       "Features": 28,
       "Region": null,
       "City": "San Jos\u00e9",
-      "Score": 2.9930442588,
+      "Score": 2.9942857065,
       "HostCountry": "US",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -67669,7 +67704,7 @@
         }
       ],
       "Status": 1,
-      "Load": 63
+      "Load": 69
     },
     {
       "Name": "US-CA#813",
@@ -67680,7 +67715,7 @@
       "Features": 12,
       "Region": null,
       "City": "San Jose",
-      "Score": 1.8116845308,
+      "Score": 1.9761087691,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -67704,7 +67739,7 @@
         }
       ],
       "Status": 1,
-      "Load": 52
+      "Load": 62
     },
     {
       "Name": "US-CA#814",
@@ -67715,7 +67750,7 @@
       "Features": 12,
       "Region": null,
       "City": "San Jose",
-      "Score": 1.818463741,
+      "Score": 1.9702373681999998,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -67739,7 +67774,7 @@
         }
       ],
       "Status": 1,
-      "Load": 56
+      "Load": 65
     },
     {
       "Name": "US-CA#815",
@@ -67750,7 +67785,7 @@
       "Features": 12,
       "Region": null,
       "City": "San Jose",
-      "Score": 1.8111106566,
+      "Score": 1.9768644617,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -67774,7 +67809,7 @@
         }
       ],
       "Status": 1,
-      "Load": 47
+      "Load": 56
     },
     {
       "Name": "US-CA#816",
@@ -67785,7 +67820,7 @@
       "Features": 12,
       "Region": null,
       "City": "San Jose",
-      "Score": 1.8133477246,
+      "Score": 1.9786794513000001,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -67809,7 +67844,7 @@
         }
       ],
       "Status": 1,
-      "Load": 47
+      "Load": 56
     },
     {
       "Name": "KZ#1",
@@ -67820,7 +67855,7 @@
       "Features": 28,
       "Region": null,
       "City": "Astana",
-      "Score": 2.9876881956,
+      "Score": 2.9877824341,
       "HostCountry": "SG",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -67855,7 +67890,7 @@
       "Features": 28,
       "Region": null,
       "City": "Astana",
-      "Score": 2.9886890884,
+      "Score": 2.9944729486,
       "HostCountry": "SG",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -67879,7 +67914,7 @@
         }
       ],
       "Status": 1,
-      "Load": 4
+      "Load": 5
     },
     {
       "Name": "KZ#11",
@@ -67890,7 +67925,7 @@
       "Features": 28,
       "Region": null,
       "City": "Astana",
-      "Score": 2.9902335884999998,
+      "Score": 2.9918839948000002,
       "HostCountry": "SG",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -67925,7 +67960,7 @@
       "Features": 28,
       "Region": null,
       "City": "Astana",
-      "Score": 2.9895399382,
+      "Score": 2.9939885758,
       "HostCountry": "SG",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -67960,7 +67995,7 @@
       "Features": 12,
       "Region": null,
       "City": "Montreal",
-      "Score": 2.9832757315,
+      "Score": 2.9410682725,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -67984,7 +68019,7 @@
         }
       ],
       "Status": 1,
-      "Load": 57
+      "Load": 59
     },
     {
       "Name": "CA#1210",
@@ -67995,7 +68030,7 @@
       "Features": 12,
       "Region": null,
       "City": "Montreal",
-      "Score": 2.9794859699,
+      "Score": 2.9361025298,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -68019,7 +68054,7 @@
         }
       ],
       "Status": 1,
-      "Load": 63
+      "Load": 66
     },
     {
       "Name": "CA#1211",
@@ -68030,7 +68065,7 @@
       "Features": 12,
       "Region": null,
       "City": "Montreal",
-      "Score": 2.9785381695,
+      "Score": 2.9337139199999998,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -68054,7 +68089,7 @@
         }
       ],
       "Status": 1,
-      "Load": 65
+      "Load": 66
     },
     {
       "Name": "CA#1212",
@@ -68065,7 +68100,7 @@
       "Features": 12,
       "Region": null,
       "City": "Montreal",
-      "Score": 2.982541785,
+      "Score": 2.9384362111,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -68089,7 +68124,7 @@
         }
       ],
       "Status": 1,
-      "Load": 62
+      "Load": 63
     },
     {
       "Name": "FR#440",
@@ -68100,7 +68135,7 @@
       "Features": 28,
       "Region": null,
       "City": "Marseille",
-      "Score": 2.993211784,
+      "Score": 2.9865870202,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -68124,7 +68159,7 @@
         }
       ],
       "Status": 1,
-      "Load": 19
+      "Load": 20
     },
     {
       "Name": "FR#441",
@@ -68135,7 +68170,7 @@
       "Features": 28,
       "Region": null,
       "City": "Marseille",
-      "Score": 2.9920854868999998,
+      "Score": 2.9919098802,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -68159,7 +68194,7 @@
         }
       ],
       "Status": 1,
-      "Load": 28
+      "Load": 29
     },
     {
       "Name": "FR#442",
@@ -68170,7 +68205,7 @@
       "Features": 28,
       "Region": null,
       "City": "Marseille",
-      "Score": 2.9893778335,
+      "Score": 2.9945653214,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -68205,7 +68240,7 @@
       "Features": 28,
       "Region": null,
       "City": "Marseille",
-      "Score": 2.9938887626,
+      "Score": 2.990140759,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -68240,7 +68275,7 @@
       "Features": 24,
       "Region": null,
       "City": "Chisinau",
-      "Score": 2.9999143077,
+      "Score": 2.9978461709,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -68264,7 +68299,7 @@
         }
       ],
       "Status": 1,
-      "Load": 26
+      "Load": 34
     },
     {
       "Name": "MD#46",
@@ -68275,7 +68310,7 @@
       "Features": 24,
       "Region": null,
       "City": "Chisinau",
-      "Score": 2.9963681867,
+      "Score": 2.9977284341,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -68299,7 +68334,7 @@
         }
       ],
       "Status": 1,
-      "Load": 23
+      "Load": 32
     },
     {
       "Name": "MD#47",
@@ -68310,7 +68345,7 @@
       "Features": 24,
       "Region": null,
       "City": "Chisinau",
-      "Score": 2.9956662254,
+      "Score": 2.9948429795,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -68334,7 +68369,7 @@
         }
       ],
       "Status": 1,
-      "Load": 25
+      "Load": 32
     },
     {
       "Name": "MD#48",
@@ -68345,7 +68380,7 @@
       "Features": 24,
       "Region": null,
       "City": "Chisinau",
-      "Score": 2.9996169558,
+      "Score": 2.9908250948,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -68369,7 +68404,7 @@
         }
       ],
       "Status": 1,
-      "Load": 26
+      "Load": 34
     },
     {
       "Name": "KR#25",
@@ -68380,7 +68415,7 @@
       "Features": 12,
       "Region": null,
       "City": "Seoul",
-      "Score": 5.9975807178,
+      "Score": 5.9960375165999995,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -68404,7 +68439,7 @@
         }
       ],
       "Status": 1,
-      "Load": 88
+      "Load": 90
     },
     {
       "Name": "KR#26",
@@ -68415,7 +68450,7 @@
       "Features": 12,
       "Region": null,
       "City": "Seoul",
-      "Score": 5.9962749054,
+      "Score": 5.9998028303,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -68439,7 +68474,7 @@
         }
       ],
       "Status": 1,
-      "Load": 87
+      "Load": 90
     },
     {
       "Name": "KR#27",
@@ -68450,7 +68485,7 @@
       "Features": 12,
       "Region": null,
       "City": "Seoul",
-      "Score": 5.9993474034,
+      "Score": 5.9953874316,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -68474,7 +68509,7 @@
         }
       ],
       "Status": 1,
-      "Load": 79
+      "Load": 82
     },
     {
       "Name": "KR#28",
@@ -68485,7 +68520,7 @@
       "Features": 12,
       "Region": null,
       "City": "Seoul",
-      "Score": 5.999228377,
+      "Score": 5.999207125,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -68509,7 +68544,7 @@
         }
       ],
       "Status": 1,
-      "Load": 82
+      "Load": 83
     },
     {
       "Name": "CH-EE#2",
@@ -68520,7 +68555,7 @@
       "Features": 1,
       "Region": null,
       "City": "Tallinn",
-      "Score": 2.9904887685,
+      "Score": 2.995373201,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -68550,13 +68585,13 @@
           "Label": "",
           "X25519PublicKey": "dq6F8vkRFuDM8jw4rSm+d4q21K8gAS8/6qgDSwdIFEk=",
           "Generation": 0,
-          "Status": 1,
-          "ServicesDown": 0,
+          "Status": 0,
+          "ServicesDown": 33,
           "ServicesDownReason": null
         }
       ],
       "Status": 1,
-      "Load": 41
+      "Load": 49
     },
     {
       "Name": "SE-EE#1",
@@ -68567,7 +68602,7 @@
       "Features": 1,
       "Region": null,
       "City": "Tallinn",
-      "Score": 2.9937367664,
+      "Score": 2.9909914275,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -68591,7 +68626,7 @@
         }
       ],
       "Status": 1,
-      "Load": 20
+      "Load": 40
     },
     {
       "Name": "HN#1",
@@ -68602,7 +68637,7 @@
       "Features": 12,
       "Region": null,
       "City": "Tegucigalpa",
-      "Score": 2.9807990377999998,
+      "Score": 2.9749473673,
       "HostCountry": "US",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -68626,7 +68661,7 @@
         }
       ],
       "Status": 1,
-      "Load": 8
+      "Load": 12
     },
     {
       "Name": "HN#10",
@@ -68637,7 +68672,7 @@
       "Features": 12,
       "Region": null,
       "City": "Tegucigalpa",
-      "Score": 2.986299716,
+      "Score": 2.980533199,
       "HostCountry": "US",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -68661,7 +68696,7 @@
         }
       ],
       "Status": 1,
-      "Load": 1
+      "Load": 4
     },
     {
       "Name": "HN#11",
@@ -68672,7 +68707,7 @@
       "Features": 12,
       "Region": null,
       "City": "Tegucigalpa",
-      "Score": 2.981017521,
+      "Score": 2.9755689315,
       "HostCountry": "US",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -68696,7 +68731,7 @@
         }
       ],
       "Status": 1,
-      "Load": 3
+      "Load": 5
     },
     {
       "Name": "HN#12",
@@ -68707,7 +68742,7 @@
       "Features": 12,
       "Region": null,
       "City": "Tegucigalpa",
-      "Score": 2.97963314,
+      "Score": 2.9723015692,
       "HostCountry": "US",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -68731,7 +68766,7 @@
         }
       ],
       "Status": 1,
-      "Load": 5
+      "Load": 7
     },
     {
       "Name": "GT#1",
@@ -68742,7 +68777,7 @@
       "Features": 12,
       "Region": null,
       "City": "Guatemala City",
-      "Score": 2.9795606541,
+      "Score": 2.9751787871,
       "HostCountry": "US",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -68766,7 +68801,7 @@
         }
       ],
       "Status": 1,
-      "Load": 7
+      "Load": 8
     },
     {
       "Name": "GT#10",
@@ -68777,7 +68812,7 @@
       "Features": 12,
       "Region": null,
       "City": "Guatemala City",
-      "Score": 2.9810008572999998,
+      "Score": 2.9756050295,
       "HostCountry": "US",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -68801,7 +68836,7 @@
         }
       ],
       "Status": 1,
-      "Load": 12
+      "Load": 14
     },
     {
       "Name": "GT#11",
@@ -68812,7 +68847,7 @@
       "Features": 12,
       "Region": null,
       "City": "Guatemala City",
-      "Score": 2.9836335072,
+      "Score": 2.9735673496,
       "HostCountry": "US",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -68836,7 +68871,7 @@
         }
       ],
       "Status": 1,
-      "Load": 10
+      "Load": 13
     },
     {
       "Name": "GT#12",
@@ -68847,7 +68882,7 @@
       "Features": 12,
       "Region": null,
       "City": "Guatemala City",
-      "Score": 2.9766640458999998,
+      "Score": 2.9785581025,
       "HostCountry": "US",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -68871,7 +68906,7 @@
         }
       ],
       "Status": 1,
-      "Load": 12
+      "Load": 14
     },
     {
       "Name": "CU#1",
@@ -68882,7 +68917,7 @@
       "Features": 12,
       "Region": null,
       "City": "Havana",
-      "Score": 2.9839121811,
+      "Score": 2.9691229566,
       "HostCountry": "US",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -68906,7 +68941,7 @@
         }
       ],
       "Status": 1,
-      "Load": 11
+      "Load": 16
     },
     {
       "Name": "CU#10",
@@ -68917,7 +68952,7 @@
       "Features": 12,
       "Region": null,
       "City": "Havana",
-      "Score": 2.9821741066,
+      "Score": 2.9637549653,
       "HostCountry": "US",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -68941,7 +68976,7 @@
         }
       ],
       "Status": 1,
-      "Load": 12
+      "Load": 16
     },
     {
       "Name": "CU#11",
@@ -68952,7 +68987,7 @@
       "Features": 12,
       "Region": null,
       "City": "Havana",
-      "Score": 2.9845491533,
+      "Score": 2.961814906,
       "HostCountry": "US",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -68976,7 +69011,7 @@
         }
       ],
       "Status": 1,
-      "Load": 3
+      "Load": 7
     },
     {
       "Name": "CU#12",
@@ -68987,7 +69022,7 @@
       "Features": 12,
       "Region": null,
       "City": "Havana",
-      "Score": 2.9858605499,
+      "Score": 2.9679628592,
       "HostCountry": "US",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -69011,7 +69046,7 @@
         }
       ],
       "Status": 1,
-      "Load": 8
+      "Load": 12
     },
     {
       "Name": "DO#1",
@@ -69022,7 +69057,7 @@
       "Features": 12,
       "Region": null,
       "City": "Santo Domingo",
-      "Score": 2.9826065064,
+      "Score": 2.9717854397,
       "HostCountry": "US",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -69046,7 +69081,7 @@
         }
       ],
       "Status": 1,
-      "Load": 20
+      "Load": 22
     },
     {
       "Name": "DO#10",
@@ -69057,7 +69092,7 @@
       "Features": 12,
       "Region": null,
       "City": "Santo Domingo",
-      "Score": 2.9861617072,
+      "Score": 2.9733977007,
       "HostCountry": "US",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -69081,7 +69116,7 @@
         }
       ],
       "Status": 1,
-      "Load": 14
+      "Load": 15
     },
     {
       "Name": "DO#11",
@@ -69092,7 +69127,7 @@
       "Features": 12,
       "Region": null,
       "City": "Santo Domingo",
-      "Score": 2.9860856153,
+      "Score": 2.9733898238,
       "HostCountry": "US",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -69116,7 +69151,7 @@
         }
       ],
       "Status": 1,
-      "Load": 21
+      "Load": 22
     },
     {
       "Name": "DO#12",
@@ -69127,7 +69162,7 @@
       "Features": 12,
       "Region": null,
       "City": "Santo Domingo",
-      "Score": 2.9872399308,
+      "Score": 2.9796688269000002,
       "HostCountry": "US",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -69151,7 +69186,7 @@
         }
       ],
       "Status": 1,
-      "Load": 23
+      "Load": 24
     },
     {
       "Name": "CO#37",
@@ -69162,7 +69197,7 @@
       "Features": 12,
       "Region": null,
       "City": "Bogot\u00e1",
-      "Score": 2.9838092621,
+      "Score": 2.9858823434,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -69186,7 +69221,7 @@
         }
       ],
       "Status": 1,
-      "Load": 35
+      "Load": 27
     },
     {
       "Name": "CO#38",
@@ -69197,7 +69232,7 @@
       "Features": 12,
       "Region": null,
       "City": "Bogot\u00e1",
-      "Score": 2.9866331886,
+      "Score": 2.9802778254,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -69221,7 +69256,7 @@
         }
       ],
       "Status": 1,
-      "Load": 40
+      "Load": 33
     },
     {
       "Name": "CO#39",
@@ -69232,7 +69267,7 @@
       "Features": 12,
       "Region": null,
       "City": "Bogot\u00e1",
-      "Score": 2.991066301,
+      "Score": 2.9797127156,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -69256,7 +69291,7 @@
         }
       ],
       "Status": 1,
-      "Load": 44
+      "Load": 36
     },
     {
       "Name": "CO#40",
@@ -69267,7 +69302,7 @@
       "Features": 12,
       "Region": null,
       "City": "Bogot\u00e1",
-      "Score": 2.9833924757,
+      "Score": 2.9873504408000002,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -69291,7 +69326,7 @@
         }
       ],
       "Status": 1,
-      "Load": 38
+      "Load": 31
     },
     {
       "Name": "AR#33",
@@ -69302,7 +69337,7 @@
       "Features": 12,
       "Region": null,
       "City": "Buenos Aires",
-      "Score": 5.9957052213,
+      "Score": 5.9928777913,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -69326,7 +69361,7 @@
         }
       ],
       "Status": 1,
-      "Load": 42
+      "Load": 56
     },
     {
       "Name": "AR#34",
@@ -69337,7 +69372,7 @@
       "Features": 12,
       "Region": null,
       "City": "Buenos Aires",
-      "Score": 5.9903125281000005,
+      "Score": 5.9914613308,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -69361,7 +69396,7 @@
         }
       ],
       "Status": 1,
-      "Load": 41
+      "Load": 55
     },
     {
       "Name": "AR#35",
@@ -69372,7 +69407,7 @@
       "Features": 12,
       "Region": null,
       "City": "Buenos Aires",
-      "Score": 5.9934109116,
+      "Score": 5.9929547139,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -69396,7 +69431,7 @@
         }
       ],
       "Status": 1,
-      "Load": 33
+      "Load": 47
     },
     {
       "Name": "AR#36",
@@ -69407,7 +69442,7 @@
       "Features": 12,
       "Region": null,
       "City": "Buenos Aires",
-      "Score": 5.9894806379,
+      "Score": 5.9956330415,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -69431,7 +69466,7 @@
         }
       ],
       "Status": 1,
-      "Load": 40
+      "Load": 53
     },
     {
       "Name": "ID#21",
@@ -69442,7 +69477,7 @@
       "Features": 28,
       "Region": null,
       "City": "Jakarta",
-      "Score": 5.9965381284,
+      "Score": 5.9921108737,
       "HostCountry": "SG",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -69466,7 +69501,7 @@
         }
       ],
       "Status": 1,
-      "Load": 42
+      "Load": 32
     },
     {
       "Name": "ID#22",
@@ -69477,7 +69512,7 @@
       "Features": 28,
       "Region": null,
       "City": "Jakarta",
-      "Score": 5.9941248151,
+      "Score": 5.992036553,
       "HostCountry": "SG",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -69501,7 +69536,7 @@
         }
       ],
       "Status": 1,
-      "Load": 41
+      "Load": 31
     },
     {
       "Name": "ID#23",
@@ -69512,7 +69547,7 @@
       "Features": 28,
       "Region": null,
       "City": "Jakarta",
-      "Score": 5.9929374865,
+      "Score": 5.9933332044,
       "HostCountry": "SG",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -69536,7 +69571,7 @@
         }
       ],
       "Status": 1,
-      "Load": 35
+      "Load": 24
     },
     {
       "Name": "US-MA#100",
@@ -69547,7 +69582,7 @@
       "Features": 28,
       "Region": null,
       "City": "Boston",
-      "Score": 1.9832660335,
+      "Score": 1.9439949084,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -69571,7 +69606,7 @@
         }
       ],
       "Status": 1,
-      "Load": 56
+      "Load": 59
     },
     {
       "Name": "US-MA#101",
@@ -69582,7 +69617,7 @@
       "Features": 28,
       "Region": null,
       "City": "Boston",
-      "Score": 1.9782355012,
+      "Score": 1.9455385257,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -69606,7 +69641,7 @@
         }
       ],
       "Status": 1,
-      "Load": 53
+      "Load": 55
     },
     {
       "Name": "US-MA#102",
@@ -69617,7 +69652,7 @@
       "Features": 28,
       "Region": null,
       "City": "Boston",
-      "Score": 1.9824434390999999,
+      "Score": 1.9477955288,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -69641,7 +69676,7 @@
         }
       ],
       "Status": 1,
-      "Load": 56
+      "Load": 59
     },
     {
       "Name": "US-MA#103",
@@ -69652,7 +69687,7 @@
       "Features": 28,
       "Region": null,
       "City": "Boston",
-      "Score": 1.9824522501000001,
+      "Score": 1.9441043877,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -69676,7 +69711,7 @@
         }
       ],
       "Status": 1,
-      "Load": 48
+      "Load": 52
     },
     {
       "Name": "ID#24",
@@ -69687,7 +69722,7 @@
       "Features": 12,
       "Region": null,
       "City": "Jakarta",
-      "Score": 5.9991358762,
+      "Score": 5.9997151497,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -69711,7 +69746,7 @@
         }
       ],
       "Status": 1,
-      "Load": 41
+      "Load": 34
     },
     {
       "Name": "ID#25",
@@ -69722,7 +69757,7 @@
       "Features": 12,
       "Region": null,
       "City": "Jakarta",
-      "Score": 5.9933627358,
+      "Score": 5.9931221111,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -69746,7 +69781,7 @@
         }
       ],
       "Status": 1,
-      "Load": 34
+      "Load": 27
     },
     {
       "Name": "ID#26",
@@ -69757,7 +69792,7 @@
       "Features": 12,
       "Region": null,
       "City": "Jakarta",
-      "Score": 5.9920187203,
+      "Score": 5.9955817026,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -69781,7 +69816,7 @@
         }
       ],
       "Status": 1,
-      "Load": 39
+      "Load": 32
     },
     {
       "Name": "ID#27",
@@ -69792,7 +69827,7 @@
       "Features": 12,
       "Region": null,
       "City": "Jakarta",
-      "Score": 5.9943140787,
+      "Score": 5.9973233334,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -69816,7 +69851,7 @@
         }
       ],
       "Status": 1,
-      "Load": 38
+      "Load": 30
     },
     {
       "Name": "CH-KR#1",
@@ -69827,7 +69862,7 @@
       "Features": 1,
       "Region": null,
       "City": "Seoul",
-      "Score": 5.9976221328,
+      "Score": 5.9978625421,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -69851,7 +69886,7 @@
         }
       ],
       "Status": 1,
-      "Load": 85
+      "Load": 88
     },
     {
       "Name": "IS-GE#1",
@@ -69862,7 +69897,7 @@
       "Features": 17,
       "Region": null,
       "City": "Tbilisi",
-      "Score": 2.9946591671,
+      "Score": 2.9957985765,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -69886,7 +69921,7 @@
         }
       ],
       "Status": 1,
-      "Load": 14
+      "Load": 15
     },
     {
       "Name": "IS-HR#1",
@@ -69897,7 +69932,7 @@
       "Features": 1,
       "Region": null,
       "City": "Zagreb",
-      "Score": 2.9928571448,
+      "Score": 2.9935717955,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -69921,7 +69956,7 @@
         }
       ],
       "Status": 1,
-      "Load": 22
+      "Load": 16
     },
     {
       "Name": "IS-MX#1",
@@ -69932,7 +69967,7 @@
       "Features": 1,
       "Region": null,
       "City": "Quer\u00e9taro",
-      "Score": 2.9899978636,
+      "Score": 2.9960845689999998,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -69956,7 +69991,7 @@
         }
       ],
       "Status": 1,
-      "Load": 65
+      "Load": 81
     },
     {
       "Name": "IS-NG#1",
@@ -69967,7 +70002,7 @@
       "Features": 1,
       "Region": null,
       "City": "Lagos",
-      "Score": 2.998516279,
+      "Score": 2.9962818208,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -69991,7 +70026,7 @@
         }
       ],
       "Status": 1,
-      "Load": 2
+      "Load": 0
     },
     {
       "Name": "IS-NZ#1",
@@ -70002,7 +70037,7 @@
       "Features": 1,
       "Region": null,
       "City": "Auckland",
-      "Score": 2.9995477031,
+      "Score": 2.9982324286,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -70026,7 +70061,7 @@
         }
       ],
       "Status": 1,
-      "Load": 24
+      "Load": 22
     },
     {
       "Name": "SE-BE#1",
@@ -70037,7 +70072,7 @@
       "Features": 1,
       "Region": null,
       "City": "Brussels",
-      "Score": 2.9971691050000002,
+      "Score": 2.9882009221,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -70061,7 +70096,7 @@
         }
       ],
       "Status": 1,
-      "Load": 45
+      "Load": 38
     },
     {
       "Name": "SE-GR#1",
@@ -70072,7 +70107,7 @@
       "Features": 1,
       "Region": null,
       "City": "Athens",
-      "Score": 2.9896239235,
+      "Score": 2.997337242,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -70096,7 +70131,7 @@
         }
       ],
       "Status": 1,
-      "Load": 10
+      "Load": 7
     },
     {
       "Name": "SE-LT#1",
@@ -70107,7 +70142,7 @@
       "Features": 1,
       "Region": null,
       "City": "Siauliai",
-      "Score": 2.9976475377,
+      "Score": 2.996235059,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -70142,7 +70177,7 @@
       "Features": 1,
       "Region": null,
       "City": "Auckland",
-      "Score": 2.9968931124,
+      "Score": 2.9964243998,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -70166,7 +70201,7 @@
         }
       ],
       "Status": 1,
-      "Load": 24
+      "Load": 14
     },
     {
       "Name": "MX#77",
@@ -70177,7 +70212,7 @@
       "Features": 12,
       "Region": null,
       "City": "Mexico City",
-      "Score": 2.9922548912,
+      "Score": 2.9939897478,
       "HostCountry": "US",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -70201,7 +70236,7 @@
         }
       ],
       "Status": 1,
-      "Load": 66
+      "Load": 70
     },
     {
       "Name": "MX#78",
@@ -70212,7 +70247,7 @@
       "Features": 12,
       "Region": null,
       "City": "Mexico City",
-      "Score": 2.9932675861,
+      "Score": 2.9925711596999998,
       "HostCountry": "US",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -70236,7 +70271,7 @@
         }
       ],
       "Status": 1,
-      "Load": 70
+      "Load": 75
     },
     {
       "Name": "MX#79",
@@ -70247,7 +70282,7 @@
       "Features": 12,
       "Region": null,
       "City": "Mexico City",
-      "Score": 2.9888465849,
+      "Score": 2.9954312468,
       "HostCountry": "US",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -70271,7 +70306,7 @@
         }
       ],
       "Status": 1,
-      "Load": 63
+      "Load": 68
     },
     {
       "Name": "MX#80",
@@ -70282,7 +70317,7 @@
       "Features": 12,
       "Region": null,
       "City": "Mexico City",
-      "Score": 2.9899807161,
+      "Score": 2.99627942,
       "HostCountry": "US",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -70306,7 +70341,7 @@
         }
       ],
       "Status": 1,
-      "Load": 71
+      "Load": 76
     },
     {
       "Name": "CH-MX#1",
@@ -70317,7 +70352,7 @@
       "Features": 1,
       "Region": null,
       "City": "Mexico City",
-      "Score": 2.9898664458,
+      "Score": 2.9974446193,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -70341,7 +70376,7 @@
         }
       ],
       "Status": 1,
-      "Load": 53
+      "Load": 58
     },
     {
       "Name": "MX#100",
@@ -70352,7 +70387,7 @@
       "Features": 12,
       "Region": null,
       "City": "Mexico City",
-      "Score": 2.9754947684,
+      "Score": 2.9737732922999998,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -70376,7 +70411,7 @@
         }
       ],
       "Status": 1,
-      "Load": 70
+      "Load": 55
     },
     {
       "Name": "MX#101",
@@ -70387,7 +70422,7 @@
       "Features": 12,
       "Region": null,
       "City": "Mexico City",
-      "Score": 2.9736376294999998,
+      "Score": 2.9757442173,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -70411,7 +70446,7 @@
         }
       ],
       "Status": 1,
-      "Load": 65
+      "Load": 48
     },
     {
       "Name": "MX#102",
@@ -70422,7 +70457,7 @@
       "Features": 12,
       "Region": null,
       "City": "Mexico City",
-      "Score": 2.9755806885,
+      "Score": 2.9747078949,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -70446,7 +70481,7 @@
         }
       ],
       "Status": 1,
-      "Load": 69
+      "Load": 54
     },
     {
       "Name": "MX#103",
@@ -70457,7 +70492,7 @@
       "Features": 12,
       "Region": null,
       "City": "Mexico City",
-      "Score": 2.9804316842,
+      "Score": 2.969126905,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -70481,7 +70516,7 @@
         }
       ],
       "Status": 1,
-      "Load": 67
+      "Load": 52
     },
     {
       "Name": "LU#45",
@@ -70492,7 +70527,7 @@
       "Features": 12,
       "Region": null,
       "City": "Luxembourg",
-      "Score": 2.9885361221,
+      "Score": 2.9939817397,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -70516,7 +70551,7 @@
         }
       ],
       "Status": 1,
-      "Load": 19
+      "Load": 27
     },
     {
       "Name": "LU#46",
@@ -70527,7 +70562,7 @@
       "Features": 12,
       "Region": null,
       "City": "Luxembourg",
-      "Score": 2.99374257,
+      "Score": 2.9842166801,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -70551,7 +70586,7 @@
         }
       ],
       "Status": 1,
-      "Load": 16
+      "Load": 24
     },
     {
       "Name": "LU#47",
@@ -70562,7 +70597,7 @@
       "Features": 12,
       "Region": null,
       "City": "Luxembourg",
-      "Score": 2.9928256657,
+      "Score": 2.9852050393000003,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -70586,7 +70621,7 @@
         }
       ],
       "Status": 1,
-      "Load": 15
+      "Load": 24
     },
     {
       "Name": "LU#48",
@@ -70597,7 +70632,7 @@
       "Features": 12,
       "Region": null,
       "City": "Luxembourg",
-      "Score": 2.9871823487,
+      "Score": 2.9917198146,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -70621,7 +70656,7 @@
         }
       ],
       "Status": 1,
-      "Load": 10
+      "Load": 18
     },
     {
       "Name": "US-MI#1",
@@ -70632,7 +70667,7 @@
       "Features": 12,
       "Region": null,
       "City": "Detroit",
-      "Score": 1.9756138754,
+      "Score": 1.9620276816,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -70656,7 +70691,7 @@
         }
       ],
       "Status": 1,
-      "Load": 73
+      "Load": 71
     },
     {
       "Name": "US-MI#10",
@@ -70667,7 +70702,7 @@
       "Features": 12,
       "Region": null,
       "City": "Detroit",
-      "Score": 1.9795365164,
+      "Score": 1.954986414,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -70691,7 +70726,7 @@
         }
       ],
       "Status": 1,
-      "Load": 67
+      "Load": 65
     },
     {
       "Name": "US-MI#11",
@@ -70702,7 +70737,7 @@
       "Features": 12,
       "Region": null,
       "City": "Detroit",
-      "Score": 1.9769903109,
+      "Score": 1.9601740282,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -70726,7 +70761,7 @@
         }
       ],
       "Status": 1,
-      "Load": 70
+      "Load": 69
     },
     {
       "Name": "US-MI#12",
@@ -70737,7 +70772,7 @@
       "Features": 12,
       "Region": null,
       "City": "Detroit",
-      "Score": 1.974541475,
+      "Score": 1.9599784457,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -70761,7 +70796,7 @@
         }
       ],
       "Status": 1,
-      "Load": 74
+      "Load": 71
     },
     {
       "Name": "US-NC#1",
@@ -70772,7 +70807,7 @@
       "Features": 12,
       "Region": null,
       "City": "Charlotte",
-      "Score": 1.9819338601,
+      "Score": 1.926354065,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -70796,7 +70831,7 @@
         }
       ],
       "Status": 1,
-      "Load": 63
+      "Load": 55
     },
     {
       "Name": "US-NC#10",
@@ -70807,7 +70842,7 @@
       "Features": 12,
       "Region": null,
       "City": "Charlotte",
-      "Score": 1.984249382,
+      "Score": 1.9263665532999998,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -70831,7 +70866,7 @@
         }
       ],
       "Status": 1,
-      "Load": 71
+      "Load": 61
     },
     {
       "Name": "US-NC#11",
@@ -70842,7 +70877,7 @@
       "Features": 12,
       "Region": null,
       "City": "Charlotte",
-      "Score": 1.980485339,
+      "Score": 1.9251958632,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -70866,7 +70901,7 @@
         }
       ],
       "Status": 1,
-      "Load": 71
+      "Load": 62
     },
     {
       "Name": "US-NC#12",
@@ -70877,7 +70912,7 @@
       "Features": 12,
       "Region": null,
       "City": "Charlotte",
-      "Score": 1.9807611134,
+      "Score": 1.9260622785,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -70901,7 +70936,7 @@
         }
       ],
       "Status": 1,
-      "Load": 62
+      "Load": 53
     },
     {
       "Name": "PE#33",
@@ -70912,7 +70947,7 @@
       "Features": 28,
       "Region": null,
       "City": "Lima",
-      "Score": 5.9932277,
+      "Score": 5.9855330755,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -70936,7 +70971,7 @@
         }
       ],
       "Status": 1,
-      "Load": 9
+      "Load": 7
     },
     {
       "Name": "PE#34",
@@ -70947,7 +70982,7 @@
       "Features": 28,
       "Region": null,
       "City": "Lima",
-      "Score": 5.9907773761000005,
+      "Score": 5.9853902724,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -70971,7 +71006,7 @@
         }
       ],
       "Status": 1,
-      "Load": 13
+      "Load": 10
     },
     {
       "Name": "PE#35",
@@ -70982,7 +71017,7 @@
       "Features": 28,
       "Region": null,
       "City": "Lima",
-      "Score": 5.9923307963,
+      "Score": 5.984517259,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -71006,7 +71041,7 @@
         }
       ],
       "Status": 1,
-      "Load": 7
+      "Load": 4
     },
     {
       "Name": "PE#36",
@@ -71017,7 +71052,7 @@
       "Features": 28,
       "Region": null,
       "City": "Lima",
-      "Score": 5.9853326788,
+      "Score": 5.9917447925000005,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -71041,7 +71076,7 @@
         }
       ],
       "Status": 1,
-      "Load": 12
+      "Load": 8
     },
     {
       "Name": "CL#33",
@@ -71052,7 +71087,7 @@
       "Features": 28,
       "Region": null,
       "City": "Santiago",
-      "Score": 2.9882348874,
+      "Score": 2.9924964625,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -71076,7 +71111,7 @@
         }
       ],
       "Status": 1,
-      "Load": 26
+      "Load": 25
     },
     {
       "Name": "CL#34",
@@ -71087,7 +71122,7 @@
       "Features": 28,
       "Region": null,
       "City": "Santiago",
-      "Score": 2.9925551844,
+      "Score": 2.9903356736999998,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -71122,7 +71157,7 @@
       "Features": 28,
       "Region": null,
       "City": "Santiago",
-      "Score": 2.9941670853,
+      "Score": 2.9939533408,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -71157,7 +71192,7 @@
       "Features": 28,
       "Region": null,
       "City": "Santiago",
-      "Score": 2.9899071289,
+      "Score": 2.9914664172,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -71192,7 +71227,7 @@
       "Features": 1,
       "Region": null,
       "City": "Moscow",
-      "Score": 5.9988538759,
+      "Score": 5.9912660211999995,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -71216,7 +71251,7 @@
         }
       ],
       "Status": 1,
-      "Load": 20
+      "Load": 53
     },
     {
       "Name": "RU#70",
@@ -71227,7 +71262,7 @@
       "Features": 12,
       "Region": null,
       "City": "Moscow",
-      "Score": 5.9933535903,
+      "Score": 5.9913268742,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -71251,7 +71286,7 @@
         }
       ],
       "Status": 1,
-      "Load": 22
+      "Load": 55
     },
     {
       "Name": "RU#71",
@@ -71262,7 +71297,7 @@
       "Features": 12,
       "Region": null,
       "City": "Moscow",
-      "Score": 5.9920908002,
+      "Score": 5.9954367652,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -71286,7 +71321,7 @@
         }
       ],
       "Status": 1,
-      "Load": 22
+      "Load": 55
     },
     {
       "Name": "RU#72",
@@ -71297,7 +71332,7 @@
       "Features": 12,
       "Region": null,
       "City": "Moscow",
-      "Score": 5.9971190976,
+      "Score": 5.9927821762,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -71321,7 +71356,7 @@
         }
       ],
       "Status": 1,
-      "Load": 22
+      "Load": 55
     },
     {
       "Name": "RU#73",
@@ -71332,7 +71367,7 @@
       "Features": 12,
       "Region": null,
       "City": "Moscow",
-      "Score": 5.9925047026,
+      "Score": 5.9866755054,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -71356,7 +71391,7 @@
         }
       ],
       "Status": 1,
-      "Load": 13
+      "Load": 46
     },
     {
       "Name": "PS#27",
@@ -71367,7 +71402,7 @@
       "Features": 12,
       "Region": null,
       "City": "Ramallah",
-      "Score": 5.9948684074,
+      "Score": 5.9887307932,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -71391,7 +71426,7 @@
         }
       ],
       "Status": 1,
-      "Load": 22
+      "Load": 19
     },
     {
       "Name": "PS#28",
@@ -71402,7 +71437,7 @@
       "Features": 12,
       "Region": null,
       "City": "Ramallah",
-      "Score": 5.995998378,
+      "Score": 5.9944181704,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -71426,7 +71461,7 @@
         }
       ],
       "Status": 1,
-      "Load": 15
+      "Load": 12
     },
     {
       "Name": "PS#29",
@@ -71437,7 +71472,7 @@
       "Features": 12,
       "Region": null,
       "City": "Ramallah",
-      "Score": 5.9981796193,
+      "Score": 5.9958369408,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -71461,7 +71496,7 @@
         }
       ],
       "Status": 1,
-      "Load": 22
+      "Load": 19
     },
     {
       "Name": "PS#30",
@@ -71472,7 +71507,7 @@
       "Features": 12,
       "Region": null,
       "City": "Ramallah",
-      "Score": 5.9904285127,
+      "Score": 5.9927874416,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -71496,7 +71531,7 @@
         }
       ],
       "Status": 1,
-      "Load": 22
+      "Load": 19
     },
     {
       "Name": "CH-PS#1",
@@ -71507,7 +71542,7 @@
       "Features": 1,
       "Region": null,
       "City": "Ramallah",
-      "Score": 5.9953102319,
+      "Score": 5.9943716513,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -71531,7 +71566,7 @@
         }
       ],
       "Status": 1,
-      "Load": 14
+      "Load": 10
     },
     {
       "Name": "GR#65",
@@ -71542,7 +71577,7 @@
       "Features": 28,
       "Region": null,
       "City": "Athens",
-      "Score": 2.9936327514,
+      "Score": 2.9960953109,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -71566,7 +71601,7 @@
         }
       ],
       "Status": 1,
-      "Load": 7
+      "Load": 6
     },
     {
       "Name": "GR#66",
@@ -71577,7 +71612,7 @@
       "Features": 28,
       "Region": null,
       "City": "Athens",
-      "Score": 2.9974829236,
+      "Score": 2.9936364218,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -71612,7 +71647,7 @@
       "Features": 28,
       "Region": null,
       "City": "Athens",
-      "Score": 2.9925553611,
+      "Score": 2.9942097018,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -71636,7 +71671,7 @@
         }
       ],
       "Status": 1,
-      "Load": 7
+      "Load": 6
     },
     {
       "Name": "GR#68",
@@ -71647,7 +71682,7 @@
       "Features": 28,
       "Region": null,
       "City": "Athens",
-      "Score": 2.993563404,
+      "Score": 2.9964558802,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -71682,7 +71717,7 @@
       "Features": 28,
       "Region": null,
       "City": "Helsinki",
-      "Score": 2.9892159822,
+      "Score": 2.9856908887999998,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -71706,7 +71741,7 @@
         }
       ],
       "Status": 1,
-      "Load": 18
+      "Load": 26
     },
     {
       "Name": "FI#43",
@@ -71717,7 +71752,7 @@
       "Features": 28,
       "Region": null,
       "City": "Helsinki",
-      "Score": 2.9904904372,
+      "Score": 2.994422282,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -71741,7 +71776,7 @@
         }
       ],
       "Status": 1,
-      "Load": 17
+      "Load": 25
     },
     {
       "Name": "FI#44",
@@ -71752,7 +71787,7 @@
       "Features": 28,
       "Region": null,
       "City": "Helsinki",
-      "Score": 2.9913894001,
+      "Score": 2.9935841637,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -71776,7 +71811,7 @@
         }
       ],
       "Status": 1,
-      "Load": 19
+      "Load": 26
     },
     {
       "Name": "FI#45",
@@ -71787,7 +71822,7 @@
       "Features": 28,
       "Region": null,
       "City": "Helsinki",
-      "Score": 2.9933230468,
+      "Score": 2.9946330604,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -71811,7 +71846,7 @@
         }
       ],
       "Status": 1,
-      "Load": 10
+      "Load": 17
     },
     {
       "Name": "HR#49",
@@ -71822,7 +71857,7 @@
       "Features": 28,
       "Region": null,
       "City": "Zagreb",
-      "Score": 2.9923552067,
+      "Score": 2.9911133668,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -71857,7 +71892,7 @@
       "Features": 28,
       "Region": null,
       "City": "Zagreb",
-      "Score": 2.989120655,
+      "Score": 2.9864907117,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -71892,7 +71927,7 @@
       "Features": 28,
       "Region": null,
       "City": "Zagreb",
-      "Score": 2.9925417704,
+      "Score": 2.9929904568,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -71927,7 +71962,7 @@
       "Features": 28,
       "Region": null,
       "City": "Zagreb",
-      "Score": 2.9942483448,
+      "Score": 2.9951127457,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -71962,7 +71997,7 @@
       "Features": 12,
       "Region": null,
       "City": "Glasgow",
-      "Score": 2.9893066604,
+      "Score": 2.9913467725,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -71986,7 +72021,7 @@
         }
       ],
       "Status": 1,
-      "Load": 38
+      "Load": 42
     },
     {
       "Name": "UK#904",
@@ -71997,7 +72032,7 @@
       "Features": 12,
       "Region": null,
       "City": "Glasgow",
-      "Score": 2.9909479846,
+      "Score": 2.9871115226000002,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -72021,7 +72056,7 @@
         }
       ],
       "Status": 1,
-      "Load": 34
+      "Load": 37
     },
     {
       "Name": "UK#905",
@@ -72032,7 +72067,7 @@
       "Features": 12,
       "Region": null,
       "City": "Glasgow",
-      "Score": 2.9928224453,
+      "Score": 2.988723843,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -72056,7 +72091,7 @@
         }
       ],
       "Status": 1,
-      "Load": 32
+      "Load": 36
     },
     {
       "Name": "UK#906",
@@ -72067,7 +72102,7 @@
       "Features": 12,
       "Region": null,
       "City": "Glasgow",
-      "Score": 2.9903403594,
+      "Score": 2.9910610454,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -72091,7 +72126,7 @@
         }
       ],
       "Status": 1,
-      "Load": 29
+      "Load": 33
     },
     {
       "Name": "AE#29",
@@ -72102,7 +72137,7 @@
       "Features": 28,
       "Region": null,
       "City": "Dubai",
-      "Score": 5.9977745735,
+      "Score": 5.9948800629,
       "HostCountry": "FR",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -72126,7 +72161,7 @@
         }
       ],
       "Status": 1,
-      "Load": 3
+      "Load": 1
     },
     {
       "Name": "AE#30",
@@ -72137,7 +72172,7 @@
       "Features": 28,
       "Region": null,
       "City": "Dubai",
-      "Score": 5.9911320644,
+      "Score": 5.9925197089,
       "HostCountry": "FR",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -72161,7 +72196,7 @@
         }
       ],
       "Status": 1,
-      "Load": 10
+      "Load": 7
     },
     {
       "Name": "AE#31",
@@ -72172,7 +72207,7 @@
       "Features": 28,
       "Region": null,
       "City": "Dubai",
-      "Score": 5.9927317527,
+      "Score": 5.9914623167,
       "HostCountry": "FR",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -72196,7 +72231,7 @@
         }
       ],
       "Status": 1,
-      "Load": 11
+      "Load": 9
     },
     {
       "Name": "AE#32",
@@ -72207,7 +72242,7 @@
       "Features": 28,
       "Region": null,
       "City": "Dubai",
-      "Score": 5.9894848896,
+      "Score": 5.9915184856,
       "HostCountry": "FR",
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -72231,7 +72266,7 @@
         }
       ],
       "Status": 1,
-      "Load": 3
+      "Load": 2
     },
     {
       "Name": "US-TX#648",
@@ -72242,7 +72277,7 @@
       "Features": 28,
       "Region": null,
       "City": "Houston",
-      "Score": 1.9712719632,
+      "Score": 1.9538467152,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -72266,7 +72301,7 @@
         }
       ],
       "Status": 1,
-      "Load": 36
+      "Load": 49
     },
     {
       "Name": "US-TX#649",
@@ -72277,7 +72312,7 @@
       "Features": 28,
       "Region": null,
       "City": "Houston",
-      "Score": 1.9747518814,
+      "Score": 1.95025594,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -72301,7 +72336,7 @@
         }
       ],
       "Status": 1,
-      "Load": 43
+      "Load": 55
     },
     {
       "Name": "US-TX#650",
@@ -72312,7 +72347,7 @@
       "Features": 28,
       "Region": null,
       "City": "Houston",
-      "Score": 1.9670292119,
+      "Score": 1.9530407481999998,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -72336,7 +72371,7 @@
         }
       ],
       "Status": 1,
-      "Load": 40
+      "Load": 54
     },
     {
       "Name": "US-TX#651",
@@ -72347,7 +72382,7 @@
       "Features": 28,
       "Region": null,
       "City": "Houston",
-      "Score": 1.9699174707,
+      "Score": 1.9470554608000001,
       "HostCountry": null,
       "OrganizationID": null,
       "VPNGatewayID": null,
@@ -72371,7 +72406,7 @@
         }
       ],
       "Status": 1,
-      "Load": 42
+      "Load": 56
     }
   ],
   "ResponseMetadata": {
