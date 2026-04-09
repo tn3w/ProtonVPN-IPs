@@ -8,7 +8,7 @@ An automatically updated list of IP addresses associated with the widely used fr
 
 ### IPInfo Category
 
-[IPSet](https://github.com/tn3w/IPSet) | [ProtonVPN-IPs](https://github.com/tn3w/ProtonVPN-IPs) | [TunnelBear-IPs](https://github.com/tn3w/TunnelBear-IPs)
+[IPBlocklist](https://github.com/tn3w/IPBlocklist) | [ProtonVPN-IPs](https://github.com/tn3w/ProtonVPN-IPs) | [TunnelBear-IPs](https://github.com/tn3w/TunnelBear-IPs)
 
 </div>
 
