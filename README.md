@@ -29,6 +29,7 @@ An automatically updated list of IP addresses associated with the widely used fr
 | `protonvpn_entry_ips.json`  | [Raw](https://raw.githubusercontent.com/tn3w/ProtonVPN-IPs/refs/heads/master/protonvpn_entry_ips.json)  | Unique entry IP addresses (JSON array)                              |
 | `protonvpn_entry_ips.txt`   | [Raw](https://raw.githubusercontent.com/tn3w/ProtonVPN-IPs/refs/heads/master/protonvpn_entry_ips.txt)   | Unique entry IP addresses (plain text, one per line)                |
 | `protonvpn_subdomains.json` | [Raw](https://raw.githubusercontent.com/tn3w/ProtonVPN-IPs/refs/heads/master/protonvpn_subdomains.json) | Unique ProtonVPN subdomains                                         |
+| `protonvpn_entry_ip_ranges.txt` | [Raw](https://raw.githubusercontent.com/tn3w/ProtonVPN-IPs/refs/heads/master/protonvpn_entry_ip_ranges.txt) | Entry IP ASN ranges as CIDRs (plain text, one per line)            |
 
 ## Token Authentication
 

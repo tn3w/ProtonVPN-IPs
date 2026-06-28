@@ -41,13 +41,13 @@ jobs:
           gh secret set -f .env -R $GITHUB_REPOSITORY
           echo "Successfully updated authentication secrets"
 
-      - name: Run Get ProtonVPN Entry IPs
+      - name: Run Get ProtonVPN Entry IPs and ASN Ranges
         run: python entry_ips.py
 
       - name: Commit and Push Changes
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add protonvpn_ips.json protonvpn_ips.txt protonvpn_logicals.json protonvpn_entry_ips.json protonvpn_entry_ips.txt protonvpn_subdomains.json
+          git add protonvpn_ips.json protonvpn_ips.txt protonvpn_logicals.json protonvpn_entry_ips.json protonvpn_entry_ips.txt protonvpn_subdomains.json protonvpn_entry_ip_ranges.txt
           git commit -m "Update ProtonVPN IPs [skip ci]" || echo "No changes to commit"
           git push
