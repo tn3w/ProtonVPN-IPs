@@ -104,6 +104,11 @@ def fetch_subdomains(domain, attempts=10, delay=30):
     return []
 
 
+def ip_sort_key(ip):
+    address = ipaddress.ip_address(ip)
+    return address.version, address
+
+
 def get_ips_for_hostname(hostname):
     ip_addresses = set()
     for family in (socket.AF_INET, socket.AF_INET6):
@@ -136,7 +141,7 @@ def resolve_hostnames(hostnames, workers=10):
             if index % 10 == 0:
                 print(f"Progress: {index}/{len(hostnames)} hostnames processed")
 
-    return sorted(ip_addresses, key=ipaddress.ip_address)
+    return sorted(ip_addresses, key=ip_sort_key)
 
 
 class AsnDb:

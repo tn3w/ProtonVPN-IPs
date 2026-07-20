@@ -151,6 +151,11 @@ def combine_logicals(api_data, base_data):
     return {**api_data, "LogicalServers": list(servers_by_id.values())}
 
 
+def ip_sort_key(ip):
+    address = ipaddress.ip_address(ip)
+    return address.version, address
+
+
 def get_unique_exit_ips(logicals):
     exit_ips = {
         server["ExitIP"]
@@ -159,7 +164,7 @@ def get_unique_exit_ips(logicals):
         if server.get("ExitIP")
     }
 
-    return sorted(exit_ips, key=ipaddress.ip_address)
+    return sorted(exit_ips, key=ip_sort_key)
 
 
 def write_outputs(exit_ips, combined_data):
