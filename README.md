@@ -1,157 +1,82 @@
 <div align="center">
-  
-# ProtonVPN-IPs
 
-An automatically updated list of IP addresses associated with the widely used free and privacy-focused VPN provider, ProtonVPN.
+<h1>ProtonVPN-IPs</h1>
 
-![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/tn3w/ProtonVPN-IPs/main.yml?label=Build&style=for-the-badge)
+**Every IP address ProtonVPN exits and enters from, refreshed daily.**
+Scraped from the Proton API by a GitHub Action, committed as plain files.
 
-### IPInfo Category
+![Build](https://img.shields.io/github/actions/workflow/status/tn3w/ProtonVPN-IPs/main.yml?label=Build&style=for-the-badge)
 
-[IPBlocklist](https://github.com/tn3w/IPBlocklist) | [IP2X](https://github.com/tn3w/IP2X) | [ProtonVPN-IPs](https://github.com/tn3w/ProtonVPN-IPs) | [TunnelBear-IPs](https://github.com/tn3w/TunnelBear-IPs) | [Windscribe-IPs](https://github.com/tn3w/Windscribe-IPs)
+<picture>
+<source media="(prefers-color-scheme: dark)" srcset="assets/overview-dark.svg">
+<img src="assets/overview-light.svg" width="880" alt="Exit IP, entry IP, hostname and ASN range counts, and exit IPs by country">
+</picture>
+
+[IPBlocklist](https://github.com/tn3w/IPBlocklist) |
+[IP2X](https://github.com/tn3w/IP2X) |
+[TunnelBear-IPs](https://github.com/tn3w/TunnelBear-IPs) |
+[Windscribe-IPs](https://github.com/tn3w/Windscribe-IPs)
 
 </div>
 
-## Table of Contents
+<br>
 
-- [Data Files](#data-files)
-- [Token Authentication](#token-authentication)
-- [Usage Examples](#usage-examples)
-- [License](#license)
+## Files
 
-## Data Files
-
-| File                        | Raw Link                                                                                                | Purpose                                                             |
-| --------------------------- | ------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- |
-| `protonvpn_logicals.json`   | [Raw](https://raw.githubusercontent.com/tn3w/ProtonVPN-IPs/refs/heads/master/protonvpn_logicals.json)   | Complete ProtonVPN API response with detailed server configurations |
-| `protonvpn_ips.json`        | [Raw](https://raw.githubusercontent.com/tn3w/ProtonVPN-IPs/refs/heads/master/protonvpn_ips.json)        | Unique exit IP addresses (JSON array)                               |
-| `protonvpn_ips.txt`         | [Raw](https://raw.githubusercontent.com/tn3w/ProtonVPN-IPs/refs/heads/master/protonvpn_ips.txt)         | Unique exit IP addresses (plain text, one per line)                 |
-| `protonvpn_entry_ips.json`  | [Raw](https://raw.githubusercontent.com/tn3w/ProtonVPN-IPs/refs/heads/master/protonvpn_entry_ips.json)  | Unique entry IP addresses (JSON array)                              |
-| `protonvpn_entry_ips.txt`   | [Raw](https://raw.githubusercontent.com/tn3w/ProtonVPN-IPs/refs/heads/master/protonvpn_entry_ips.txt)   | Unique entry IP addresses (plain text, one per line)                |
-| `protonvpn_subdomains.json` | [Raw](https://raw.githubusercontent.com/tn3w/ProtonVPN-IPs/refs/heads/master/protonvpn_subdomains.json) | Unique ProtonVPN subdomains                                         |
-| `protonvpn_entry_ip_ranges.txt` | [Raw](https://raw.githubusercontent.com/tn3w/ProtonVPN-IPs/refs/heads/master/protonvpn_entry_ip_ranges.txt) | Entry IP ASN ranges as CIDRs (plain text, one per line)            |
-
-## Token Authentication
-
-The project uses Proton API authentication tokens with automatic refresh capability. The workflow automatically updates expired tokens.
-
-### Required Repository Secrets
-
-| Secret          | Source                           | Purpose                   |
-| --------------- | -------------------------------- | ------------------------- |
-| `AUTH_PM_UID`   | ProtonVPN cookie `AUTH-{uid}`    | Account identifier        |
-| `AUTH_TOKEN`    | ProtonVPN cookie value           | Authentication token      |
-| `REFRESH_TOKEN` | ProtonVPN cookie `REFRESH-{uid}` | Token refresh credentials |
-| `SESSION_ID`    | ProtonVPN cookie `Session-Id`    | Session identifier        |
-| `GH_TOKEN`      | GitHub fine-grained token        | Update repository secrets |
-
-### Quick Setup
-
-1. **Extract ProtonVPN tokens**: Login to [account.protonvpn.com](https://account.protonvpn.com), open browser dev tools (F12), go to Web Storage → Cookies, extract cookie values
-2. **Create GitHub token**: Go to GitHub Settings → Developer settings → Personal access tokens → Fine-grained tokens, create with `Contents: Read/Write` and `Secrets: Read/Write` permissions
-3. **Add secrets**: In your repository, go to Settings → Secrets and variables → Actions, add all required secrets
-4. **Test**: Run the workflow from Actions tab
-
-### Token Details
-
-From your browser's Web Storage → Cookies, extract:
-
-- **AUTH_PM_UID**: The `{uid}` from `AUTH-{uid}` cookie name
-- **AUTH_TOKEN**: Value of `AUTH-{uid}` cookie
-- **REFRESH_TOKEN**: Value of `REFRESH-{uid}` cookie
-- **SESSION_ID**: Value of `Session-Id` cookie
-
-### Notes
-
-- Tokens refresh automatically every ~24 hours
-- `REFRESH_TOKEN` expires after ~180 days (manual renewal required)
-- Free accounts access fewer servers than paid accounts
-- Never share tokens publicly
-
-## Usage Examples
-
-### Check Exit IP
+| File | Contents |
+|------|----------|
+| [`protonvpn_ips.txt`](https://raw.githubusercontent.com/tn3w/ProtonVPN-IPs/refs/heads/master/protonvpn_ips.txt), [`.json`](https://raw.githubusercontent.com/tn3w/ProtonVPN-IPs/refs/heads/master/protonvpn_ips.json) | exit IPs, the address a site sees |
+| [`protonvpn_entry_ips.txt`](https://raw.githubusercontent.com/tn3w/ProtonVPN-IPs/refs/heads/master/protonvpn_entry_ips.txt), [`.json`](https://raw.githubusercontent.com/tn3w/ProtonVPN-IPs/refs/heads/master/protonvpn_entry_ips.json) | entry IPs, the address a client connects to |
+| [`protonvpn_entry_ip_ranges.txt`](https://raw.githubusercontent.com/tn3w/ProtonVPN-IPs/refs/heads/master/protonvpn_entry_ip_ranges.txt) | CIDRs of the ASNs behind the entry IPs |
+| [`protonvpn_subdomains.json`](https://raw.githubusercontent.com/tn3w/ProtonVPN-IPs/refs/heads/master/protonvpn_subdomains.json) | server hostnames |
+| [`protonvpn_logicals.json`](https://raw.githubusercontent.com/tn3w/ProtonVPN-IPs/refs/heads/master/protonvpn_logicals.json) | the full API response, every field |
 
 ```python
 import json
-import netaddr
 
-def is_protonvpn_exit_ip(ip_to_check):
-    try:
-        netaddr.IPAddress(ip_to_check)
-        with open('protonvpn_ips.json', 'r') as f:
-            protonvpn_ips = json.load(f)
-        return ip_to_check in protonvpn_ips
-    except:
-        return False
+with open("protonvpn_ips.json") as file:
+    exit_ips = set(json.load(file))
 
-# Usage
-if is_protonvpn_exit_ip("84.247.50.181"):
-    print("ProtonVPN exit IP detected")
+"84.247.50.181" in exit_ips  # True
 ```
 
-### Check Entry IP
+Ranges are CIDRs behind a `#` header:
 
 ```python
-import json
-import netaddr
+import ipaddress
 
-def is_protonvpn_entry_ip(ip_to_check):
-    try:
-        netaddr.IPAddress(ip_to_check)
-        with open('protonvpn_entry_ips.json', 'r') as f:
-            protonvpn_ips = json.load(f)
-        return ip_to_check in protonvpn_ips
-    except:
-        return False
+with open("protonvpn_entry_ip_ranges.txt") as file:
+    networks = [
+        ipaddress.ip_network(line.strip())
+        for line in file
+        if line.strip() and not line.startswith("#")
+    ]
 
-# Usage
-if is_protonvpn_entry_ip("146.70.120.210"):
-    print("ProtonVPN entry IP detected")
+address = ipaddress.ip_address("146.70.120.210")
+any(address in network for network in networks)  # True
 ```
 
-### Bulk IP Check
+These are whole ASNs and overshoot, only shared ISP and CDN ones are trimmed to
+their entry IPs. Prefer the IP lists.
 
-```python
-import json
-from typing import List, Dict
+## Running it yourself
 
-def check_multiple_ips(ips_to_check: List[str]) -> Dict[str, Dict[str, bool]]:
-    try:
-        with open('protonvpn_ips.json', 'r') as f:
-            exit_ips = set(json.load(f))
-        with open('protonvpn_entry_ips.json', 'r') as f:
-            entry_ips = set(json.load(f))
-
-        results = {}
-        for ip in ips_to_check:
-            results[ip] = {
-                'is_exit_ip': ip in exit_ips,
-                'is_entry_ip': ip in entry_ips
-            }
-        return results
-    except Exception as e:
-        return {'error': str(e)}
-
-# Usage
-ips = ["146.70.120.210", "84.247.50.181", "192.168.1.1"]
-results = check_multiple_ips(ips)
-for ip, status in results.items():
-    print(f"{ip}: Exit={status.get('is_exit_ip', False)}, Entry={status.get('is_entry_ip', False)}")
+```
+python main.py         # logicals, exit IPs
+python entry_ips.py    # entry IPs, ASN ranges
 ```
 
-## License
+The API needs a logged-in session. Take four cookies from
+[account.protonvpn.com](https://account.protonvpn.com) (F12, Web Storage, Cookies)
+into secrets:
 
-Copyright 2025 TN3W
+| Secret | Cookie |
+|--------|--------|
+| `AUTH_PM_UID` | the `{uid}` in the `AUTH-{uid}` name |
+| `AUTH_TOKEN` | value of `AUTH-{uid}` |
+| `REFRESH_TOKEN` | value of `REFRESH-{uid}` |
+| `SESSION_ID` | value of `Session-Id` |
 
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
+A fifth, `GH_TOKEN` with `Contents: Read/Write` and `Secrets: Read/Write`, lets
+the workflow write refreshed tokens back. Auth rotates every ~24 h by itself,
+`REFRESH_TOKEN` dies after ~180 days. Free accounts see fewer servers than paid.
