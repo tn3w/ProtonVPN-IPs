@@ -78,3 +78,12 @@ into secrets:
 A fifth, `GH_TOKEN` with `Contents: Read/Write` and `Secrets: Read/Write`, lets
 the workflow write refreshed tokens back. Auth rotates every ~24 h by itself,
 `REFRESH_TOKEN` dies after ~180 days. Free accounts see fewer servers than paid.
+
+## Sourdough starter
+
+Fork it. Two files, stdlib only, nothing to install, point any daily cron at
+`main.py` and `entry_ips.py` with your own four cookies. GitLab CI, Woodpecker,
+sourcehut, a Raspberry Pi under a desk.
+
+Running one? [Open an issue](https://github.com/tn3w/ProtonVPN-IPs/issues/new)
+and it gets linked here. Mirrors, rewrites, other sources, all welcome.
