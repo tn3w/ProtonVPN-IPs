@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import ipaddress
 import json
 import mmap
@@ -5,10 +6,10 @@ import os
 import socket
 import struct
 import time
+import urllib.error
 import urllib.request
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
-from typing import List
 
 
 TXT_HEADER = """#
@@ -37,6 +38,8 @@ RANGES_HEADER = """#
 #
 """
 
+BASE_DOMAIN = "protonvpn.net"
+
 DB_URL = "https://github.com/tn3w/ASNDB/releases/latest/download/asndb-tiny.bin"
 DB_PATH = Path(os.environ.get("XDG_CACHE_HOME", Path.home() / ".cache"))
 DB_PATH = DB_PATH / "asndb" / "asndb-tiny.bin"
@@ -63,51 +66,59 @@ SEG4 = struct.Struct("<II")
 SEG6 = struct.Struct("<16sI")
 
 
-def get_subdomains_from_crtsh(domain: str) -> List[str]:
-    """Get subdomains for a domain from crt.sh using their web API."""
-    subdomains = set()
+def get_subdomains_from_crtsh(domain):
+    url = f"https://crt.sh/json?q={domain}"
     try:
-        with urllib.request.urlopen(
-            f"https://crt.sh/json?q={domain}", timeout=60
-        ) as response:
-            if response.status == 200:
-                data = json.loads(response.read().decode("utf-8"))
-                for item in data:
-                    for name in item.get("name_value", "").split("\n"):
-                        if (
-                            domain in name
-                            and name.endswith(domain)
-                            and name != domain
-                            and "*" not in name
-                        ):
-                            subdomains.add(name.strip().lower())
-    except Exception as e:
-        print(f"Error with crt.sh API: {e}")
+        with urllib.request.urlopen(url, timeout=60) as response:
+            if response.status != 200:
+                return set()
+            entries = json.loads(response.read().decode("utf-8"))
+    except (urllib.error.URLError, TimeoutError, json.JSONDecodeError) as error:
+        print(f"Error with crt.sh API: {error}")
+        return set()
 
-    return list(subdomains)
+    names = (
+        name.strip().lower()
+        for entry in entries
+        for name in entry.get("name_value", "").split("\n")
+    )
 
-
-def get_ips_for_hostname(hostname: str) -> List[str]:
-    """Get both IPv4 and IPv6 addresses for a hostname."""
-    ips = set()
-
-    try:
-        for info in socket.getaddrinfo(hostname, None, socket.AF_INET):
-            ips.add(info[4][0])
-    except (socket.gaierror, socket.herror) as e:
-        print(f"IPv4 lookup failed for {hostname}: {e}")
-
-    try:
-        for info in socket.getaddrinfo(hostname, None, socket.AF_INET6):
-            ips.add(info[4][0])
-    except (socket.gaierror, socket.herror) as e:
-        print(f"IPv6 lookup failed for {hostname}: {e}")
-
-    return list(ips)
+    return {
+        name
+        for name in names
+        if name.endswith(domain) and name != domain and "*" not in name
+    }
 
 
-def batch_get_ips_for_hostnames(hostnames: List[str], workers: int = 10) -> List[str]:
-    """Get IP addresses for multiple hostnames in parallel."""
+def fetch_subdomains(domain, attempts=10, delay=30):
+    for attempt in range(1, attempts + 1):
+        subdomains = get_subdomains_from_crtsh(domain)
+        if subdomains:
+            return sorted(subdomains)
+
+        print(f"Attempt {attempt}/{attempts}: No subdomains found from crt.sh API")
+        if attempt < attempts:
+            print(f"Retrying in {delay} seconds due to known intermittent issues...")
+            time.sleep(delay)
+
+    return []
+
+
+def get_ips_for_hostname(hostname):
+    ip_addresses = set()
+    for family in (socket.AF_INET, socket.AF_INET6):
+        try:
+            infos = socket.getaddrinfo(hostname, None, family)
+        except (socket.gaierror, socket.herror, UnicodeError) as error:
+            print(f"Lookup failed for {hostname}: {error}")
+            continue
+
+        ip_addresses.update(info[4][0] for info in infos)
+
+    return ip_addresses
+
+
+def resolve_hostnames(hostnames, workers=10):
     ip_addresses = set()
 
     with ThreadPoolExecutor(max_workers=workers) as executor:
@@ -116,25 +127,19 @@ def batch_get_ips_for_hostnames(hostnames: List[str], workers: int = 10) -> List
             for hostname in hostnames
         }
 
-        for i, future in enumerate(as_completed(futures)):
-            hostname = futures[future]
-            try:
-                ips = future.result()
-                if ips:
-                    print(f"Found {len(ips)} IPs for {hostname}")
-                    ip_addresses.update(ips)
-            except Exception as e:
-                print(f"Error processing {hostname}: {e}")
+        for index, future in enumerate(as_completed(futures), 1):
+            resolved = future.result()
+            if resolved:
+                print(f"Found {len(resolved)} IPs for {futures[future]}")
+                ip_addresses.update(resolved)
 
-            if (i + 1) % 10 == 0:
-                print(f"Progress: {i + 1}/{len(hostnames)} hostnames processed")
+            if index % 10 == 0:
+                print(f"Progress: {index}/{len(hostnames)} hostnames processed")
 
-    return list(ip_addresses)
+    return sorted(ip_addresses, key=ipaddress.ip_address)
 
 
 class AsnDb:
-    """ASNDB tiny reader: mmap + struct + bisect over IP segments."""
-
     def __init__(self, path):
         self.file = open(path, "rb")
         self.mm = mmap.mmap(self.file.fileno(), 0, access=mmap.ACCESS_READ)
@@ -158,12 +163,17 @@ class AsnDb:
         return self.mm[base + 4 : base + 4 + length].decode("utf-8", "replace")
 
     def locate(self, ip):
-        addr = ipaddress.ip_address(ip)
-        if addr.version == 4:
-            return self._segment(self.seg4_off, self.counts["seg4"], 8, int(addr),
-                lambda o: U32.unpack_from(self.mm, o)[0], V4_MAX, 4)
-        return self._segment(self.seg6_off, self.counts["seg6"], 20, int(addr),
-            lambda o: int.from_bytes(self.mm[o : o + 16], "big"), V6_MAX, 6)
+        address = ipaddress.ip_address(ip)
+        if address.version == 4:
+            return self._segment(
+                self.seg4_off, self.counts["seg4"], 8, int(address),
+                lambda offset: U32.unpack_from(self.mm, offset)[0], V4_MAX, 4,
+            )
+        return self._segment(
+            self.seg6_off, self.counts["seg6"], 20, int(address),
+            lambda offset: int.from_bytes(self.mm[offset : offset + 16], "big"),
+            V6_MAX, 6,
+        )
 
     def _segment(self, base, count, stride, key, key_at, top, version):
         lo, hi = 0, count
@@ -175,47 +185,53 @@ class AsnDb:
                 hi = mid
         if lo == 0:
             return None
+
         record = base + (lo - 1) * stride
         index = U32.unpack_from(self.mm, record + stride - 4)[0]
         if index == NO_ASN:
             return None
-        start = key_at(record)
+
         end = key_at(base + lo * stride) - 1 if lo < count else top
-        return version, start, end, index
+        return version, key_at(record), end, index
 
     def ranges_for(self, targets):
-        return self._scan(self.seg4_off, self.counts["seg4"], SEG4, V4_MAX, 4,
-            targets, int) + self._scan(self.seg6_off, self.counts["seg6"], SEG6,
-            V6_MAX, 6, targets, lambda b: int.from_bytes(b, "big"))
+        return self._scan(
+            self.seg4_off, self.counts["seg4"], SEG4, V4_MAX, 4, targets, int
+        ) + self._scan(
+            self.seg6_off, self.counts["seg6"], SEG6, V6_MAX, 6, targets,
+            lambda raw: int.from_bytes(raw, "big"),
+        )
 
     def _scan(self, base, count, fmt, top, version, targets, to_int):
         raw = self.mm[base : base + count * fmt.size]
         records = list(fmt.iter_unpack(raw))
-        out = []
-        for i, (start, index) in enumerate(records):
-            if index not in targets:
+        rows = []
+        for index, (start, asn_index) in enumerate(records):
+            if asn_index not in targets:
                 continue
-            end = to_int(records[i + 1][0]) - 1 if i + 1 < count else top
-            out.append((version, to_int(start), end,
-                self.asn_at(index), self.name_at(index)))
-        return out
+            end = to_int(records[index + 1][0]) - 1 if index + 1 < count else top
+            rows.append((
+                version, to_int(start), end,
+                self.asn_at(asn_index), self.name_at(asn_index),
+            ))
+        return rows
 
 
 def ensure_db(path, url):
     if path.exists():
         return
+
     path.parent.mkdir(parents=True, exist_ok=True)
     print(f"Downloading {url}")
     urllib.request.urlretrieve(url, path)
 
 
 def to_cidrs(version, start, end):
-    cls = ipaddress.IPv4Address if version == 4 else ipaddress.IPv6Address
-    return ipaddress.summarize_address_range(cls(start), cls(end))
+    address = ipaddress.IPv4Address if version == 4 else ipaddress.IPv6Address
+    return ipaddress.summarize_address_range(address(start), address(end))
 
 
 def build_ranges(db, ip_addresses):
-    """Resolve IPs to ASN ranges: full ASN expansion, sensitive ASNs trimmed."""
     targets = set()
     hits = {}
     unresolved = []
@@ -224,11 +240,12 @@ def build_ranges(db, ip_addresses):
         if located is None:
             unresolved.append(ip)
             continue
+
         version, start, end, index = located
         targets.add(index)
         hits[(version, start, end)] = index
 
-    sensitive = {i for i in targets if db.asn_at(i) in SENSITIVE_ASNS}
+    sensitive = {index for index in targets if db.asn_at(index) in SENSITIVE_ASNS}
     rows = db.ranges_for(targets - sensitive)
     for (version, start, end), index in hits.items():
         if index in sensitive:
@@ -240,17 +257,18 @@ def build_ranges(db, ip_addresses):
 def write_ranges_txt(rows, path):
     lines = []
     for version, start, end, _, _ in rows:
-        lines.extend(str(net) for net in to_cidrs(version, start, end))
-    with path.open("w", encoding="utf-8") as f:
-        f.write(RANGES_HEADER)
-        f.write("\n".join(lines))
+        lines.extend(str(network) for network in to_cidrs(version, start, end))
+
+    with path.open("w", encoding="utf-8") as file:
+        file.write(RANGES_HEADER)
+        file.write("\n".join(lines))
 
 
 def generate_ranges(ip_addresses):
     ensure_db(DB_PATH, DB_URL)
-    db = AsnDb(DB_PATH)
-    rows, unresolved = build_ranges(db, ip_addresses)
+    rows, unresolved = build_ranges(AsnDb(DB_PATH), ip_addresses)
     write_ranges_txt(rows, RANGES_OUTPUT)
+
     asns = {asn for _, _, _, asn, _ in rows}
     print(f"Wrote {len(rows)} ranges across {len(asns)} ASNs")
     print(f"  trimmed to containing segments: {len(SENSITIVE_ASNS)} sensitive ASNs")
@@ -258,51 +276,50 @@ def generate_ranges(ip_addresses):
         print(f"  unresolved IPs: {len(unresolved)}")
 
 
+def write_outputs(subdomains, ip_addresses):
+    with open("protonvpn_subdomains.json", "w", encoding="utf-8") as file:
+        json.dump(subdomains, file, indent=2)
+
+    with open("protonvpn_entry_ips.json", "w", encoding="utf-8") as file:
+        json.dump(ip_addresses, file, indent=2)
+
+    with open("protonvpn_entry_ips.txt", "w", encoding="utf-8") as file:
+        file.write(TXT_HEADER)
+        file.write("\n".join(ip_addresses))
+
+
+def print_distribution(ip_addresses):
+    total = len(ip_addresses)
+    if not total:
+        return
+
+    ipv4_count = sum(1 for ip in ip_addresses if ":" not in ip)
+    counts = {"IPv4": ipv4_count, "IPv6": total - ipv4_count}
+
+    print("\nIP Address Distribution:")
+    for label, count in counts.items():
+        bar = "█" * int(30 * count / total)
+        print(f"{label} ({count}): {bar} {count / total:.1%}")
+
+
 def main():
-    """Discover ProtonVPN entry IPs and build the ASN range blocklist."""
     print("Starting Entry IP discovery...")
-    base_domain = "protonvpn.net"
 
-    subdomains = list()
-    for i in range(10):
-        subdomains = get_subdomains_from_crtsh(base_domain)
-        if subdomains:
-            break
-        print(f"Attempt {i + 1}/10: No subdomains found from crt.sh API")
-        print("Retrying in 30 seconds due to known intermittent issues...")
-        time.sleep(30)
-
+    subdomains = fetch_subdomains(BASE_DOMAIN)
     if not subdomains:
         print("Error: No subdomains found. Exiting.")
         return
 
-    with open("protonvpn_subdomains.json", "w", encoding="utf-8") as f:
-        json.dump(list(subdomains), f, indent=2)
-
     print(f"Processing {len(subdomains)} subdomains...")
+    ip_addresses = resolve_hostnames(subdomains)
 
-    ip_addresses = batch_get_ips_for_hostnames(subdomains)
-    with open("protonvpn_entry_ips.json", "w", encoding="utf-8") as f:
-        json.dump(ip_addresses, f, indent=2)
-
-    with open("protonvpn_entry_ips.txt", "w", encoding="utf-8") as f:
-        f.write(TXT_HEADER)
-        f.write("\n".join(ip_addresses))
-
-    ipv4_count = sum(1 for ip in ip_addresses if ":" not in ip)
-    ipv6_count = sum(1 for ip in ip_addresses if ":" in ip)
-    total = len(ip_addresses)
+    write_outputs(subdomains, ip_addresses)
 
     print("\nSummary:")
     print(f"Total subdomains discovered: {len(subdomains)}")
-    print(f"Total unique Entry IPs found: {total}")
+    print(f"Total unique Entry IPs found: {len(ip_addresses)}")
 
-    print("\nIP Address Distribution:")
-    ipv4_bar = "█" * int(30 * ipv4_count / total)
-    ipv6_bar = "█" * int(30 * ipv6_count / total)
-
-    print(f"IPv4 ({ipv4_count}): {ipv4_bar} {ipv4_count/total:.1%}")
-    print(f"IPv6 ({ipv6_count}): {ipv6_bar} {ipv6_count/total:.1%}")
+    print_distribution(ip_addresses)
 
     print("\nGenerating ASN range blocklist...")
     generate_ranges(ip_addresses)
