@@ -5,8 +5,6 @@
 **Every IP address ProtonVPN exits and enters from, refreshed daily.**
 Scraped from the Proton API by a GitHub Action, committed as plain files.
 
-![Build](https://img.shields.io/github/actions/workflow/status/tn3w/ProtonVPN-IPs/main.yml?label=Build&style=for-the-badge)
-
 <picture>
 <source media="(prefers-color-scheme: dark)" srcset="assets/overview-dark.svg">
 <img src="assets/overview-light.svg" width="880" alt="Exit IP, entry IP, hostname and ASN range counts, and exit IPs by country">
