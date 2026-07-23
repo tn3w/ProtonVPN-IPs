@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+import bisect
 import ipaddress
 import json
 import mmap
@@ -43,6 +44,8 @@ BASE_DOMAIN = "protonvpn.net"
 DB_URL = "https://github.com/tn3w/ASNDB/releases/latest/download/asndb-tiny.bin"
 DB_PATH = Path(os.environ.get("XDG_CACHE_HOME", Path.home() / ".cache"))
 DB_PATH = DB_PATH / "asndb" / "asndb-tiny.bin"
+
+VPN_LIST_URL = "https://raw.githubusercontent.com/X4BNet/lists_vpn/main/ipv4.txt"
 
 RANGES_OUTPUT = Path("protonvpn_entry_ip_ranges.txt")
 
@@ -222,6 +225,47 @@ class AsnDb:
         return rows
 
 
+class IntervalSet:
+    def __init__(self, intervals):
+        merged = []
+        for start, end in sorted(intervals):
+            if merged and start <= merged[-1][1] + 1:
+                merged[-1][1] = max(merged[-1][1], end)
+            else:
+                merged.append([start, end])
+        self.starts = [start for start, _ in merged]
+        self.ends = [end for _, end in merged]
+
+    def contains(self, start, end):
+        index = bisect.bisect_right(self.starts, start) - 1
+        return index >= 0 and end <= self.ends[index]
+
+
+def fetch_vpn_ranges(url):
+    print(f"Downloading {url}")
+    try:
+        with urllib.request.urlopen(url, timeout=60) as response:
+            text = response.read().decode("utf-8")
+    except (urllib.error.URLError, TimeoutError) as error:
+        print(f"Error fetching VPN list: {error}")
+        return IntervalSet([])
+
+    intervals = []
+    for line in text.splitlines():
+        line = line.strip()
+        if not line or line.startswith("#"):
+            continue
+        try:
+            network = ipaddress.ip_network(line, strict=False)
+        except ValueError:
+            continue
+        if network.version == 4:
+            start = int(network.network_address)
+            intervals.append((start, int(network.broadcast_address)))
+
+    return IntervalSet(intervals)
+
+
 def ensure_db(path, url):
     if path.exists():
         return
@@ -236,7 +280,7 @@ def to_cidrs(version, start, end):
     return ipaddress.summarize_address_range(address(start), address(end))
 
 
-def build_ranges(db, ip_addresses):
+def build_ranges(db, ip_addresses, vpn_ranges):
     targets = set()
     hits = {}
     unresolved = []
@@ -250,10 +294,16 @@ def build_ranges(db, ip_addresses):
         targets.add(index)
         hits[(version, start, end)] = index
 
-    sensitive = {index for index in targets if db.asn_at(index) in SENSITIVE_ASNS}
-    rows = db.ranges_for(targets - sensitive)
+    rows = []
+    for row in db.ranges_for(targets):
+        version, start, end, asn, _ = row
+        if asn not in SENSITIVE_ASNS:
+            rows.append(row)
+        elif version == 4 and vpn_ranges.contains(start, end):
+            rows.append(row)
+
     for (version, start, end), index in hits.items():
-        if index in sensitive:
+        if db.asn_at(index) in SENSITIVE_ASNS:
             rows.append((version, start, end, db.asn_at(index), db.name_at(index)))
 
     return sorted(set(rows)), unresolved
@@ -271,12 +321,13 @@ def write_ranges_txt(rows, path):
 
 def generate_ranges(ip_addresses):
     ensure_db(DB_PATH, DB_URL)
-    rows, unresolved = build_ranges(AsnDb(DB_PATH), ip_addresses)
+    vpn_ranges = fetch_vpn_ranges(VPN_LIST_URL)
+    rows, unresolved = build_ranges(AsnDb(DB_PATH), ip_addresses, vpn_ranges)
     write_ranges_txt(rows, RANGES_OUTPUT)
 
     asns = {asn for _, _, _, asn, _ in rows}
     print(f"Wrote {len(rows)} ranges across {len(asns)} ASNs")
-    print(f"  trimmed to containing segments: {len(SENSITIVE_ASNS)} sensitive ASNs")
+    print(f"  {len(SENSITIVE_ASNS)} sensitive ASNs trimmed to VPN-list + entry ranges")
     if unresolved:
         print(f"  unresolved IPs: {len(unresolved)}")
 
