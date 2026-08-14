@@ -1,11 +1,10 @@
 #!/usr/bin/env python3
 import bisect
+import gzip
 import ipaddress
 import json
-import mmap
 import os
 import socket
-import struct
 import time
 import urllib.error
 import urllib.request
@@ -29,7 +28,7 @@ RANGES_HEADER = """#
 # https://github.com/tn3w/ProtonVPN-IPs/blob/master/protonvpn_entry_ip_ranges.txt
 #
 # An automatically updated list of CIDR ranges of the ASNs that host
-# ProtonVPN entry IPs, derived via the ASNDB database.
+# ProtonVPN entry IPs, derived from the iptoasn.com database.
 #
 # ASNs that are shared consumer ISPs or CDNs are trimmed to only the ranges
 # directly containing an entry IP, to avoid blocking unrelated services.
@@ -41,9 +40,10 @@ RANGES_HEADER = """#
 
 BASE_DOMAIN = "protonvpn.net"
 
-DB_URL = "https://github.com/tn3w/ASNDB/releases/latest/download/asndb-tiny.bin"
+DB_URL = "https://iptoasn.com/data/ip2asn-combined.tsv.gz"
 DB_PATH = Path(os.environ.get("XDG_CACHE_HOME", Path.home() / ".cache"))
-DB_PATH = DB_PATH / "asndb" / "asndb-tiny.bin"
+DB_PATH = DB_PATH / "ip2asn" / "ip2asn-combined.tsv.gz"
+DB_MAX_AGE = 24 * 3600
 
 VPN_LIST_URL = "https://raw.githubusercontent.com/X4BNet/lists_vpn/main/ipv4.txt"
 
@@ -56,18 +56,6 @@ SENSITIVE_ASNS = {
     212238: "Datacamp / CDNEXT (CDN)",
     60068: "Datacamp / CDN77 (CDN)",
 }
-
-MAGIC = 0x000442444E534144
-NO_ASN = 0xFFFFFFFF
-V4_MAX = 0xFFFFFFFF
-V6_MAX = (1 << 128) - 1
-
-HDR = struct.Struct("<Q B 7x 6I 8Q")
-TINY = struct.Struct("<IIII 2s 3B 3x")
-U32 = struct.Struct("<I")
-SEG4 = struct.Struct("<II")
-SEG6 = struct.Struct("<16sI")
-
 
 def get_subdomains_from_crtsh(domain):
     url = f"https://crt.sh/json?q={domain}"
@@ -147,82 +135,46 @@ def resolve_hostnames(hostnames, workers=10):
     return sorted(ip_addresses, key=ip_sort_key)
 
 
-class AsnDb:
+class AsnTable:
     def __init__(self, path):
-        self.file = open(path, "rb")
-        self.mm = mmap.mmap(self.file.fileno(), 0, access=mmap.ACCESS_READ)
-        head = HDR.unpack_from(self.mm, 0)
-        if head[0] != MAGIC:
-            raise ValueError("bad magic")
-        self.counts = dict(zip(("asn", "seg4", "seg6"), head[2:5]))
-        self.asn_off = head[8]
-        self.seg4_off, self.seg6_off = head[9], head[10]
-        self.str_off = head[14]
+        self.rows = {4: [], 6: []}
+        with gzip.open(path, "rt", encoding="utf-8", errors="replace") as file:
+            for line in file:
+                first, last, asn, _, name = line.rstrip("\n").split("\t")
+                if asn == "0":
+                    continue
 
-    def asn_at(self, index):
-        return U32.unpack_from(self.mm, self.asn_off + index * TINY.size)[0]
+                start = ipaddress.ip_address(first)
+                end = ipaddress.ip_address(last)
+                self.rows[start.version].append(
+                    (int(start), int(end), int(asn), name)
+                )
 
-    def name_at(self, index):
-        name_off = TINY.unpack_from(self.mm, self.asn_off + index * TINY.size)[1]
-        if name_off == 0:
-            return ""
-        base = self.str_off + name_off
-        (length,) = U32.unpack_from(self.mm, base)
-        return self.mm[base + 4 : base + 4 + length].decode("utf-8", "replace")
+        for rows in self.rows.values():
+            rows.sort()
+        self.starts = {version: [row[0] for row in rows]
+                       for version, rows in self.rows.items()}
 
     def locate(self, ip):
         address = ipaddress.ip_address(ip)
-        if address.version == 4:
-            return self._segment(
-                self.seg4_off, self.counts["seg4"], 8, int(address),
-                lambda offset: U32.unpack_from(self.mm, offset)[0], V4_MAX, 4,
-            )
-        return self._segment(
-            self.seg6_off, self.counts["seg6"], 20, int(address),
-            lambda offset: int.from_bytes(self.mm[offset : offset + 16], "big"),
-            V6_MAX, 6,
-        )
-
-    def _segment(self, base, count, stride, key, key_at, top, version):
-        lo, hi = 0, count
-        while lo < hi:
-            mid = (lo + hi) >> 1
-            if key_at(base + mid * stride) <= key:
-                lo = mid + 1
-            else:
-                hi = mid
-        if lo == 0:
+        rows = self.rows[address.version]
+        index = bisect.bisect_right(self.starts[address.version], int(address)) - 1
+        if index < 0:
             return None
 
-        record = base + (lo - 1) * stride
-        index = U32.unpack_from(self.mm, record + stride - 4)[0]
-        if index == NO_ASN:
+        start, end, asn, name = rows[index]
+        if int(address) > end:
             return None
 
-        end = key_at(base + lo * stride) - 1 if lo < count else top
-        return version, key_at(record), end, index
+        return address.version, start, end, asn, name
 
-    def ranges_for(self, targets):
-        return self._scan(
-            self.seg4_off, self.counts["seg4"], SEG4, V4_MAX, 4, targets, int
-        ) + self._scan(
-            self.seg6_off, self.counts["seg6"], SEG6, V6_MAX, 6, targets,
-            lambda raw: int.from_bytes(raw, "big"),
-        )
-
-    def _scan(self, base, count, fmt, top, version, targets, to_int):
-        raw = self.mm[base : base + count * fmt.size]
-        records = list(fmt.iter_unpack(raw))
-        rows = []
-        for index, (start, asn_index) in enumerate(records):
-            if asn_index not in targets:
-                continue
-            end = to_int(records[index + 1][0]) - 1 if index + 1 < count else top
-            rows.append((
-                version, to_int(start), end,
-                self.asn_at(asn_index), self.name_at(asn_index),
-            ))
-        return rows
+    def ranges_for(self, asns):
+        return [
+            (version, start, end, asn, name)
+            for version, rows in self.rows.items()
+            for start, end, asn, name in rows
+            if asn in asns
+        ]
 
 
 class IntervalSet:
@@ -267,7 +219,7 @@ def fetch_vpn_ranges(url):
 
 
 def ensure_db(path, url):
-    if path.exists():
+    if path.exists() and time.time() - path.stat().st_mtime < DB_MAX_AGE:
         return
 
     path.parent.mkdir(parents=True, exist_ok=True)
@@ -280,31 +232,28 @@ def to_cidrs(version, start, end):
     return ipaddress.summarize_address_range(address(start), address(end))
 
 
-def build_ranges(db, ip_addresses, vpn_ranges):
+def build_ranges(table, ip_addresses, vpn_ranges):
     targets = set()
-    hits = {}
+    hits = set()
     unresolved = []
     for ip in ip_addresses:
-        located = db.locate(ip)
+        located = table.locate(ip)
         if located is None:
             unresolved.append(ip)
             continue
 
-        version, start, end, index = located
-        targets.add(index)
-        hits[(version, start, end)] = index
+        targets.add(located[3])
+        hits.add(located)
 
     rows = []
-    for row in db.ranges_for(targets):
+    for row in table.ranges_for(targets):
         version, start, end, asn, _ = row
         if asn not in SENSITIVE_ASNS:
             rows.append(row)
         elif version == 4 and vpn_ranges.contains(start, end):
             rows.append(row)
 
-    for (version, start, end), index in hits.items():
-        if db.asn_at(index) in SENSITIVE_ASNS:
-            rows.append((version, start, end, db.asn_at(index), db.name_at(index)))
+    rows.extend(row for row in hits if row[3] in SENSITIVE_ASNS)
 
     return sorted(set(rows)), unresolved
 
@@ -322,7 +271,7 @@ def write_ranges_txt(rows, path):
 def generate_ranges(ip_addresses):
     ensure_db(DB_PATH, DB_URL)
     vpn_ranges = fetch_vpn_ranges(VPN_LIST_URL)
-    rows, unresolved = build_ranges(AsnDb(DB_PATH), ip_addresses, vpn_ranges)
+    rows, unresolved = build_ranges(AsnTable(DB_PATH), ip_addresses, vpn_ranges)
     write_ranges_txt(rows, RANGES_OUTPUT)
 
     asns = {asn for _, _, _, asn, _ in rows}

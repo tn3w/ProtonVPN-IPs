@@ -57,6 +57,11 @@ any(address in network for network in networks)  # True
 These are whole ASNs and overshoot, only shared ISP and CDN ones are trimmed to
 their entry IPs. Prefer the IP lists.
 
+ASNs come from the [iptoasn.com](https://iptoasn.com) combined table, cached for
+a day in `$XDG_CACHE_HOME/ip2asn`. Trimming of the shared ASNs keeps the ranges
+that [X4BNet/lists_vpn](https://github.com/X4BNet/lists_vpn) also flags as VPN,
+plus the ranges holding an entry IP.
+
 ## Running it yourself
 
 ```
