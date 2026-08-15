@@ -4,6 +4,7 @@ import gzip
 import ipaddress
 import json
 import os
+import shutil
 import socket
 import time
 import urllib.error
@@ -57,10 +58,20 @@ SENSITIVE_ASNS = {
     60068: "Datacamp / CDN77 (CDN)",
 }
 
+USER_AGENT = (
+    "ProtonVPN-IPs/1.0 (+https://github.com/tn3w/ProtonVPN-IPs)"
+)
+
+
+def open_url(url, timeout=60):
+    request = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
+    return urllib.request.urlopen(request, timeout=timeout)
+
+
 def get_subdomains_from_crtsh(domain):
     url = f"https://crt.sh/json?q={domain}"
     try:
-        with urllib.request.urlopen(url, timeout=60) as response:
+        with open_url(url) as response:
             if response.status != 200:
                 return set()
             entries = json.loads(response.read().decode("utf-8"))
@@ -196,7 +207,7 @@ class IntervalSet:
 def fetch_vpn_ranges(url):
     print(f"Downloading {url}")
     try:
-        with urllib.request.urlopen(url, timeout=60) as response:
+        with open_url(url) as response:
             text = response.read().decode("utf-8")
     except (urllib.error.URLError, TimeoutError) as error:
         print(f"Error fetching VPN list: {error}")
@@ -224,7 +235,8 @@ def ensure_db(path, url):
 
     path.parent.mkdir(parents=True, exist_ok=True)
     print(f"Downloading {url}")
-    urllib.request.urlretrieve(url, path)
+    with open_url(url) as response, path.open("wb") as file:
+        shutil.copyfileobj(response, file)
 
 
 def to_cidrs(version, start, end):
