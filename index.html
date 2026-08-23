@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="Check whether an IP address belongs to ProtonVPN." />
+        <title>Is ProtonVPN?</title>
+        <style>
+            :root {
+                color-scheme: light dark;
+                --background: #f4f5f8;
+                --surface: #ffffff;
+                --text: #1e1738;
+                --muted: #697080;
+                --line: #d9dce5;
+                --accent: #6f59f6;
+                --accent-soft: #eeebff;
+                --success: #13795b;
+                --danger: #c34d63;
+                --shadow: 0 18px 55px rgb(30 23 56 / 10%);
+            }
+
+            @media (prefers-color-scheme: dark) {
+                :root {
+                    --background: #101018;
+                    --surface: #1b1a26;
+                    --text: #f4f2ff;
+                    --muted: #a9a5b8;
+                    --line: #3b394a;
+                    --accent: #a48bff;
+                    --accent-soft: #292443;
+                    --success: #61d7b0;
+                    --danger: #ff8298;
+                    --shadow: 0 18px 55px rgb(0 0 0 / 30%);
+                }
+            }
+
+            * {
+                box-sizing: border-box;
+            }
+
+            body {
+                min-height: 100vh;
+                margin: 0;
+                display: grid;
+                place-items: center;
+                padding: 24px;
+                color: var(--text);
+                background:
+                    radial-gradient(circle at 15% 15%, var(--accent-soft), transparent 32%),
+                    var(--background);
+                font-family: 'Avenir Next', 'Century Gothic', 'Trebuchet MS', sans-serif;
+            }
+
+            main {
+                width: min(100%, 600px);
+                text-align: center;
+            }
+
+            h1 {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 4px;
+                margin: 0 0 28px;
+                font-size: clamp(2.5rem, 8vw, 4.75rem);
+                font-weight: 500;
+                letter-spacing: -0.04em;
+                line-height: 1;
+            }
+
+            .logo {
+                width: clamp(215px, 52vw, 330px);
+                height: auto;
+            }
+
+            .search-form {
+                position: relative;
+            }
+
+            input {
+                width: 100%;
+                height: 64px;
+                padding: 0 142px 0 22px;
+                border: 1px solid var(--line);
+                border-radius: 8px;
+                outline: none;
+                color: var(--text);
+                background: var(--surface);
+                box-shadow: var(--shadow);
+                font:
+                    18px/1 'Avenir Next',
+                    'Century Gothic',
+                    'Trebuchet MS',
+                    sans-serif;
+                transition:
+                    border-color 160ms ease,
+                    box-shadow 160ms ease;
+            }
+
+            input:focus {
+                border-color: var(--accent);
+                box-shadow:
+                    0 0 0 4px var(--accent-soft),
+                    var(--shadow);
+            }
+            input::placeholder {
+                color: var(--muted);
+            }
+
+            button {
+                position: absolute;
+                top: 8px;
+                right: 8px;
+                height: 48px;
+                padding: 0 20px;
+                border: 0;
+                border-radius: 5px;
+                color: #fff;
+                background: var(--accent);
+                cursor: pointer;
+                font:
+                    600 15px/1 'Avenir Next',
+                    'Century Gothic',
+                    'Trebuchet MS',
+                    sans-serif;
+            }
+
+            button:hover {
+                filter: brightness(1.08);
+            }
+            button:disabled {
+                cursor: wait;
+                opacity: 0.65;
+            }
+
+            .result {
+                min-height: 28px;
+                margin: 22px 0 0;
+                color: var(--muted);
+                font-size: 17px;
+                line-height: 1.45;
+            }
+
+            .result.yes,
+            .result.no {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+
+            .result.yes {
+                color: var(--text);
+            }
+            .result.no {
+                color: var(--text);
+            }
+            .result-status {
+                display: inline-block;
+                color: var(--success);
+                font:
+                    600 30px/1 'Avenir Next',
+                    'Century Gothic',
+                    'Trebuchet MS',
+                    sans-serif;
+                letter-spacing: 0.04em;
+            }
+            .result.no .result-status {
+                color: var(--danger);
+            }
+            .result-detail {
+                display: inline-block;
+            }
+            .match-list {
+                display: inline-flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 7px;
+            }
+            .match {
+                padding: 6px 10px;
+                border: 1px solid color-mix(in srgb, var(--success) 45%, var(--line));
+                border-radius: 5px;
+                color: var(--success);
+                background: color-mix(in srgb, var(--success) 10%, transparent);
+                font-size: 15px;
+                font-weight: 600;
+            }
+            .result .not-found {
+                color: var(--text);
+                font-size: 18px;
+            }
+            .result .error {
+                color: var(--danger);
+            }
+
+            footer {
+                position: fixed;
+                right: 24px;
+                bottom: 20px;
+                left: 24px;
+                color: var(--muted);
+                font-size: 12px;
+                line-height: 1.6;
+                text-align: center;
+            }
+
+            footer a {
+                color: inherit;
+                text-underline-offset: 3px;
+            }
+            footer a:hover {
+                color: var(--text);
+            }
+            .github-icon {
+                width: 14px;
+                height: 14px;
+                margin-right: 4px;
+                vertical-align: -2px;
+                fill: currentColor;
+            }
+            .footer-separator {
+                margin: 0 7px;
+                opacity: 0.45;
+            }
+
+            @media (max-width: 440px) {
+                h1 {
+                    flex-wrap: wrap;
+                    gap: 9px;
+                }
+                input {
+                    padding-right: 112px;
+                }
+                button {
+                    padding: 0 14px;
+                }
+                footer {
+                    right: 16px;
+                    bottom: 12px;
+                    left: 16px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <h1>
+                Is
+                <svg
+                    class="logo"
+                    viewBox="0 0 360 120"
+                    role="img"
+                    aria-label="ProtonVPN"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+                    <defs>
+                        <linearGradient id="backGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#6F59F6" />
+                            <stop offset="100%" stop-color="#6F59F6" />
+                        </linearGradient>
+                        <linearGradient id="frontGrad" x1="0%" y1="0%" x2="50%" y2="100%">
+                            <stop offset="0%" stop-color="#7253F6" />
+                            <stop offset="100%" stop-color="#46DBDB" />
+                        </linearGradient>
+                        <clipPath id="logoClip">
+                            <path d="M25 40Q20 32 30 34L86 42Q96 43 93 52L65 93Q58 103 52 93Z" />
+                        </clipPath>
+                    </defs>
+                    <g clip-path="url(#logoClip)">
+                        <rect width="120" height="120" fill="url(#backGrad)" />
+                        <polygon points="0,0 48,0 60,120 0,120" fill="url(#frontGrad)" />
+                    </g>
+                    <text
+                        x="115"
+                        y="78"
+                        font-family="Avenir Next, Century Gothic, Trebuchet MS, sans-serif"
+                        font-size="48"
+                        font-weight="600"
+                    >
+                        <tspan fill="currentColor">Proton</tspan>
+                        <tspan fill="#6F59F6">VPN</tspan>
+                    </text>
+                </svg>
+                ?
+            </h1>
+            <form class="search-form" id="search-form">
+                <label for="ip-input" hidden>IP address</label>
+                <input
+                    id="ip-input"
+                    type="text"
+                    inputmode="text"
+                    autocomplete="off"
+                    spellcheck="false"
+                    placeholder="Enter an IP address"
+                    aria-describedby="result"
+                    required
+                />
+                <button type="submit" id="search-button">Check</button>
+            </form>
+            <p class="result" id="result" aria-live="polite">Loading ProtonVPN IP lists...</p>
+        </main>
+
+        <footer>
+            <a href="https://github.com/tn3w/ProtonVPN-IPs" aria-label="GitHub repository">
+                <svg class="github-icon" viewBox="0 0 16 16" aria-hidden="true">
+                    <path
+                        d="M8 0C3.58 0 0 3.64 0 8.13c0 3.59 2.29 6.63 5.47 7.7.4.08.55-.18.55-.39 0-.19-.01-.7-.01-1.37-2.23.5-2.7-1.1-2.7-1.1-.36-.94-.89-1.19-.89-1.19-.73-.51.06-.5.06-.5.8.06 1.22.84 1.22.84.72 1.26 1.89.9 2.35.69.07-.53.28-.9.51-1.11-1.78-.21-3.64-.91-3.64-4.02 0-.89.31-1.61.82-2.18-.08-.21-.36-1.03.08-2.15 0 0 .67-.22 2.2.83A7.45 7.45 0 0 1 8 3.9c.68 0 1.36.09 2 .27 1.53-1.05 2.2-.83 2.2-.83.44 1.12.16 1.94.08 2.15.51.57.82 1.29.82 2.18 0 3.12-1.87 3.8-3.65 4.01.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.19 0 .21.14.47.55.39A8.14 8.14 0 0 0 16 8.13C16 3.64 12.42 0 8 0Z"
+                    /></svg
+                >GitHub</a
+            >
+            <span class="footer-separator">|</span>
+            <a
+                href="https://raw.githubusercontent.com/tn3w/ProtonVPN-IPs/refs/heads/master/protonvpn_ips.txt"
+                >exit IPs</a
+            >
+            <a
+                href="https://raw.githubusercontent.com/tn3w/ProtonVPN-IPs/refs/heads/master/protonvpn_entry_ips.txt"
+                >entry IPs</a
+            >
+            <a
+                href="https://raw.githubusercontent.com/tn3w/ProtonVPN-IPs/refs/heads/master/protonvpn_entry_ip_ranges.txt"
+                >ranges</a
+            >
+            <span class="footer-separator">|</span>
+            <a href="https://github.com/tn3w/ProtonVPN-IPs#files">how to load</a>
+        </footer>
+
+        <script>
+            const SOURCES = {
+                exit: 'https://raw.githubusercontent.com/tn3w/ProtonVPN-IPs/refs/heads/master/protonvpn_ips.txt',
+                entry: 'https://raw.githubusercontent.com/tn3w/ProtonVPN-IPs/refs/heads/master/protonvpn_entry_ips.txt',
+                ranges: 'https://raw.githubusercontent.com/tn3w/ProtonVPN-IPs/refs/heads/master/protonvpn_entry_ip_ranges.txt',
+            };
+            const result = document.querySelector('#result');
+            const input = document.querySelector('#ip-input');
+            const button = document.querySelector('#search-button');
+            let lists;
+
+            function lines(text) {
+                return text
+                    .split(/\r?\n/)
+                    .map((line) => line.trim())
+                    .filter((line) => line && !line.startsWith('#'));
+            }
+
+            function parseIp(value) {
+                if (value.includes('.')) {
+                    const parts = value.split('.');
+                    if (
+                        parts.length !== 4 ||
+                        parts.some((part) => !/^\d+$/.test(part) || Number(part) > 255)
+                    )
+                        return null;
+                    return {
+                        version: 4,
+                        value: parts.reduce((number, part) => number * 256n + BigInt(part), 0n),
+                    };
+                }
+                if (!value.includes(':')) return null;
+                const halves = value.split('::');
+                if (halves.length > 2) return null;
+                const left = halves[0] ? halves[0].split(':') : [];
+                const right = halves[1] ? halves[1].split(':') : [];
+                if (
+                    left.some((part) => !/^[\da-f]{1,4}$/i.test(part)) ||
+                    right.some((part) => !/^[\da-f]{1,4}$/i.test(part))
+                )
+                    return null;
+                const groups =
+                    halves.length === 2
+                        ? [...left, ...Array(8 - left.length - right.length).fill('0'), ...right]
+                        : left;
+                if (groups.length !== 8) return null;
+                return {
+                    version: 6,
+                    value: groups.reduce(
+                        (number, part) => number * 65536n + BigInt(`0x${part}`),
+                        0n
+                    ),
+                };
+            }
+
+            function inRange(ip, cidr) {
+                const [address, prefixText] = cidr.split('/');
+                const network = parseIp(address);
+                const prefix = Number(prefixText);
+                if (
+                    !network ||
+                    network.version !== ip.version ||
+                    !Number.isInteger(prefix) ||
+                    prefix < 0 ||
+                    prefix > (ip.version === 4 ? 32 : 128)
+                )
+                    return false;
+                const bits = BigInt(ip.version === 4 ? 32 : 128);
+                const mask =
+                    prefix === 0
+                        ? 0n
+                        : ((1n << bits) - 1n) ^ ((1n << (bits - BigInt(prefix))) - 1n);
+                return (ip.value & mask) === (network.value & mask);
+            }
+
+            async function loadLists() {
+                const responses = await Promise.all(
+                    Object.values(SOURCES).map((url) => fetch(url))
+                );
+                if (responses.some((response) => !response.ok))
+                    throw new Error('Could not load the lists');
+                const texts = await Promise.all(responses.map((response) => response.text()));
+                return {
+                    exit: new Set(lines(texts[0]).map((value) => value.toLowerCase())),
+                    entry: new Set(lines(texts[1]).map((value) => value.toLowerCase())),
+                    ranges: lines(texts[2]),
+                };
+            }
+
+            function showResult(message, className = '') {
+                result.className = `result ${className}`;
+                result.innerHTML = message;
+            }
+
+            document.querySelector('#search-form').addEventListener('submit', (event) => {
+                event.preventDefault();
+                if (!lists)
+                    return showResult(
+                        'The IP lists are still loading. Try again in a moment.',
+                        'error'
+                    );
+                const value = input.value.trim().toLowerCase();
+                const ip = parseIp(value);
+                if (!ip) return showResult('That does not look like a valid IP address.', 'error');
+                const matches = [];
+                if (lists.exit.has(value)) matches.push('Exit IP list');
+                if (lists.entry.has(value)) matches.push('Entry IP list');
+                if (lists.ranges.some((range) => inRange(ip, range)))
+                    matches.push('Entry range list');
+                if (matches.length)
+                    showResult(
+                        `<span class="result-status">YES</span><span class="result-detail">Listed in:</span><span class="match-list">${matches.map((match) => `<span class="match">${match}</span>`).join('')}</span>`,
+                        'yes'
+                    );
+                else
+                    showResult(
+                        `<span class="result-status">NO</span><span class="not-found">Not listed in the ProtonVPN lists.</span>`,
+                        'no'
+                    );
+            });
+
+            loadLists()
+                .then((data) => {
+                    lists = data;
+                    button.disabled = false;
+                    showResult('Ready to check.');
+                })
+                .catch(() =>
+                    showResult(
+                        'The IP lists could not be loaded. Please refresh and try again.',
+                        'error'
+                    )
+                );
+            button.disabled = true;
+        </script>
+    </body>
+</html>
