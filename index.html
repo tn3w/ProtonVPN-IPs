@@ -8,21 +8,28 @@
         <style>
             :root {
                 --bg: #f7f7fb;
+                --glow: #e9e5ff;
                 --card: #fff;
                 --text: #211b35;
                 --muted: #777388;
                 --line: #e4e1ed;
-                --purple: #6f59f6;
                 --green: #159b72;
                 --red: #d34d67;
+                --shadow: 0 12px 35px #211b3512;
+                --purple: #6f59f6;
+                --font: 'Avenir Next', 'Trebuchet MS', sans-serif;
             }
             @media (prefers-color-scheme: dark) {
                 :root {
                     --bg: #111016;
+                    --glow: #2b2352;
                     --card: #1c1a23;
                     --text: #f7f5ff;
                     --muted: #aaa5b7;
                     --line: #373441;
+                    --green: #2fd6a3;
+                    --red: #ff7d94;
+                    --shadow: 0 12px 35px #00000059;
                 }
             }
             * {
@@ -34,12 +41,10 @@
                 display: grid;
                 place-items: center;
                 padding: 24px;
-                background: radial-gradient(circle at 20% 10%, #e9e5ff, transparent 35%), var(--bg);
+                background: radial-gradient(circle at 20% 10%, var(--glow), transparent 35%)
+                    var(--bg);
                 color: var(--text);
-                font:
-                    16px 'Avenir Next',
-                    'Trebuchet MS',
-                    sans-serif;
+                font: 16px var(--font);
             }
             main {
                 width: min(560px, 100%);
@@ -71,15 +76,12 @@
                 background: var(--card);
                 color: var(--text);
                 outline: 0;
-                font: inherit;
-                font-size: 17px;
-                box-shadow: 0 12px 35px #211b3512;
+                font: 17px var(--font);
+                box-shadow: var(--shadow);
             }
             input:focus {
                 border-color: var(--purple);
-                box-shadow:
-                    0 0 0 4px #6f59f622,
-                    0 12px 35px #211b3512;
+                box-shadow: 0 0 0 4px #6f59f622, var(--shadow);
             }
             button {
                 position: absolute;
@@ -89,12 +91,9 @@
                 padding: 0 22px;
                 border: 0;
                 border-radius: 10px;
-                background: #6f59f6;
+                background: var(--purple);
                 color: #fff;
-                font:
-                    800 16px 'Avenir Next',
-                    'Trebuchet MS',
-                    sans-serif;
+                font: 800 16px var(--font);
                 letter-spacing: 0.01em;
                 cursor: pointer;
                 box-shadow: 0 5px 14px #6f59f655;
@@ -103,18 +102,15 @@
                     filter 0.15s,
                     box-shadow 0.15s;
             }
-
             button:hover {
                 filter: brightness(1.08);
                 transform: translateY(-1px);
                 box-shadow: 0 7px 18px #6f59f666;
             }
-
             button:active {
                 transform: translateY(0);
                 box-shadow: 0 3px 9px #6f59f644;
             }
-
             button:disabled {
                 opacity: 0.55;
                 cursor: wait;
@@ -126,38 +122,35 @@
                 color: var(--muted);
                 line-height: 1.5;
             }
-            .yes,
-            .no {
+            .answer,
+            .tags {
                 display: flex;
-                justify-content: center;
                 align-items: center;
-                gap: 10px;
+                justify-content: center;
                 flex-wrap: wrap;
+                gap: 10px;
+            }
+            .tags {
+                gap: 7px;
             }
             .status {
                 font-size: 28px;
                 font-weight: 700;
                 letter-spacing: 0.03em;
             }
-            .yes .status {
+            .yes,
+            .tag {
                 color: var(--green);
             }
-            .no .status,
+            .no,
             .error {
                 color: var(--red);
             }
-            .tags {
-                display: flex;
-                gap: 7px;
-                flex-wrap: wrap;
-                justify-content: center;
-            }
             .tag {
                 padding: 6px 10px;
-                border: 1px solid #159b7266;
+                border: 1px solid color-mix(in srgb, var(--green) 40%, transparent);
                 border-radius: 8px;
-                color: var(--green);
-                background: #159b7212;
+                background: color-mix(in srgb, var(--green) 10%, transparent);
                 font-size: 14px;
                 font-weight: 600;
             }
@@ -191,37 +184,21 @@
         <main>
             <h1>
                 Is
-                <svg
-                    class="logo"
-                    viewBox="0 0 360 120"
-                    role="img"
-                    aria-label="ProtonVPN"
-                    xmlns="http://www.w3.org/2000/svg"
-                >
+                <svg class="logo" viewBox="0 0 360 120" role="img" aria-label="ProtonVPN">
                     <defs>
-                        <linearGradient id="backGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                            <stop offset="0%" stop-color="#6F59F6" />
-                            <stop offset="100%" stop-color="#6F59F6" />
-                        </linearGradient>
-                        <linearGradient id="frontGrad" x1="0%" y1="0%" x2="50%" y2="100%">
+                        <linearGradient id="shine" x1="0%" y1="0%" x2="50%" y2="100%">
                             <stop offset="0%" stop-color="#7253F6" />
                             <stop offset="100%" stop-color="#46DBDB" />
                         </linearGradient>
-                        <clipPath id="logoClip">
+                        <clipPath id="mark">
                             <path d="M25 40Q20 32 30 34L86 42Q96 43 93 52L65 93Q58 103 52 93Z" />
                         </clipPath>
                     </defs>
-                    <g clip-path="url(#logoClip)">
-                        <rect width="120" height="120" fill="url(#backGrad)" />
-                        <polygon points="0,0 48,0 60,120 0,120" fill="url(#frontGrad)" />
+                    <g clip-path="url(#mark)">
+                        <rect width="120" height="120" fill="#6F59F6" />
+                        <polygon points="0,0 48,0 60,120 0,120" fill="url(#shine)" />
                     </g>
-                    <text
-                        x="115"
-                        y="78"
-                        font-family="Avenir Next, Century Gothic, Trebuchet MS, sans-serif"
-                        font-size="48"
-                        font-weight="600"
-                    >
+                    <text x="115" y="78" font-size="48" font-weight="600">
                         <tspan fill="currentColor">Proton</tspan>
                         <tspan fill="#6F59F6">VPN</tspan>
                     </text>
@@ -254,125 +231,115 @@
                 GitHub
             </a>
             <span>·</span>
-            <a
-                href="https://raw.githubusercontent.com/tn3w/ProtonVPN-IPs/refs/heads/master/protonvpn_ips.txt"
-                >exit IPs</a
-            >
-            <a
-                href="https://raw.githubusercontent.com/tn3w/ProtonVPN-IPs/refs/heads/master/protonvpn_entry_ips.txt"
-                >entry IPs</a
-            >
-            <a
-                href="https://raw.githubusercontent.com/tn3w/ProtonVPN-IPs/refs/heads/master/protonvpn_entry_ip_ranges.txt"
-                >ranges</a
-            >
+            <a href="https://raw.githubusercontent.com/tn3w/ProtonVPN-IPs/refs/heads/master/protonvpn_ips.txt">exit IPs</a>
+            <a href="https://raw.githubusercontent.com/tn3w/ProtonVPN-IPs/refs/heads/master/protonvpn_entry_ips.txt">entry IPs</a>
+            <a href="https://raw.githubusercontent.com/tn3w/ProtonVPN-IPs/refs/heads/master/protonvpn_entry_ip_ranges.txt">ranges</a>
             <span>·</span>
             <a href="https://github.com/tn3w/ProtonVPN-IPs#files">how to load</a>
         </footer>
 
         <script>
-            const URLS = [
-                'https://raw.githubusercontent.com/tn3w/ProtonVPN-IPs/refs/heads/master/protonvpn_ips.txt',
-                'https://raw.githubusercontent.com/tn3w/ProtonVPN-IPs/refs/heads/master/protonvpn_entry_ips.txt',
-                'https://raw.githubusercontent.com/tn3w/ProtonVPN-IPs/refs/heads/master/protonvpn_entry_ip_ranges.txt',
-            ];
+            const BASE =
+                'https://raw.githubusercontent.com/tn3w/ProtonVPN-IPs/refs/heads/master/';
 
-            const $ = (s) => document.querySelector(s),
-                result = $('#result'),
-                input = $('#ip'),
-                button = $('#check');
+            const result = document.querySelector('#result');
+            const input = document.querySelector('#ip');
+            const button = document.querySelector('#check');
 
-            const clean = (s) =>
-                s
+            async function fetchList(file) {
+                const response = await fetch(BASE + file);
+                if (!response.ok) throw Error(file);
+
+                const text = await response.text();
+                return text
                     .split(/\r?\n/)
-                    .map((x) => x.trim().toLowerCase())
-                    .filter((x) => x && !x.startsWith('#'));
+                    .map((line) => line.trim().toLowerCase())
+                    .filter((line) => line && !line.startsWith('#'));
+            }
 
-            function ip(value) {
+            async function loadLists() {
+                const [exit, entry, ranges] = await Promise.all(
+                    [
+                        'protonvpn_ips.txt',
+                        'protonvpn_entry_ips.txt',
+                        'protonvpn_entry_ip_ranges.txt',
+                    ].map(fetchList)
+                );
+                return { exit: new Set(exit), entry: new Set(entry), ranges };
+            }
+
+            function parseIp(value) {
                 if (value.includes('.')) {
-                    const p = value.split('.');
-                    if (p.length !== 4 || p.some((x) => !/^\d+$/.test(x) || +x > 255)) return;
-                    return { v: 4, n: p.reduce((a, x) => a * 256n + BigInt(x), 0n) };
+                    const parts = value.split('.');
+                    const invalid = (x) => !/^\d+$/.test(x) || +x > 255;
+                    if (parts.length !== 4 || parts.some(invalid)) return;
+                    return { bits: 32, number: parts.reduce((a, x) => a * 256n + BigInt(x), 0n) };
                 }
 
                 if (!value.includes(':')) return;
-                const h = value.split('::');
-                if (h.length > 2) return;
+                const halves = value.split('::');
+                if (halves.length > 2) return;
 
-                const l = h[0] ? h[0].split(':') : [],
-                    r = h[1] ? h[1].split(':') : [];
-                if ([...l, ...r].some((x) => !/^[\da-f]{1,4}$/i.test(x))) return;
+                const [head, tail] = halves;
+                const left = head ? head.split(':') : [];
+                const right = tail ? tail.split(':') : [];
+                if ([...left, ...right].some((x) => !/^[\da-f]{1,4}$/i.test(x))) return;
 
-                const g =
-                    h.length === 2 ? [...l, ...Array(8 - l.length - r.length).fill('0'), ...r] : l;
+                const groups =
+                    tail === undefined
+                        ? left
+                        : [...left, ...Array(8 - left.length - right.length).fill('0'), ...right];
+                if (groups.length !== 8) return;
 
-                if (g.length !== 8) return;
-                return { v: 6, n: g.reduce((a, x) => a * 65536n + BigInt('0x' + x), 0n) };
+                const number = groups.reduce((a, x) => a * 65536n + BigInt('0x' + x), 0n);
+                return { bits: 128, number };
             }
 
-            function range(x, c) {
-                const [a, p] = c.split('/'),
-                    n = ip(a),
-                    bits = x.v === 4 ? 32 : 128,
-                    prefix = +p;
-                if (!n || n.v !== x.v || !Number.isInteger(prefix) || prefix < 0 || prefix > bits)
-                    return false;
-                const mask =
-                    prefix === 0
-                        ? 0n
-                        : ((1n << BigInt(bits)) - 1n) ^ ((1n << BigInt(bits - prefix)) - 1n);
-                return (x.n & mask) === (n.n & mask);
+            function inRange(address, cidr) {
+                const [network, prefixText] = cidr.split('/');
+                const base = parseIp(network);
+                const prefix = +prefixText;
+                if (!base || base.bits !== address.bits) return false;
+                if (!Number.isInteger(prefix) || prefix < 0 || prefix > address.bits) return false;
+
+                const size = BigInt(address.bits);
+                const mask = ((1n << size) - 1n) ^ ((1n << (size - BigInt(prefix))) - 1n);
+                return (address.number & mask) === (base.number & mask);
             }
 
-            function show(html, cls = '') {
-                result.className = cls;
+            function show(html, className = '') {
+                result.className = className;
                 result.innerHTML = html;
             }
 
             let lists;
 
-            async function load() {
-                const data = await Promise.all(
-                    URLS.map((u) =>
-                        fetch(u).then((r) => {
-                            if (!r.ok) throw Error();
-                            return r.text();
-                        })
-                    )
-                );
-
-                return {
-                    exit: new Set(clean(data[0])),
-                    entry: new Set(clean(data[1])),
-                    ranges: clean(data[2]),
-                };
-            }
-
-            $('#form').onsubmit = (e) => {
-                e.preventDefault();
-
+            document.querySelector('#form').onsubmit = (event) => {
+                event.preventDefault();
                 if (!lists) return show('The lists are still loading. Try again shortly.', 'error');
 
-                const value = input.value.trim().toLowerCase(),
-                    x = ip(value);
-                if (!x) return show('That does not look like a valid IP address.', 'error');
+                const value = input.value.trim().toLowerCase();
+                const address = parseIp(value);
+                if (!address) return show('That does not look like a valid IP address.', 'error');
 
                 const matches = [];
                 if (lists.exit.has(value)) matches.push('Exit IP');
                 if (lists.entry.has(value)) matches.push('Entry IP');
-                if (lists.ranges.some((r) => range(x, r))) matches.push('Entry range');
+                if (lists.ranges.some((cidr) => inRange(address, cidr))) matches.push('Entry range');
 
+                const tags = matches.map((x) => `<span class="tag">${x}</span>`).join('');
                 show(
                     matches.length
-                        ? `<div class="yes"><span class="status">YES</span><span>Listed in:</span>
-       <div class="tags">${matches.map((x) => `<span class="tag">${x}</span>`).join('')}</div></div>`
-                        : `<div class="no"><span class="status">NO</span><span>Not listed in the ProtonVPN lists.</span></div>`
+                        ? `<div class="answer"><span class="status yes">YES</span>
+                           <span>Listed in:</span><div class="tags">${tags}</div></div>`
+                        : `<div class="answer"><span class="status no">NO</span>
+                           <span>Not listed in the ProtonVPN lists.</span></div>`
                 );
             };
 
-            load()
-                .then((x) => {
-                    lists = x;
+            loadLists()
+                .then((loaded) => {
+                    lists = loaded;
                     button.disabled = false;
                     show('Ready to check.');
                 })
