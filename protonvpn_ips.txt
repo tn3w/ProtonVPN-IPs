@@ -1,11 +1,8 @@
 #
 # protonvpn_ips.txt
-# https://github.com/tn3w/ProtonVPN-IPs/blob/master/protonvpn_ips.txt
+# https://github.com/tn3w/ProtonVPN-IPs
 #
-# An automatically updated list of IP addresses associated with the
-# widely used free and privacy-focused VPN provider, ProtonVPN.
-#
-# This list could be used to block malicious traffic from ProtonVPN's servers.
+# Exit IPs ProtonVPN advertises, the address a site sees.
 #
 2.58.241.67
 2.58.241.68

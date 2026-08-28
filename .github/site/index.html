@@ -232,8 +232,9 @@
             </a>
             <span>·</span>
             <a href="https://raw.githubusercontent.com/tn3w/ProtonVPN-IPs/refs/heads/master/protonvpn_ips.txt">exit IPs</a>
+            <a href="https://raw.githubusercontent.com/tn3w/ProtonVPN-IPs/refs/heads/master/protonvpn_ip_ranges.txt">/24 blocks</a>
             <a href="https://raw.githubusercontent.com/tn3w/ProtonVPN-IPs/refs/heads/master/protonvpn_entry_ips.txt">entry IPs</a>
-            <a href="https://raw.githubusercontent.com/tn3w/ProtonVPN-IPs/refs/heads/master/protonvpn_entry_ip_ranges.txt">ranges</a>
+            <a href="https://raw.githubusercontent.com/tn3w/ProtonVPN-IPs/refs/heads/master/protonvpn_entry_ip_ranges.txt">entry ranges</a>
             <span>·</span>
             <a href="https://github.com/tn3w/ProtonVPN-IPs#files">how to load</a>
         </footer>
@@ -258,14 +259,20 @@
             }
 
             async function loadLists() {
-                const [exit, entry, ranges] = await Promise.all(
+                const [exit, exitRanges, entry, entryRanges] = await Promise.all(
                     [
                         'protonvpn_ips.txt',
+                        'protonvpn_ip_ranges.txt',
                         'protonvpn_entry_ips.txt',
                         'protonvpn_entry_ip_ranges.txt',
                     ].map(fetchList)
                 );
-                return { exit: new Set(exit), entry: new Set(entry), ranges };
+                return {
+                    'Exit IP': new Set(exit),
+                    'Exit range': exitRanges,
+                    'Entry IP': new Set(entry),
+                    'Entry range': entryRanges,
+                };
             }
 
             function parseIp(value) {
@@ -322,10 +329,13 @@
                 const address = parseIp(value);
                 if (!address) return show('That does not look like a valid IP address.', 'error');
 
-                const matches = [];
-                if (lists.exit.has(value)) matches.push('Exit IP');
-                if (lists.entry.has(value)) matches.push('Entry IP');
-                if (lists.ranges.some((cidr) => inRange(address, cidr))) matches.push('Entry range');
+                const matches = Object.entries(lists)
+                    .filter(([, list]) =>
+                        list instanceof Set
+                            ? list.has(value)
+                            : list.some((cidr) => inRange(address, cidr))
+                    )
+                    .map(([name]) => name);
 
                 const tags = matches.map((x) => `<span class="tag">${x}</span>`).join('');
                 show(
