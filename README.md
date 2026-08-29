@@ -92,8 +92,8 @@ so ASN data never covers exit traffic. That is what the /24 blocks are for.
 ## Layout
 
 ```
+builder             the builder, Go, stdlib only
 .github/assets      README graphics, generated
-.github/builder     the builder, Go, stdlib only
 .github/site        is-protonvpn.tn3w.dev, deployed by the workflow
 .github/workflows   daily build, secret rotation, Pages deploy
 ```
@@ -101,7 +101,7 @@ so ASN data never covers exit traffic. That is what the /24 blocks are for.
 ## Running it yourself
 
 ```
-go run .github/builder/*.go
+go run ./builder
 ```
 
 Writes every file above. One program, no dependencies, no build step.

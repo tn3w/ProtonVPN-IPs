@@ -31,7 +31,7 @@ jobs:
           REFRESH_TOKEN: ${{ secrets.REFRESH_TOKEN }}
           SESSION_ID: ${{ secrets.SESSION_ID }}
           TOKEN_FILE: ${{ runner.temp }}/tokens.env
-        run: go run .github/builder/*.go
+        run: go run ./builder
 
       - name: Rotate secrets
         if: github.event_name != 'push'
