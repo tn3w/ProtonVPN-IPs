@@ -4,7 +4,8 @@
 #
 # Announced prefixes holding an entry IP, plus every prefix of ProtonVPN's ASNs.
 #
-2.58.240.0/22
+2.58.241.0/24
+2.58.242.0/23
 31.13.188.0/22
 37.0.12.0/24
 37.19.195.0/24
