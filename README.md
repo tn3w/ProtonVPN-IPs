@@ -13,7 +13,7 @@ Check an address at [is-protonvpn.tn3w.dev](https://is-protonvpn.tn3w.dev).
 <img src=".github/assets/overview-light.svg" width="880" alt="Exit IP, /24 block, entry IP, hostname and prefix counts, and exit IPs by country">
 </picture>
 
-[plevin](https://github.com/tn3w/plevin) |
+[iplore](https://github.com/tn3w/iplore) |
 [IPBlocklist](https://github.com/tn3w/IPBlocklist) |
 [IP2X](https://github.com/tn3w/IP2X) |
 [TunnelBear-IPs](https://github.com/tn3w/TunnelBear-IPs) |
