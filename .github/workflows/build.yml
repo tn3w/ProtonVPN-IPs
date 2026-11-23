@@ -34,10 +34,13 @@ jobs:
         run: go run ./builder
 
       - name: Rotate secrets
-        if: github.event_name != 'push'
+        if: always() && github.event_name != 'push'
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
-        run: gh secret set -f ${{ runner.temp }}/tokens.env -R $GITHUB_REPOSITORY
+          TOKEN_FILE: ${{ runner.temp }}/tokens.env
+        run: |
+          [ -f "$TOKEN_FILE" ] || exit 0
+          gh secret set -f "$TOKEN_FILE" -R $GITHUB_REPOSITORY
 
       - name: Commit
         if: github.event_name != 'push'

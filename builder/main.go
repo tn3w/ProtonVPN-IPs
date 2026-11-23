@@ -22,7 +22,7 @@ import (
 const (
 	baseDomain   = "protonvpn.net"
 	versionURL   = "https://account.protonvpn.com/assets/yandex-browser-manifest.json"
-	refreshURL   = "https://account.proton.me/api/auth/refresh"
+	refreshURL   = "https://account.protonvpn.com/api/auth/refresh"
 	logicalsURL  = "https://account.protonvpn.com/api/vpn/logicals"
 	crtShURL     = "https://crt.sh/json?q=" + baseDomain
 	peeringDBURL = "https://www.peeringdb.com/api/net?name_search=Proton"
